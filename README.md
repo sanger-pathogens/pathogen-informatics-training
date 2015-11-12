@@ -1,4 +1,4 @@
-# Pathogen Informatics Traning
+# Pathogen Informatics Training
 
 The courses use [Jupyter](http://jupyter.org/) notebooks, which
 means that Jupyter must be installed to use them.
