@@ -1,0 +1,9 @@
+First line of file
+Second line of file
+LINE three
+Line four looks like the First line
+Line five also looks like the First Line
+Hello world
+This	line	is	tab-separated
+This line is not tab-separated
+gene1
