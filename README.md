@@ -7,7 +7,7 @@ for details.
 
 To use the courses, first take a clone of this repository:
 
-    git clone https://github.com/martinghunt/pathogen-informatics-training.git
+    git clone https://github.com/sanger-pathogens/pathogen-informatics-training.git
 
 Then view the available courses. This will start Jupyter at the main index page:
 
