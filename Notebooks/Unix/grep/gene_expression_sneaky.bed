@@ -1,0 +1,9 @@
+chr1	10	100	gene1	10	+
+chr1	350	500	gene2	1000	-
+chr1	350	500	sneaky-gene3	1000	+
+chr2	20	35	gene4	0	+
+chr2	110	200	gene5	4	-
+chr3	1000	2000	gene6	100	+
+chr8	20	100	chr11.gene1	1000	-
+chr10	1	100	gene7	11	-
+chr11	20	100	sneaky-gene8	1000	+

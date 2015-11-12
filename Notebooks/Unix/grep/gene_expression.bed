@@ -1,0 +1,8 @@
+chr1	10	100	gene1	10	+
+chr1	350	500	gene2	1000	-
+chr2	20	35	gene3	0	+
+chr2	110	200	Gene4	4	-
+chr3	1000	2000	gene5	100	+
+chr10	1	100	gene6	11	-
+chrX	60	90	Gene7	2	+
+chrY	80	120	GENE8	42	-

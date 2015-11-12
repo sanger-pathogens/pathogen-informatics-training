@@ -1,0 +1,10 @@
+chr1	source1	gene	100	300	0.5	+	0	name=gene1;product=unknown
+chr1	source2	gene	1000	1100	0.9	-	0	name=recA;product=RecA protein
+chr1	source5	repeat	10000	14000	1	+	.	name=ALU
+chr2	source2	gene	10000	1200	0.95	+	0
+chr2	source1	gene	50	900	0.4	-	0	name=gene2;product=gene2 protein
+chr3	source1	gene	200	210	0.8	.	0	name=gene3
+chr4	source3	repeat	300	400	1	+	.	name=ALU
+chr10	source2	repeat	60	70	0.78	+	.	name=LINE1
+chr10	source2	repeat	150	166	0.84	+	.	name=LINE2
+chrX	source1	gene	123	456	0.6	+	0	name=gene4;product=unknown
