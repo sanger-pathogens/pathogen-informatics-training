@@ -55,9 +55,12 @@ basicstyle=\small\ttfamily,
 tabsize=8,
 columns=flexible,
 breaklines=true,
+frame=tb,
+rulecolor=\color[rgb]{0.8,0.8,0.7},
 backgroundcolor=\color[rgb]{1,1,0.91},
 postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}}
 }
+\usepackage{fontawesome}
 ''')
 
         to_replace = {'\#': '#', '\$': '$', '\_': '_'}
@@ -67,6 +70,8 @@ postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}
             if lines[i] == r'''    \begin{Verbatim}[commandchars=\\\{\}]''':
                 if lines[i+1].startswith(r'''{\color{incolor}In '''):
                     lines[i] = r'''    \vspace{0.5em}\begin{Verbatim}[commandchars=\\\{\}]'''
+                    cmd = lines[i+1].split(' ', maxsplit=2)[-1]
+                    lines[i+1] = r'''\llap{\LARGE\faKeyboardO }\colorbox{gray}{\color{white}''' + cmd + '}'
                 else:
                     lines[i] = r'''    \begin{lstlisting}'''
                     in_lstlisting = True
@@ -96,6 +101,13 @@ postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}
 ''')
 
 
+    def _remove_syntax_highlighting(self, lines):
+        for i in range(len(lines)):
+            if r'''\begin{document}''' in lines[i]:
+                lines.insert(i, r'''\renewcommand{\PY}[2]{{#2}}''')
+                return
+
+
     def run(self):
         self._nbconvert_to_tex(self.infile, self.outfile)
 
@@ -114,6 +126,7 @@ postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}
         if self.notitle:
             self._remove_title(lines)
         
+        self._remove_syntax_highlighting(lines)
 
         self._set_section_heading_style(lines)
 

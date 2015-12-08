@@ -36,7 +36,7 @@ print('Making final pdf', final_pdf)
 
 
 try:
-    subprocess.check_output('pdflatex ' + final_tex_file, shell=True, stderr=subprocess.STDOUT)
+    subprocess.check_output('lualatex --halt-on-error ' + final_tex_file, shell=True, stderr=subprocess.STDOUT)
 except subprocess.CalledProcessError as error:
     sys.exit('Error running latex')
 
