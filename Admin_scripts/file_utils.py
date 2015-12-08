@@ -55,6 +55,8 @@ basicstyle=\small\ttfamily,
 tabsize=8,
 columns=flexible,
 breaklines=true,
+frame=tb,
+rulecolor=\color[rgb]{0.8,0.8,0.7},
 backgroundcolor=\color[rgb]{1,1,0.91},
 postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}}
 }
