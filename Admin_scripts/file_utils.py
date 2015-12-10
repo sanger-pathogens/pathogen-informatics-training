@@ -12,6 +12,7 @@ class Ipynb_to_tex_converter:
         notitle=True,
         parskip=True,
         font_size=11,
+        execute_notebook=True,
         date=None
     ):
         self.infile = infile
@@ -21,13 +22,18 @@ class Ipynb_to_tex_converter:
         self.font_size = font_size
         self.notitle = notitle
         self.date = date
+        self.execute_notebook = execute_notebook
 
         if not os.path.exists(self.infile):
             raise Error('Input file not found "' + self.infile + '". Cannot continue')
 
 
     def _nbconvert_to_tex(self, infile, outfile):
-        cmd = 'jupyter nbconvert --execute --to latex --output ' + outfile + ' ' + infile
+        cmd = 'jupyter nbconvert'
+        if self.execute_notebook:
+            cmd += ' --execute'
+
+        cmd += ' --to latex --output ' + outfile + ' ' + infile
 
         try:
             subprocess.check_output(cmd, shell=True, stderr=subprocess.STDOUT)
@@ -61,17 +67,30 @@ backgroundcolor=\color[rgb]{1,1,0.91},
 postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}}
 }
 \usepackage{fontawesome}
+
+
+\usepackage{mdframed}
+\newmdenv[
+  backgroundcolor=gray,
+  fontcolor=white,
+  nobreak=true,
+]{terminalinput}
+
+
 ''')
 
         to_replace = {'\#': '#', '\$': '$', '\_': '_'}
         in_lstlisting = False
+        in_verbatim = False
 
         for i in range(len(lines)):
             if lines[i] == r'''    \begin{Verbatim}[commandchars=\\\{\}]''':
                 if lines[i+1].startswith(r'''{\color{incolor}In '''):
-                    lines[i] = r'''    \vspace{0.5em}\begin{Verbatim}[commandchars=\\\{\}]'''
+                    lines[i] = '\n'.join([r'''\begin{terminalinput}''', r'''\begin{Verbatim}[commandchars=\\\{\}]'''])
                     cmd = lines[i+1].split(' ', maxsplit=2)[-1]
-                    lines[i+1] = r'''\llap{\LARGE\faKeyboardO }\colorbox{gray}{\color{white}''' + cmd + '}'
+                    lines[i+1] = r'''\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}}''' + cmd
+                    in_verbatim = True
+                    continue
                 else:
                     lines[i] = r'''    \begin{lstlisting}'''
                     in_lstlisting = True
@@ -84,6 +103,10 @@ postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}
                 else:
                     for key, val in to_replace.items():
                         lines[i] = lines[i].replace(key, val)
+            if in_verbatim and lines[i] == '\end{Verbatim}':
+                lines[i] += '\n' + r'''\end{terminalinput}'''
+                in_verbatim = False
+            
                    
 
 
@@ -108,6 +131,10 @@ postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}
                 return
 
 
+    def _fix_image_files(self, lines):
+        pass
+
+
     def run(self):
         self._nbconvert_to_tex(self.infile, self.outfile)
 
@@ -129,6 +156,7 @@ postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}
         self._remove_syntax_highlighting(lines)
 
         self._set_section_heading_style(lines)
+        self._fix_image_files(lines)
 
         with open(self.outfile, 'w') as f:
             for line in lines:
