@@ -100,6 +100,10 @@ postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}
                 if lines[i] == r'''    \end{Verbatim}''':
                     lines[i] = r'''    \end{lstlisting}'''
                     in_lstlisting = False
+
+                    # sometimes there is no output, which would leave a small empty box
+                    if lines[i-2] == r'''    \begin{lstlisting}''' and lines[i-1] == '':
+                        lines[i-1] = '(no output)'
                 else:
                     for key, val in to_replace.items():
                         lines[i] = lines[i].replace(key, val)
