@@ -94,7 +94,7 @@ postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}
 
 ''')
 
-        to_replace = {'\#': '#', '\$': '$', '\_': '_'}
+        to_replace = {'\#': '#', '\$': '$', '\_': '_', r'''{\ldots}''': '...'}
         in_lstlisting = False
         in_verbatim = False
 
