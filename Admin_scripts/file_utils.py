@@ -52,6 +52,21 @@ class Ipynb_to_tex_converter:
     def _remove_useless_first_lines(self, lines):
         while len(lines) and not lines[0].startswith(r'''\documentclass'''):
             lines.pop(0)
+
+
+    def _fix_figures(self, lines):
+        for i in range(len(lines)):
+            if lines[i].startswith(r'''\begin{figure}'''):
+               assert lines[i+2].startswith(r'''\includegraphics''')
+               assert lines[i+3].startswith(r'''\caption''')
+               assert lines[i+4] == r'''\end{figure}'''
+               graphics_string = lines[i+3].split('{')[-1][:-1]
+               lines[i] = ''
+               lines[i+1] = r'''\begin{center}'''
+               lines[i+2] = lines[i+2].split('{')[-1][:-1]
+               lines[i+2] = r'''\includegraphics[''' + graphics_string + ']{' + lines[i+2] + '}'
+               lines[i+3] = r'''\end{center}'''
+               lines[i+4] = ''
       
 
     def _fix_terminal_style(self, lines):
@@ -160,6 +175,7 @@ postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}
         self._remove_syntax_highlighting(lines)
 
         self._set_section_heading_style(lines)
+        self._fix_figures(lines)
         self._fix_image_files(lines)
 
         with open(self.outfile, 'w') as f:
