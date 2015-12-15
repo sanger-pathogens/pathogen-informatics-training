@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -e
+set -eu
 
 # check that the correct number of options was given.
 # If not, then write a message explaining how to use the
