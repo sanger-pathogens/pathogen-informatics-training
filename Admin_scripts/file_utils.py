@@ -139,7 +139,8 @@ postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}
     def _set_section_heading_style(self, lines):
         lines.insert(1, r'''\usepackage{sectsty}
 \allsectionsfont{\color{blue}\fontfamily{lmss}\selectfont}
-\usepackage{charter}
+\usepackage{fontspec}
+\setmainfont{XCharter}
 ''')
 
 
