@@ -12,6 +12,7 @@ class Ipynb_to_tex_converter:
         notitle=True,
         parskip=True,
         font_size=11,
+        execute_notebook=True,
         date=None
     ):
         self.infile = infile
@@ -21,13 +22,18 @@ class Ipynb_to_tex_converter:
         self.font_size = font_size
         self.notitle = notitle
         self.date = date
+        self.execute_notebook = execute_notebook
 
         if not os.path.exists(self.infile):
             raise Error('Input file not found "' + self.infile + '". Cannot continue')
 
 
     def _nbconvert_to_tex(self, infile, outfile):
-        cmd = 'jupyter nbconvert --execute --to latex --output ' + outfile + ' ' + infile
+        cmd = 'jupyter nbconvert'
+        if self.execute_notebook:
+            cmd += ' --execute'
+
+        cmd += ' --to latex --output ' + outfile + ' ' + infile
 
         try:
             subprocess.check_output(cmd, shell=True, stderr=subprocess.STDOUT)
@@ -46,6 +52,21 @@ class Ipynb_to_tex_converter:
     def _remove_useless_first_lines(self, lines):
         while len(lines) and not lines[0].startswith(r'''\documentclass'''):
             lines.pop(0)
+
+
+    def _fix_figures(self, lines):
+        for i in range(len(lines)):
+            if lines[i].startswith(r'''\begin{figure}'''):
+               assert lines[i+2].startswith(r'''\includegraphics''')
+               assert lines[i+3].startswith(r'''\caption''')
+               assert lines[i+4] == r'''\end{figure}'''
+               graphics_string = lines[i+3].split('{')[-1][:-1]
+               lines[i] = ''
+               lines[i+1] = r'''\begin{center}'''
+               lines[i+2] = lines[i+2].split('{')[-1][:-1]
+               lines[i+2] = r'''\includegraphics[''' + graphics_string + ']{' + lines[i+2] + '}'
+               lines[i+3] = r'''\end{center}'''
+               lines[i+4] = ''
       
 
     def _fix_terminal_style(self, lines):
@@ -61,17 +82,30 @@ backgroundcolor=\color[rgb]{1,1,0.91},
 postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}}
 }
 \usepackage{fontawesome}
+
+
+\usepackage{mdframed}
+\newmdenv[
+  backgroundcolor=gray,
+  fontcolor=white,
+  nobreak=true,
+]{terminalinput}
+
+
 ''')
 
-        to_replace = {'\#': '#', '\$': '$', '\_': '_'}
+        to_replace = {'\#': '#', '\$': '$', '\_': '_', r'''{\ldots}''': '...'}
         in_lstlisting = False
+        in_verbatim = False
 
         for i in range(len(lines)):
             if lines[i] == r'''    \begin{Verbatim}[commandchars=\\\{\}]''':
                 if lines[i+1].startswith(r'''{\color{incolor}In '''):
-                    lines[i] = r'''    \vspace{0.5em}\begin{Verbatim}[commandchars=\\\{\}]'''
+                    lines[i] = '\n'.join([r'''\begin{terminalinput}''', r'''\begin{Verbatim}[commandchars=\\\{\}]'''])
                     cmd = lines[i+1].split(' ', maxsplit=2)[-1]
-                    lines[i+1] = r'''\llap{\LARGE\faKeyboardO }\colorbox{gray}{\color{white}''' + cmd + '}'
+                    lines[i+1] = r'''\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}}''' + cmd
+                    in_verbatim = True
+                    continue
                 else:
                     lines[i] = r'''    \begin{lstlisting}'''
                     in_lstlisting = True
@@ -81,9 +115,17 @@ postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}
                 if lines[i] == r'''    \end{Verbatim}''':
                     lines[i] = r'''    \end{lstlisting}'''
                     in_lstlisting = False
+
+                    # sometimes there is no output, which would leave a small empty box
+                    if lines[i-2] == r'''    \begin{lstlisting}''' and lines[i-1] == '':
+                        lines[i-1] = '(no output)'
                 else:
                     for key, val in to_replace.items():
                         lines[i] = lines[i].replace(key, val)
+            if in_verbatim and lines[i] == '\end{Verbatim}':
+                lines[i] += '\n' + r'''\end{terminalinput}'''
+                in_verbatim = False
+            
                    
 
 
@@ -97,7 +139,8 @@ postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}
     def _set_section_heading_style(self, lines):
         lines.insert(1, r'''\usepackage{sectsty}
 \allsectionsfont{\color{blue}\fontfamily{lmss}\selectfont}
-\usepackage{charter}
+\usepackage{fontspec}
+\setmainfont{XCharter}
 ''')
 
 
@@ -106,6 +149,16 @@ postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}
             if r'''\begin{document}''' in lines[i]:
                 lines.insert(i, r'''\renewcommand{\PY}[2]{{#2}}''')
                 return
+
+
+    def _fix_image_files(self, lines):
+        pass
+
+
+    # because emph might end up being underline, not italics
+    def _change_emph_to_italics(self, lines):
+        for i in range(len(lines)):
+            lines[i] = lines[i].replace(r'''\emph{''', r'''\textit{''')
 
 
     def run(self):
@@ -129,6 +182,9 @@ postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}
         self._remove_syntax_highlighting(lines)
 
         self._set_section_heading_style(lines)
+        self._fix_figures(lines)
+        self._fix_image_files(lines)
+        self._change_emph_to_italics(lines)
 
         with open(self.outfile, 'w') as f:
             for line in lines:

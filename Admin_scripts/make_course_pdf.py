@@ -9,6 +9,7 @@ import file_utils
 parser = argparse.ArgumentParser(
     description = 'Cats tex files. Uses header from first file listed.',
     usage = '%(prog)s [options] <outprefix> <infile1, infile2, ...>')
+parser.add_argument('--no_exec', action='store_true', help='Do not execute all commands in notebook')
 parser.add_argument('outprefix', help='Prefix of output files')
 parser.add_argument('infiles', nargs='+', help='Name of input ipynb files')
 options = parser.parse_args()
@@ -20,7 +21,7 @@ for filename in options.infiles:
     outfile = options.outprefix + '.' + str(len(tex_files)) + '.tex'
     tex_files.append(outfile)
     print('Converting', filename, 'to temporary tex file', outfile)
-    converter = file_utils.Ipynb_to_tex_converter(filename, outfile)
+    converter = file_utils.Ipynb_to_tex_converter(filename, outfile, execute_notebook=(not options.no_exec))
     converter.run()
 
 assert len(tex_files) == len(options.infiles)
