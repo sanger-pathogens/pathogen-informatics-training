@@ -155,6 +155,12 @@ postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}
         pass
 
 
+    # because emph might end up being underline, not italics
+    def _change_emph_to_italics(self, lines):
+        for i in range(len(lines)):
+            lines[i] = lines[i].replace(r'''\emph{''', r'''\textit{''')
+
+
     def run(self):
         self._nbconvert_to_tex(self.infile, self.outfile)
 
@@ -178,6 +184,7 @@ postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}
         self._set_section_heading_style(lines)
         self._fix_figures(lines)
         self._fix_image_files(lines)
+        self._change_emph_to_italics(lines)
 
         with open(self.outfile, 'w') as f:
             for line in lines:
