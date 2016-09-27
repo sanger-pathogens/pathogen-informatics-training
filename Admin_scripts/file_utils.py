@@ -18,7 +18,7 @@ class Ipynb_to_tex_converter:
         self.infile = infile
         self.outfile = outfile
         self.fix_terminal_style = fix_terminal_style
-        self.parskip = parskip 
+        self.parskip = parskip
         self.font_size = font_size
         self.notitle = notitle
         self.date = date
@@ -29,6 +29,10 @@ class Ipynb_to_tex_converter:
 
 
     def _nbconvert_to_tex(self, infile, outfile):
+        # on xenial, the --output foo puts foo in the same directory
+        # as the infile, so use absolute path
+        outfile = os.path.abspath(outfile)
+
         cmd = 'jupyter nbconvert'
         if self.execute_notebook:
             cmd += ' --execute'
@@ -67,7 +71,7 @@ class Ipynb_to_tex_converter:
                lines[i+2] = r'''\includegraphics[''' + graphics_string + ']{' + lines[i+2] + '}'
                lines[i+3] = r'''\end{center}'''
                lines[i+4] = ''
-      
+
 
     def _fix_terminal_style(self, lines):
         lines.insert(1, r'''\usepackage{listings}
@@ -125,8 +129,8 @@ postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}
             if in_verbatim and lines[i] == '\end{Verbatim}':
                 lines[i] += '\n' + r'''\end{terminalinput}'''
                 in_verbatim = False
-            
-                   
+
+
 
 
 
@@ -178,7 +182,7 @@ postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}
 
         if self.notitle:
             self._remove_title(lines)
-        
+
         self._remove_syntax_highlighting(lines)
 
         self._set_section_heading_style(lines)
