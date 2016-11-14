@@ -1,0 +1,10 @@
+
+
+Building a new DB, current time: 11/08/2016 14:13:00
+New DB name:   bacteria_nucl
+New DB title:  bacteria_nucl
+Sequence type: Nucleotide
+Keep Linkouts: T
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 75 sequences in 0.00582099 seconds.
