@@ -1,0 +1,10 @@
+
+
+Building a new DB, current time: 11/08/2016 15:12:27
+New DB name:   db/mammalian/mammalian
+New DB title:  mammalian
+Sequence type: Protein
+Keep Linkouts: T
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 22 sequences in 0.00262713 seconds.
