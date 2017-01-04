@@ -1,0 +1,361 @@
+>Feature ENA_LN890523_LN890523.1
+156	13304	CDS
+			gene	lgrB
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q70LM6
+			locus_tag	LN890523_00001
+			product	Linear gramicidin synthase subunit B
+13558	14817	CDS
+			gene	tetA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P02981
+			locus_tag	LN890523_00002
+			product	Tetracycline resistance protein, class C
+15188	15454	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00003
+			product	hypothetical protein
+15610	16299	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00004
+			product	hypothetical protein
+17069	16311	CDS
+			EC_number	2.7.8.-
+			gene	entD
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P19925
+			locus_tag	LN890523_00005
+			product	Enterobactin synthase component D
+17227	17511	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00006
+			product	hypothetical protein
+17553	18362	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00007
+			product	hypothetical protein
+18885	18436	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00008
+			product	hypothetical protein
+19751	19269	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00009
+			product	hypothetical protein
+20026	19742	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00010
+			product	hypothetical protein
+20338	20598	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00011
+			product	hypothetical protein
+20595	21557	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00012
+			product	hypothetical protein
+21820	21542	CDS
+			EC_number	3.1.-.-
+			gene	ceaC
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P00646
+			locus_tag	LN890523_00013
+			product	Colicin-E3
+22093	22233	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00014
+			product	hypothetical protein
+22367	22630	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00015
+			product	hypothetical protein
+23803	22754	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00016
+			product	hypothetical protein
+25094	24000	CDS
+			EC_number	2.3.1.-
+			gene	rimL
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P13857
+			locus_tag	LN890523_00017
+			product	Ribosomal-protein-serine acetyltransferase
+25792	25322	CDS
+			EC_number	4.1.1.95
+			gene	btrK
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q2L4H3
+			locus_tag	LN890523_00018
+			product	L-glutamyl-[BtrI acyl-carrier protein] decarboxylase
+26480	26650	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00019
+			product	hypothetical protein
+27607	27455	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00020
+			product	hypothetical protein
+28572	27604	CDS
+			gene	smc
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_01894
+			locus_tag	LN890523_00021
+			product	Chromosome partition protein Smc
+29445	29278	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00022
+			product	hypothetical protein
+29754	29539	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00023
+			product	hypothetical protein
+29995	29744	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00024
+			product	hypothetical protein
+30299	30072	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00025
+			product	hypothetical protein
+30805	30500	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00026
+			product	hypothetical protein
+31812	31087	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00027
+			product	hypothetical protein
+32490	32152	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00028
+			product	hypothetical protein
+33725	32856	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00029
+			product	hypothetical protein
+34290	34045	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00030
+			product	hypothetical protein
+34635	34420	CDS
+			EC_number	3.1.4.4
+			gene	pld
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q92G53
+			locus_tag	LN890523_00031
+			product	Phospholipase D
+34949	34632	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00032
+			product	hypothetical protein
+35895	35164	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00033
+			product	hypothetical protein
+36458	35892	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00034
+			product	hypothetical protein
+41780	36477	CDS
+			gene	traI
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P14565
+			locus_tag	LN890523_00035
+			product	Multifunctional conjugation protein TraI
+44014	41780	CDS
+			gene	traD
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P09130
+			locus_tag	LN890523_00036
+			product	Coupling protein TraD
+44902	44165	CDS
+			gene	ylpA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P27461
+			locus_tag	LN890523_00037
+			product	Lipoprotein YlpA
+45571	46773	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00038
+			product	hypothetical protein
+47387	46929	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00039
+			product	hypothetical protein
+48254	47691	CDS
+			gene	klcA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P52603
+			locus_tag	LN890523_00040
+			product	Antirestriction protein KlcA
+49624	48791	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00041
+			product	hypothetical protein
+49817	49671	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00042
+			product	hypothetical protein
+50259	49912	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00043
+			product	hypothetical protein
+50720	50316	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00044
+			product	hypothetical protein
+52561	51413	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00045
+			product	hypothetical protein
+53065	52712	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00046
+			product	hypothetical protein
+53790	53062	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00047
+			product	hypothetical protein
+54218	53787	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00048
+			product	hypothetical protein
+56295	54262	CDS
+			gene	noc
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_02015
+			locus_tag	LN890523_00049
+			product	Nucleoid occlusion protein
+56607	56365	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00050
+			product	hypothetical protein
+57214	56660	CDS
+			gene	ssb
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P28044
+			locus_tag	LN890523_00051
+			product	Plasmid-derived single-stranded DNA-binding protein
+58224	57907	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00052
+			product	hypothetical protein
+58420	58259	CDS
+			EC_number	2.7.7.7
+			gene	holE
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P0ABS8
+			locus_tag	LN890523_00053
+			product	DNA polymerase III subunit theta
+58896	58705	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00054
+			product	hypothetical protein
+59445	58939	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00055
+			product	hypothetical protein
+60630	59851	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00056
+			product	hypothetical protein
+61104	60685	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00057
+			product	hypothetical protein
+61336	61115	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00058
+			product	hypothetical protein
+61773	61336	CDS
+			EC_number	2.1.1.72
+			gene	yhdJ
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P28638
+			locus_tag	LN890523_00059
+			product	DNA adenine methyltransferase YhdJ
+61977	62120	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00060
+			product	hypothetical protein
+62374	62898	CDS
+			EC_number	3.4.-.-
+			gene	yedK
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P76318
+			locus_tag	LN890523_00061
+			product	Putative SOS response-associated peptidase YedK
+63225	63356	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00062
+			product	hypothetical protein
+63356	63646	CDS
+			EC_number	3.4.21.88
+			gene	lexA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P60512
+			locus_tag	LN890523_00063
+			product	LexA repressor
+63646	64920	CDS
+			EC_number	2.7.7.7
+			gene	dinB1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P9WNT3
+			locus_tag	LN890523_00064
+			product	DNA polymerase IV 1
+65976	65002	CDS
+			gene	virB
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P0A247
+			locus_tag	LN890523_00065
+			product	Virulence regulon transcriptional activator VirB
+67181	65976	CDS
+			gene	parA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P07620
+			locus_tag	LN890523_00066
+			product	Plasmid partition protein A
+67455	67315	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00067
+			product	hypothetical protein
+67607	68548	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00068
+			product	hypothetical protein
+69481	68699	CDS
+			gene	xerD
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P9WF33
+			locus_tag	LN890523_00069
+			product	Tyrosine recombinase XerD
+70095	69790	CDS
+			gene	ccdB
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P62554
+			locus_tag	LN890523_00070
+			product	Toxin CcdB
+70315	70097	CDS
+			gene	ccdA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P62552
+			locus_tag	LN890523_00071
+			product	Antitoxin CcdA
+71708	71001	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00072
+			product	hypothetical protein
+72232	71837	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00073
+			product	hypothetical protein
+72632	73045	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890523_00074
+			product	hypothetical protein
+73738	82119	CDS
+			gene	tycC
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O30409
+			locus_tag	LN890523_00075
+			product	Tyrocidine synthase 3

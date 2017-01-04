@@ -1,0 +1,117 @@
+[11:15:50] This is prokka 1.12-beta
+[11:15:50] Written by Torsten Seemann <torsten.seemann@gmail.com>
+[11:15:50] Homepage is https://github.com/tseemann/prokka
+[11:15:50] Local time is Wed Jan  4 11:15:50 2017
+[11:15:50] You are manager
+[11:15:50] Operating system is linux
+[11:15:50] You have BioPerl 1.006923
+[11:15:50] System has 1 cores.
+[11:15:50] Option --cpu asked for 8 cores, but system only has 1
+[11:15:50] Will use maximum of 1 cores.
+[11:15:50] Annotating as >>> Bacteria <<<
+[11:15:50] Creating new output folder: prokka_LN890526
+[11:15:50] Running: mkdir -p prokka_LN890526
+[11:15:50] Using filename prefix: PROKKA_01042017.XXX
+[11:15:50] Setting HMMER_NCPU=1
+[11:15:50] Writing log to: prokka_LN890526/PROKKA_01042017.log
+[11:15:50] Command: /usr/local/bin/prokka --kingdom Bacteria --genus Salmonella --locustag LN890526 --outdir prokka_LN890526 LN890526.fna
+[11:15:50] Appending to PATH: /opt/prokka/bin/../binaries/linux
+[11:15:50] Appending to PATH: /opt/prokka/bin/../binaries/linux/../common
+[11:15:50] Appending to PATH: /opt/prokka/bin
+[11:15:50] Looking for 'aragorn' - found /usr/bin/aragorn
+[11:15:50] Determined aragorn version is 1.2
+[11:15:50] Looking for 'barrnap' - found /usr/local/bin/barrnap
+[11:15:51] Determined barrnap version is 0.7
+[11:15:51] Looking for 'blastp' - found /usr/bin/blastp
+[11:15:51] Determined blastp version is 2.2
+[11:15:51] Looking for 'cmpress' - found /usr/bin/cmpress
+[11:15:51] Determined cmpress version is 1.1
+[11:15:51] Looking for 'cmscan' - found /usr/bin/cmscan
+[11:15:51] Determined cmscan version is 1.1
+[11:15:51] Looking for 'egrep' - found /bin/egrep
+[11:15:51] Looking for 'find' - found /usr/bin/find
+[11:15:51] Looking for 'grep' - found /bin/grep
+[11:15:51] Looking for 'hmmpress' - found /usr/bin/hmmpress
+[11:15:51] Determined hmmpress version is 3.1
+[11:15:51] Looking for 'hmmscan' - found /usr/bin/hmmscan
+[11:15:51] Determined hmmscan version is 3.1
+[11:15:51] Looking for 'less' - found /usr/bin/less
+[11:15:51] Looking for 'makeblastdb' - found /usr/bin/makeblastdb
+[11:15:51] Determined makeblastdb version is 2.2
+[11:15:51] Looking for 'minced' - found /opt/prokka/bin/../binaries/linux/../common/minced
+[11:15:51] Determined minced version is 2.0
+[11:15:51] Looking for 'parallel' - found /usr/bin/parallel
+[11:15:51] Determined parallel version is 20150422
+[11:15:51] Looking for 'prodigal' - found /usr/bin/prodigal
+[11:15:51] Determined prodigal version is 2.6
+[11:15:51] Looking for 'prokka-genbank_to_fasta_db' - found /opt/prokka/bin/prokka-genbank_to_fasta_db
+[11:15:51] Looking for 'sed' - found /bin/sed
+[11:15:51] Looking for 'tbl2asn' - found /usr/bin/tbl2asn
+[11:15:51] Determined tbl2asn version is 25.3
+[11:15:51] Using genetic code table 11.
+[11:15:51] Loading and checking input file: LN890526.fna
+[11:15:52] Changing illegal '|' to '_' in sequence name: ENA|LN890526|LN890526.1
+[11:15:52] Wrote 1 contigs totalling 47244 bp.
+[11:15:52] Predicting tRNAs and tmRNAs
+[11:15:52] Running: aragorn -l -gc11  -w prokka_LN890526\/PROKKA_01042017\.fna
+[11:15:52] Found 0 tRNAs
+[11:15:52] Predicting Ribosomal RNAs
+[11:15:52] Running Barrnap with 1 threads
+[11:15:52] Found 0 rRNAs
+[11:15:52] Skipping ncRNA search, enable with --rfam if desired.
+[11:15:52] Total of 0 tRNA + rRNA features
+[11:15:52] Searching for CRISPR repeats
+[11:15:52] Found 0 CRISPRs
+[11:15:52] Predicting coding sequences
+[11:15:52] Contigs total 47244 bp, so using meta mode
+[11:15:52] Running: prodigal -i prokka_LN890526\/PROKKA_01042017\.fna -c -m -g 11 -p meta -f sco -q
+[11:15:52] Found 67 CDS
+[11:15:52] Connecting features back to sequences
+[11:15:52] Not using genus-specific database. Try --usegenus to enable it.
+[11:15:52] Annotating CDS, please be patient.
+[11:15:52] Will use 1 CPUs for similarity searching.
+[11:15:52] There are still 67 unannotated CDS left (started with 67)
+[11:15:52] Will use blast to search against /opt/prokka/bin/../db/kingdom/Bacteria/sprot with 1 CPUs
+[11:15:52] Running: cat prokka_LN890526\/sprot\.faa | parallel --gnu --plain -j 1 --block 6758 --recstart '>' --pipe blastp -query - -db /opt/prokka/bin/../db/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > prokka_LN890526\/sprot\.blast 2> /dev/null
+[11:15:57] Deleting unwanted file: prokka_LN890526/sprot.faa
+[11:15:57] Deleting unwanted file: prokka_LN890526/sprot.blast
+[11:15:58] There are still 61 unannotated CDS left (started with 67)
+[11:15:58] Will use hmmer3 to search against /opt/prokka/bin/../db/hmm/HAMAP.hmm with 1 CPUs
+[11:15:58] Running: cat prokka_LN890526\/HAMAP\.hmm\.faa | parallel --gnu --plain -j 1 --block 6027 --recstart '>' --pipe hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 /opt/prokka/bin/../db/hmm/HAMAP.hmm /dev/stdin > prokka_LN890526\/HAMAP\.hmm\.hmmer3 2> /dev/null
+[11:16:05] Deleting unwanted file: prokka_LN890526/HAMAP.hmm.faa
+[11:16:05] Deleting unwanted file: prokka_LN890526/HAMAP.hmm.hmmer3
+[11:16:05] Labelling remaining 59 proteins as 'hypothetical protein'
+[11:16:05] Found 7 unique /gene codes.
+[11:16:05] Fixed 0 colliding /gene names.
+[11:16:05] Adding /locus_tag identifiers
+[11:16:05] Assigned 67 locus_tags to CDS and RNA features.
+[11:16:05] Writing outputs to prokka_LN890526/
+[11:16:05] Generating annotation statistics file
+[11:16:05] Generating Genbank and Sequin files
+[11:16:05] Running: tbl2asn -V b -a r10k -l paired-ends -M n -N 1 -y 'Annotated using prokka 1.12-beta from https://github.com/tseemann/prokka' -Z prokka_LN890526\/PROKKA_01042017\.err -i prokka_LN890526\/PROKKA_01042017\.fsa 2> /dev/null
+[11:16:06] Deleting unwanted file: prokka_LN890526/errorsummary.val
+[11:16:06] Deleting unwanted file: prokka_LN890526/PROKKA_01042017.dr
+[11:16:06] Deleting unwanted file: prokka_LN890526/PROKKA_01042017.fixedproducts
+[11:16:06] Deleting unwanted file: prokka_LN890526/PROKKA_01042017.ecn
+[11:16:06] Deleting unwanted file: prokka_LN890526/PROKKA_01042017.val
+[11:16:06] Repairing broken .GBK output that tbl2asn produces...
+[11:16:06] Running: sed 's/COORDINATES: profile/COORDINATES:profile/' < prokka_LN890526\/PROKKA_01042017\.gbf > prokka_LN890526\/PROKKA_01042017\.gbk
+[11:16:06] Deleting unwanted file: prokka_LN890526/PROKKA_01042017.gbf
+[11:16:06] Output files:
+[11:16:06] prokka_LN890526/PROKKA_01042017.gbk
+[11:16:06] prokka_LN890526/PROKKA_01042017.txt
+[11:16:06] prokka_LN890526/PROKKA_01042017.faa
+[11:16:06] prokka_LN890526/PROKKA_01042017.fsa
+[11:16:06] prokka_LN890526/PROKKA_01042017.gff
+[11:16:06] prokka_LN890526/PROKKA_01042017.tbl
+[11:16:06] prokka_LN890526/PROKKA_01042017.err
+[11:16:06] prokka_LN890526/PROKKA_01042017.sqn
+[11:16:06] prokka_LN890526/PROKKA_01042017.fna
+[11:16:06] prokka_LN890526/PROKKA_01042017.ffn
+[11:16:06] prokka_LN890526/PROKKA_01042017.log
+[11:16:06] Annotation finished successfully.
+[11:16:06] Walltime used: 0.27 minutes
+[11:16:06] If you use this result please cite the Prokka paper:
+[11:16:06] Seemann T (2014) Prokka: rapid prokaryotic genome annotation. Bioinformatics. 30(14):2068-9.
+[11:16:06] Type 'prokka --citation' for more details.
+[11:16:06] Thank you, come again.

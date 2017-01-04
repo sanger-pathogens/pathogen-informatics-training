@@ -1,0 +1,421 @@
+>Feature ENA_LN890525_LN890525.1
+65	235	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00001
+			product	hypothetical protein
+517	266	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00002
+			product	hypothetical protein
+853	551	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00003
+			product	hypothetical protein
+1097	1945	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00004
+			product	hypothetical protein
+2366	2031	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00005
+			product	hypothetical protein
+2600	2932	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00006
+			product	hypothetical protein
+2943	5642	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00007
+			product	hypothetical protein
+7970	5679	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00008
+			product	hypothetical protein
+9033	7963	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00009
+			product	hypothetical protein
+10260	9052	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00010
+			product	hypothetical protein
+11431	10478	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00011
+			product	hypothetical protein
+12030	12185	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00012
+			product	hypothetical protein
+12508	12257	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00013
+			product	hypothetical protein
+13343	13167	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00014
+			product	hypothetical protein
+13675	13884	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00015
+			product	hypothetical protein
+14618	13956	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00016
+			product	hypothetical protein
+16857	14689	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00017
+			product	hypothetical protein
+17538	16954	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00018
+			product	hypothetical protein
+18769	17567	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00019
+			product	hypothetical protein
+19350	18736	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00020
+			product	hypothetical protein
+22394	19350	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00021
+			product	hypothetical protein
+23284	22484	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00022
+			product	hypothetical protein
+23456	23268	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00023
+			product	hypothetical protein
+23924	23520	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00024
+			product	hypothetical protein
+24502	23975	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00025
+			product	hypothetical protein
+25206	24502	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00026
+			product	hypothetical protein
+26495	25206	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00027
+			product	hypothetical protein
+27481	26498	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00028
+			product	hypothetical protein
+28184	27492	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00029
+			product	hypothetical protein
+28528	28181	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00030
+			product	hypothetical protein
+32313	28546	CDS
+			EC_number	2.7.7.-
+			gene	traC
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P27189
+			locus_tag	LN890525_00031
+			product	DNA primase TraC
+32954	32403	CDS
+			EC_number	3.1.4.4
+			gene	pld
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q92G53
+			locus_tag	LN890525_00032
+			product	Phospholipase D
+33259	32969	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00033
+			product	hypothetical protein
+34404	33256	CDS
+			gene	pilT
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P24559
+			locus_tag	LN890525_00034
+			product	Twitching mobility protein
+35219	34401	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00035
+			product	hypothetical protein
+35674	35216	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00036
+			product	hypothetical protein
+36653	36069	CDS
+			EC_number	3.1.3.-
+			gene	ais
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8ZNF4
+			locus_tag	LN890525_00037
+			product	Lipopolysaccharide core heptose(II)-phosphate phosphatase
+37912	36713	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00038
+			product	hypothetical protein
+38825	38001	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00039
+			product	hypothetical protein
+40130	38976	CDS
+			gene	xerC
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_01808
+			locus_tag	LN890525_00040
+			product	Tyrosine recombinase XerC
+41370	41236	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00041
+			product	hypothetical protein
+43277	42171	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00042
+			product	hypothetical protein
+43933	43277	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00043
+			product	hypothetical protein
+44478	43918	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00044
+			product	hypothetical protein
+45102	44488	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00045
+			product	hypothetical protein
+46204	45119	CDS
+			gene	tcpE
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P0C6C9
+			locus_tag	LN890525_00046
+			product	Toxin coregulated pilus biosynthesis protein E
+47770	46217	CDS
+			gene	tcpT
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P29480
+			locus_tag	LN890525_00047
+			product	Toxin coregulated pilus biosynthesis protein T
+48233	47781	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00048
+			product	hypothetical protein
+49515	48220	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00049
+			product	hypothetical protein
+51190	49508	CDS
+			gene	bfpB
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9S142
+			locus_tag	LN890525_00050
+			product	Outer membrane lipoprotein BfpB
+51641	51204	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00051
+			product	hypothetical protein
+52708	51641	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00052
+			product	hypothetical protein
+53335	52742	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00053
+			product	hypothetical protein
+53714	53460	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00054
+			product	hypothetical protein
+54569	53886	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00055
+			product	hypothetical protein
+55356	54823	CDS
+			gene	rfaH
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_00951
+			locus_tag	LN890525_00056
+			product	Transcription antitermination protein RfaH
+56085	55798	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00057
+			product	hypothetical protein
+57194	58270	CDS
+			gene	repA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q52221
+			locus_tag	LN890525_00058
+			product	Replication initiation protein
+59180	59458	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00059
+			product	hypothetical protein
+59458	59733	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00060
+			product	hypothetical protein
+59839	60120	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00061
+			product	hypothetical protein
+60578	60312	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00062
+			product	hypothetical protein
+61072	60578	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00063
+			product	hypothetical protein
+61730	61128	CDS
+			gene	proQ
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_00749
+			locus_tag	LN890525_00064
+			product	RNA chaperone ProQ
+62958	61906	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00065
+			product	hypothetical protein
+63761	63171	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00066
+			product	hypothetical protein
+64015	63761	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00067
+			product	hypothetical protein
+64583	64996	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00068
+			product	hypothetical protein
+64998	65777	CDS
+			gene	xerD
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P9WF33
+			locus_tag	LN890525_00069
+			product	Tyrosine recombinase XerD
+65957	66601	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00070
+			product	hypothetical protein
+66688	66996	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00071
+			product	hypothetical protein
+67410	68390	CDS
+			gene	parM
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P11904
+			locus_tag	LN890525_00072
+			product	Plasmid segregation protein ParM
+68383	68799	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00073
+			product	hypothetical protein
+70075	68801	CDS
+			EC_number	2.7.7.7
+			gene	dinB1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P9WNT3
+			locus_tag	LN890525_00074
+			product	DNA polymerase IV 1
+70512	70075	CDS
+			EC_number	3.4.21.88
+			gene	lexA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P0A7C2
+			locus_tag	LN890525_00075
+			product	LexA repressor
+70757	70509	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00076
+			product	hypothetical protein
+71151	72077	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00077
+			product	hypothetical protein
+72074	72286	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00078
+			product	hypothetical protein
+72462	73145	CDS
+			EC_number	2.1.1.72
+			gene	yhdJ
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P28638
+			locus_tag	LN890525_00079
+			product	DNA adenine methyltransferase YhdJ
+73146	73367	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00080
+			product	hypothetical protein
+73380	73814	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00081
+			product	hypothetical protein
+73814	74635	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00082
+			product	hypothetical protein
+75052	75477	CDS
+			gene	klcA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P52603
+			locus_tag	LN890525_00083
+			product	Antirestriction protein KlcA
+75524	75946	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00084
+			product	hypothetical protein
+75943	76134	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00085
+			product	hypothetical protein
+76904	77431	CDS
+			gene	ssb
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P28044
+			locus_tag	LN890525_00086
+			product	Plasmid-derived single-stranded DNA-binding protein
+77489	77722	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00087
+			product	hypothetical protein
+77691	79739	CDS
+			gene	spo0C
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q72H91
+			locus_tag	LN890525_00088
+			product	Chromosome-partitioning protein Spo0J
+79794	80228	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00089
+			product	hypothetical protein
+80225	80944	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00090
+			product	hypothetical protein
+80941	81537	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00091
+			product	hypothetical protein
+82000	82500	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00092
+			product	hypothetical protein
+83229	83663	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00093
+			product	hypothetical protein
+83756	84022	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	LN890525_00094
+			product	hypothetical protein
