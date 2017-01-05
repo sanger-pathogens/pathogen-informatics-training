@@ -1,4 +1,0 @@
-organism: Salmonella species strain 
-contigs: 1
-bases: 47244
-CDS: 67
