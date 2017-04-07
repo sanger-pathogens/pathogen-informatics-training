@@ -1,0 +1,19 @@
+16S.rDNA_WHO_F_01361c
+23S.rDNA_WHO_F_01358c
+folP.Neisseria_meningitidis_H44_76_v1_00541	folP.Neisseria_meningitidis_M01_240149_v1_00504	folP.Neisseria_meningitidis_MC58_v2_01707	folP.Neisseria_meningitidis_serogroup_A_Z2491_v1_01867	folP.Neisseria_meningitidis_serogroup_C_FAM18_v1_01586	folP.WHO_F_01537c	folP.WHO_G_01367c	folP.WHO_K_01359c	folP.WHO_L_00516	folP.WHO_M_01364c	folP.WHO_N_01367c	folP.WHO_O_01412c	folP.WHO_P_01364c	folP.WHO_U_01433c	folP.WHO_V_01427c	folP.WHO_W_01420c	folP.WHO_X_01360c	folP.WHO_Y_01480c	folP.WHO_Z_01426c
+gyrA.Neisseria_meningitidis_H44_76_v1_00856	gyrA.Neisseria_meningitidis_M01_240149_v1_00796	gyrA.Neisseria_meningitidis_serogroup_A_Z2491_v1_01510	gyrA.Neisseria_meningitidis_serogroup_C_FAM18_v1_01290	gyrA.WHO_F_00668c	gyrA.WHO_G_01105	gyrA.WHO_M_01098	gyrA.WHO_Z_01155
+mtrR.Neisseria_meningitidis_H44_76_v1_00513	mtrR.Neisseria_meningitidis_M01_240149_v1_00481	mtrR.Neisseria_meningitidis_MC58_v2_01735	mtrR.Neisseria_meningitidis_serogroup_A_Z2491_v1_01888	mtrR.Neisseria_meningitidis_serogroup_C_FAM18_v1_01611	mtrR.WHO_F_01564	mtrR.WHO_G_01393	mtrR.WHO_K_01388	mtrR.WHO_L_00489c	mtrR.WHO_M_01390	mtrR.WHO_O_01438	mtrR.WHO_U_01459	mtrR.WHO_V_01454	mtrR.WHO_W_01449	mtrR.WHO_X_01389	mtrR.WHO_Y_01506	mtrR.WHO_Z_01455
+parC.Neisseria_meningitidis_H44_76_v1_00633	parC.Neisseria_meningitidis_M01_240149_v1_00588	parC.Neisseria_meningitidis_serogroup_A_Z2491_v1_01724	parC.Neisseria_meningitidis_serogroup_C_FAM18_v1_01496	parC.WHO_F_01444	parC.WHO_G_00206c	parC.WHO_L_00611c	parC.WHO_M_00204c	parC.WHO_N_00209c	parC.WHO_P_00203c	parC.WHO_V_00204c	parC.WHO_X_00208c	parC.WHO_Y_00247c
+parE.Neisseria_meningitidis_H44_76_v1_00550	parE.Neisseria_meningitidis_M01_240149_v1_00513	parE.Neisseria_meningitidis_serogroup_A_Z2491_v1_01858	parE.Neisseria_meningitidis_serogroup_C_FAM18_v1_01577	parE.WHO_F_01528c	parE.WHO_G_01358c	parE.WHO_M_01355c	parE.WHO_W_01411c
+penA.0.001	penA.1.001	penA.1.002	penA.1.003	penA.10.001	penA.12.001	penA.12.002	penA.12.003	penA.13.001	penA.14.001	penA.14.002	penA.15.001	penA.15.002	penA.17.001	penA.18.001	penA.19.001	penA.2.001	penA.2.002	penA.2.003	penA.21.001	penA.22.001	penA.22.002	penA.22.003	penA.22.004	penA.22.005	penA.27.001	penA.3.001	penA.34.001	penA.34.002	penA.34.003	penA.34.004	penA.34.005	penA.35.001	penA.35.002	penA.35.003	penA.37.001	penA.38.001	penA.39.001	penA.4.001	penA.40.001	penA.41.001	penA.41.002	penA.42.001	penA.43.001	penA.43.002	penA.44.001	penA.45.001	penA.46.001	penA.47.001	penA.48.001	penA.49.001	penA.5.001	penA.5.002	penA.5.003	penA.5.004	penA.50.001	penA.52.001	penA.53.001	penA.53.002	penA.54.001	penA.55.001	penA.56.001	penA.57.001	penA.58.001	penA.59.001	penA.7.001	penA.9.001
+ponA.Neisseria_meningitidis_H44_76_v1_01795	ponA.Neisseria_meningitidis_MC58_v2_01817	ponA.Neisseria_meningitidis_serogroup_C_FAM18_v1_00419	ponA.WHO_F_00106	ponA.WHO_G_00106	ponA.WHO_W_00105
+porB1b.WHO_K_02195c	porB1b.WHO_L_01891c	porB1b.WHO_M_02204c	porB1b.WHO_O_01976	porB1b.WHO_P_02204c	porB1b.WHO_U_02278c	porB1b.WHO_V_02265c	porB1b.WHO_W_02258c	porB1b.WHO_X_02194c	porB1b.WHO_Y_02277c	porB1b.WHO_Z_02266c
+rpoB.Neisseria_meningitidis_H44_76_v1_00134	rpoB.Neisseria_meningitidis_M01_240149_v1_02024	rpoB.Neisseria_meningitidis_serogroup_A_Z2491_v1_00134	rpoB.Neisseria_meningitidis_serogroup_C_FAM18_v1_00120	rpoB.WHO_F_02153c	rpoB.WHO_M_02157
+rpsJ.Neisseria_meningitidis_serogroup_C_FAM18_v1_00126	rpsJ.WHO_F_02142c	rpsJ.WHO_Y_02241
+mtrR_promoter.WHO_F
+porA.WHO_U_01087c	porA.NCCP11945
+blaTEM.WHO_M_pConjugative_00003
+tetM.WHO_G_pTetM_00047
+porB1a.WHO_F_02106	porB1a.WHO_G_02195c	porB1a.WHO_N_02200c
+porB2.Neisseria_meningitidis_serogroup_C_FAM18_v1_01992
+porB3.Neisseria_meningitidis_serogroup_A_Z2491_v1_00376	porB3.Neisseria_meningitidis_M01_240149_v1_00150	porB3.Neisseria_meningitidis_H44_76_v1_02028	porB3.Neisseria_meningitidis_MC58_v2_02051
