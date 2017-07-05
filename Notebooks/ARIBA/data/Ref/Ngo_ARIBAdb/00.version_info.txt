@@ -1,0 +1,28 @@
+ARIBA run with this command:
+/usr/local/bin/ariba prepareref prepareref -f Ngo_ARIBA.fa -m Ngo_ARIBA.tsv --cdhit_clusters Ngo_ARIBA.clusters Ngo_ARIBAdb
+from this directory: /home/ubuntu/sanger-pathogens/pathogen-informatics-training/Notebooks/ARIBA/data/Ref
+
+ARIBA version: 2.9.0
+
+External dependencies:
+bowtie2	2.2.9	/home/ubuntu/bin/bowtie2
+cdhit	4.6	/home/ubuntu/bin/cd-hit-est
+nucmer	3.1	/usr/bin/nucmer
+
+External dependencies OK: True
+
+Python version:
+3.5.2 (default, Nov 17 2016, 17:05:23) 
+[GCC 5.4.0 20160609]
+
+Python packages:
+ariba	2.9.0	/usr/local/lib/python3.5/dist-packages/ariba-2.9.0-py3.5-linux-x86_64.egg/ariba/__init__.py
+bs4	4.5.3	/home/ubuntu/.local/lib/python3.5/site-packages/bs4/__init__.py
+dendropy	4.2.0	/home/ubuntu/.local/lib/python3.5/site-packages/dendropy/__init__.py
+pyfastaq	3.14.0	/home/ubuntu/.local/lib/python3.5/site-packages/pyfastaq/__init__.py
+pymummer	0.10.2	/home/ubuntu/.local/lib/python3.5/site-packages/pymummer/__init__.py
+pysam	0.10.0	/home/ubuntu/.local/lib/python3.5/site-packages/pysam/__init__.py
+
+Python packages OK: True
+
+Everything looks OK: True

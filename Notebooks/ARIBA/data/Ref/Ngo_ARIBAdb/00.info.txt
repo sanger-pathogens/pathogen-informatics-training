@@ -1,0 +1,3 @@
+input fasta file:	Ngo_ARIBA.fa
+input tsv file:	Ngo_ARIBA.tsv
+genetic_code	11
