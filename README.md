@@ -11,13 +11,14 @@ A set of courses for pathogen informatics training.
   * [Feedback/Issues](#feedbackissues)
 
 ## Introduction
-The pathogen informatics training courses use Jupyter notebooks to provide pathogen informatics training. There are currently 5 independent notebooks:
+The pathogen informatics training courses use Jupyter notebooks to provide pathogen informatics training. There are currently 6 independent notebooks:
 
  * UNIX
  * ARIBA
  * SeroBA
  * BLAST
  * DEAGO
+ * Roary
 
 ## Installation
 The courses use [Jupyter](http://jupyter.org/) notebooks, which means that Jupyter must be installed to use them. Please see the [Jupyter installation instructions](http://jupyter.readthedocs.org/en/latest/install.html) for details.
