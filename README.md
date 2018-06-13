@@ -14,6 +14,7 @@ A set of courses for pathogen informatics training.
 The pathogen informatics training courses use Jupyter notebooks to provide pathogen informatics training. There are currently 6 independent notebooks:
 
  * UNIX
+ * Data formats and QC
  * ARIBA
  * SeroBA
  * BLAST
