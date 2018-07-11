@@ -1,0 +1,10 @@
+
+
+Building a new DB, current time: 11/08/2016 15:12:26
+New DB name:   db/bacteria/bacteria_prot
+New DB title:  bacteria_prot
+Sequence type: Protein
+Keep Linkouts: T
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 75 sequences in 0.004632 seconds.
