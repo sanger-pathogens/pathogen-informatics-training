@@ -1,0 +1,6 @@
+sample	condition
+MT1	MT
+MT2	MT
+SBP1	SBP
+SBP2	SBP
+SBP3	SBP
