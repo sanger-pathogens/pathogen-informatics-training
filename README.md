@@ -1,5 +1,5 @@
 # Pathogen Informatics Training
-A set of bioinformatics training courses developed by Pathogen Infomatics at Wellcome Sanger Institute.
+A set of bioinformatics training courses developed by Pathogen Informatics at Wellcome Sanger Institute.
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-brightgreen.svg)](https://github.com/sanger-pathogens/pathogen-informatics-training/blob/master/LICENSE)
 
@@ -11,11 +11,12 @@ A set of bioinformatics training courses developed by Pathogen Infomatics at Wel
   * [Feedback/Issues](#feedbackissues)
 
 ## Introduction
-These bioinformatics training courses use Jupyter notebooks to provide pathogen informatics training. There are currently 8 independent notebooks:
+These bioinformatics training courses use Jupyter notebooks to provide pathogen informatics training and the following notebooks are avaiable:
 
  * UNIX for Bioinformatics
  * Introduction to BLAST
  * NGS Data Formats and QC
+ * An Introduction to IGV
  * RNA-Seq Expression Analysis 
  * Differential Expression and GO Term Analysis using DEAGO
  * Pangenome Construction using Roary
