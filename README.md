@@ -1,5 +1,5 @@
 # Pathogen Informatics Training
-A set of courses for pathogen informatics training.
+A set of bioinformatics training courses developed by Pathogen Infomatics at Wellcome Sanger Institute.
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-brightgreen.svg)](https://github.com/sanger-pathogens/pathogen-informatics-training/blob/master/LICENSE)
 
@@ -11,15 +11,16 @@ A set of courses for pathogen informatics training.
   * [Feedback/Issues](#feedbackissues)
 
 ## Introduction
-The pathogen informatics training courses use Jupyter notebooks to provide pathogen informatics training. There are currently 6 independent notebooks:
+These bioinformatics training courses use Jupyter notebooks to provide pathogen informatics training. There are currently 8 independent notebooks:
 
- * UNIX
- * Data formats and QC
- * ARIBA
- * SeroBA
- * BLAST
- * DEAGO
- * Roary
+ * UNIX for Bioinformatics
+ * Introduction to BLAST
+ * NGS Data Formats and QC
+ * RNA-Seq Expression Analysis 
+ * Differential Expression and GO Term Analysis using DEAGO
+ * Pangenome Construction using Roary
+ * Antimicrobial Resistance Identification using ARIBA
+ * Serotype Detection using SeroBA
 
 ## Installation
 The courses use [Jupyter](http://jupyter.org/) notebooks, which means that Jupyter must be installed to use them. Please see the [Jupyter installation instructions](http://jupyter.readthedocs.org/en/latest/install.html) for details.
@@ -30,7 +31,7 @@ If you are running Jupyter on MacOS you may have to install the bash kernel. To 
    
     python -m bash_kernel.install
   
-Most of the courses assume that you have the relevant tools installed (e.g. [ARIBA](https://github.com/sanger-pathogens/ariba) and [SeroBA](https://github.com/sanger-pathogens/seroba)). Further information about the relevant dependencies can be found inside each indsvidual notebook.
+The courses assume that you have the relevant tools installed (e.g. [ARIBA](https://github.com/sanger-pathogens/ariba) and [SeroBA](https://github.com/sanger-pathogens/seroba)). Further information about the relevant dependencies can be found inside each individual notebook.
 
 ## Usage
 Clone this repository:
@@ -41,7 +42,7 @@ Start Jupyter at the main index page to view the available courses:
 
     jupyter notebook pathogen-informatics-training/Notebooks/index.ipynb
 
-Select a course and follow the instructions give in the notebook.
+Select a course and follow the instructions given in the notebook.
 
 ## License
 This is free software, licensed under [GPLv3](https://github.com/sanger-pathogens/pathogen-informatics-training/blob/master/LICENSE).
