@@ -1,211 +1,0 @@
-
-
-processing file: deago_markdown.Rmd
-  |                                                                         |                                                                 |   0%  |                                                                         |.                                                                |   2%
-   inline R code fragments
-
-  |                                                                         |...                                                              |   5%
-label: setup_libraries (with options) 
-List of 1
- $ include: logi FALSE
-
-  |                                                                         |....                                                             |   7%
-  ordinary text without R code
-
-  |                                                                         |......                                                           |   9%
-label: config (with options) 
-List of 1
- $ message: logi FALSE
-
-  |                                                                         |.......                                                          |  11%
-  ordinary text without R code
-
-  |                                                                         |.........                                                        |  14%
-label: printConfig (with options) 
-List of 1
- $ echo: logi FALSE
-
-  |                                                                         |..........                                                       |  16%
-  ordinary text without R code
-
-  |                                                                         |............                                                     |  18%
-label: targets
-  |                                                                         |.............                                                    |  20%
-  ordinary text without R code
-
-  |                                                                         |...............                                                  |  23%
-label: printTargets (with options) 
-List of 1
- $ echo: logi FALSE
-
-  |                                                                         |................                                                 |  25%
-  ordinary text without R code
-
-  |                                                                         |..................                                               |  27%
-label: analysis (with options) 
-List of 1
- $ message: logi FALSE
-
-estimating size factors
-estimating dispersions
-gene-wise dispersion estimates
-mean-dispersion relationship
-final dispersion estimates
-fitting model and testing
-  |                                                                         |...................                                              |  30%
-  ordinary text without R code
-
-  |                                                                         |.....................                                            |  32%
-label: annotation
-  |                                                                         |......................                                           |  34%
-  ordinary text without R code
-
-  |                                                                         |........................                                         |  36%
-label: readCountPlot (with options) 
-List of 2
- $ fig.width : num 9
- $ fig.height: num 11
-
-  |                                                                         |.........................                                        |  39%
-  ordinary text without R code
-
-  |                                                                         |...........................                                      |  41%
-label: nullCountPlot (with options) 
-List of 2
- $ fig.width : num 9
- $ fig.height: num 11
-
-  |                                                                         |............................                                     |  43%
-  ordinary text without R code
-
-  |                                                                         |..............................                                   |  45%
-label: plotSampleDistances (with options) 
-List of 5
- $ results   : chr "hide"
- $ fig.keep  : chr "all"
- $ warnings  : logi FALSE
- $ fig.width : num 12
- $ fig.height: num 11
-
-  |                                                                         |...............................                                  |  48%
-  ordinary text without R code
-
-  |                                                                         |................................                                 |  50%
-label: pcaPlot (with options) 
-List of 3
- $ warning   : logi FALSE
- $ fig.width : num 12
- $ fig.height: num 11
-
-  |                                                                         |..................................                               |  52%
-  ordinary text without R code
-
-  |                                                                         |...................................                              |  55%
-label: pcaScreePlot (with options) 
-List of 3
- $ warning   : logi FALSE
- $ fig.width : num 9
- $ fig.height: num 7
-
-  |                                                                         |.....................................                            |  57%
-  ordinary text without R code
-
-  |                                                                         |......................................                           |  59%
-label: pcaSummary (with options) 
-List of 1
- $ warning: logi FALSE
-
-  |                                                                         |........................................                         |  61%
-  ordinary text without R code
-
-  |                                                                         |.........................................                        |  64%
-label: plotCooks (with options) 
-List of 6
- $ results   : chr "hide"
- $ fig.keep  : chr "all"
- $ warning   : logi FALSE
- $ comment   : logi FALSE
- $ fig.width : num 9
- $ fig.height: num 7
-
-  |                                                                         |...........................................                      |  66%
-  ordinary text without R code
-
-  |                                                                         |............................................                     |  68%
-label: plotDensity (with options) 
-List of 6
- $ results   : chr "hide"
- $ fig.keep  : chr "all"
- $ comment   : logi FALSE
- $ warning   : logi FALSE
- $ fig.width : num 11
- $ fig.height: num 12
-
-  |                                                                         |..............................................                   |  70%
-  ordinary text without R code
-
-  |                                                                         |...............................................                  |  73%
-label: plotDispersionEstimates (with options) 
-List of 5
- $ results   : chr "hide"
- $ fig.keep  : chr "all"
- $ warning   : logi FALSE
- $ fig.width : num 9
- $ fig.height: num 7
-
-  |                                                                         |.................................................                |  75%
-  ordinary text without R code
-
-  |                                                                         |..................................................               |  77%
-label: contrasts (with options) 
-List of 1
- $ echo: logi TRUE
-
-  |                                                                         |....................................................             |  80%
-  ordinary text without R code
-
-  |                                                                         |.....................................................            |  82%
-label: contrast_summary (with options) 
-List of 1
- $ echo: logi TRUE
-
-  |                                                                         |.......................................................          |  84%
-  ordinary text without R code
-
-  |                                                                         |........................................................         |  86%
-label: lrt.MA (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |..........................................................       |  89%
-  ordinary text without R code
-
-  |                                                                         |...........................................................      |  91%
-label: lrt.volcano (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |.............................................................    |  93%
-  ordinary text without R code
-
-  |                                                                         |..............................................................   |  95%
-label: lrt.DEA (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |................................................................ |  98%
-  ordinary text without R code
-
-  |                                                                         |.................................................................| 100%
-label: session (with options) 
-List of 1
- $ echo: logi FALSE
-
-
-output file: deago_markdown.knit.md
-
-/software/pathogen/external/apps/usr/bin/pandoc +RTS -K512m -RTS deago_markdown.utf8.md --to html --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output /lustre/scratch118/infgen/pathdev/vo1/deago_tutorial/lrt_analysis/deago_markdown.html --smart --email-obfuscation none --self-contained --standalone --section-divs --table-of-contents --toc-depth 3 --variable toc_float=1 --variable toc_selectors=h1,h2,h3 --variable toc_collapsed=1 --variable toc_smooth_scroll=1 --variable toc_print=1 --template /software/pathogen/external/lib/R-3.4/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --number-sections --variable 'theme:paper' --include-in-header /tmp/RtmpIZL6qy/rmarkdown-str697a64130e9f.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' 
-
-Output created: deago_markdown.html
-Warning message:
-Removed 778 rows containing non-finite values (stat_density). 
