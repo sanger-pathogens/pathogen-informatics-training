@@ -1,0 +1,94 @@
+[13:13:57] Need 'less' - using /usr/bin/less
+[13:13:57] Need 'grep' - using /bin/grep
+[13:13:57] Need 'egrep' - using /bin/egrep
+[13:13:57] Need 'sed' - using /bin/sed
+[13:13:57] Need 'find' - using /usr/bin/find
+[13:13:57] Need 'tbl2asn' - using /software/pathogen/external/apps/usr/bin/tbl2asn
+[13:13:57] Need 'makeblastdb' - using /software/pubseq/bin/ncbi_blast+/makeblastdb
+[13:13:57] Need 'blastp' - using /software/pubseq/bin/ncbi_blast+/blastp
+[13:13:57] Need 'aragorn' - using /software/pathogen/external/apps/usr/bin/aragorn
+[13:13:57] Need 'prodigal' - using /software/pathogen/external/apps/usr/bin/prodigal
+[13:13:57] Need 'rnammer' - using /software/pathogen/external/apps/usr/bin/rnammer
+[13:13:57] Need 'parallel' - using /software/pathogen/external/apps/usr/bin/parallel
+[13:13:57] Need 'hmmscan' - using /software/pathogen/external/apps/usr/bin/hmmscan
+[13:13:57] Need 'cmscan' - using /software/pathogen/external/apps/usr/bin/cmscan
+[13:13:58] Determined aragorn version is 1.2.36
+[13:13:58] Determined prodigal version is 2.60
+[13:13:58] Determined rnammer version is 1.2
+[13:13:58] Determined infernal version is 1.1
+[13:13:58] Determined signalp version is 4.1
+[13:13:58] Using genetic code table 1.
+[13:13:58] Loading and checking input file: /lustre/scratch118/infgen/pathogen/pathpipe/viruses/seq-pipelines/Human/immunodeficiency_virus_1/TRACKING/479/93_HIV_T146/SLX/93_HIV_T146_236926/5008_5#1/spades_assembly//contigs.fa
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.2
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.3
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.4
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.5
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.6
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.7
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.8
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.9
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.10
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.11
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.12
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.13
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.14
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.15
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.16
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.17
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.18
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.19
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.20
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.21
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.22
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.23
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.24
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.25
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.26
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.27
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.28
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.29
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.30
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.31
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.32
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.33
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.34
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.35
+[13:13:58] Skipping short (<200 bp) contig: .5008_5_1.36
+[13:13:58] Wrote 1 contigs
+[13:13:58] Predicting tRNAs and tmRNAs
+[13:13:58] Running: aragorn -gc1 -w annotation/5008_5#1.fna
+[13:13:58] Found 0 tRNAs
+[13:13:58] Disabling rRNA search for Viruses.
+[13:13:58] Scanning for ncRNAs... please be patient.
+[13:13:59] Found 0 ncRNAs.
+[13:13:59] Total of 0 RNA features
+[13:13:59] Predicting coding sequences
+[13:13:59] Contigs total 408 bp, so using meta mode
+[13:13:59] Running: prodigal -i annotation/5008_5#1.fna -c -m -g 1 -p meta -f sco -q
+[13:13:59] Found 0 CDS
+[13:13:59] Connecting features back to sequences
+[13:13:59] Skipping genus-specific proteins as can't see /lustre/scratch118/infgen/pathogen/pathpipe/prokka/Human
+[13:13:59] Annotating CDS, please be patient.
+[13:13:59] Will use 1 CPUs for similarity searching.
+[13:13:59] Found 0 unique /gene codes.
+[13:13:59] Fixed 0 colliding /gene names.
+[13:13:59] Assigned 0 locus_tags to CDS and RNA features.
+[13:13:59] Writing outputs to annotation/
+[13:13:59] Generating Genbank and Sequin files
+[13:13:59] Running: tbl2asn -N 1 -y 'Annotated using PROKKA 1.5 from http://www.vicbioinformatics.com' -Z annotation/5008_5#1.err -M n -V b -i annotation/5008_5#1.fsa -f annotation/5008_5#1.tbl 2> /dev/null
+[13:13:59] Deleting temporary file: annotation/errorsummary.val
+[13:13:59] Deleting temporary file: annotation/5008_5#1.dr
+[13:13:59] Deleting temporary file: annotation/5008_5#1.fixedproducts
+[13:13:59] Deleting temporary file: annotation/5008_5#1.ecn
+[13:13:59] Deleting temporary file: annotation/5008_5#1.val
+[13:13:59] Output files:
+[13:13:59] annotation/5008_5#1.log
+[13:13:59] annotation/5008_5#1.fna
+[13:13:59] annotation/5008_5#1.gff
+[13:13:59] annotation/5008_5#1.faa
+[13:13:59] annotation/5008_5#1.ffn
+[13:13:59] annotation/5008_5#1.tbl
+[13:13:59] annotation/5008_5#1.fsa
+[13:13:59] annotation/5008_5#1.err
+[13:13:59] Walltime used: 0.03 minutes
+[13:13:59] Thank you, come again.

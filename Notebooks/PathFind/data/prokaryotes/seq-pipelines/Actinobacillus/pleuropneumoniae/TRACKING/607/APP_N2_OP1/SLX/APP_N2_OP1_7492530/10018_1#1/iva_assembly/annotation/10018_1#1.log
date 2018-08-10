@@ -1,0 +1,198 @@
+[11:59:30] Need 'less' - using /usr/bin/less
+[11:59:30] Need 'grep' - using /bin/grep
+[11:59:30] Need 'egrep' - using /bin/egrep
+[11:59:30] Need 'sed' - using /bin/sed
+[11:59:30] Need 'find' - using /usr/bin/find
+[11:59:30] Need 'tbl2asn' - using /software/pathogen/external/apps/usr/bin/tbl2asn
+[11:59:30] Need 'makeblastdb' - using /software/pubseq/bin/ncbi_blast+/makeblastdb
+[11:59:30] Need 'blastp' - using /software/pubseq/bin/ncbi_blast+/blastp
+[11:59:30] Need 'aragorn' - using /software/pathogen/external/apps/usr/bin/aragorn
+[11:59:30] Need 'prodigal' - using /software/pathogen/external/apps/usr/bin/prodigal
+[11:59:30] Need 'rnammer' - using /software/pathogen/external/apps/usr/bin/rnammer
+[11:59:30] Need 'parallel' - using /software/pathogen/external/apps/usr/bin/parallel
+[11:59:30] Need 'hmmscan' - using /software/pathogen/external/apps/usr/bin/hmmscan
+[11:59:30] Need 'cmscan' - using /software/pathogen/external/apps/usr/bin/cmscan
+[11:59:31] Determined aragorn version is 1.2.36
+[11:59:31] Determined prodigal version is 2.60
+[11:59:31] Determined rnammer version is 1.2
+[11:59:31] Determined infernal version is 1.1
+[11:59:31] Determined signalp version is 4.1
+[11:59:31] Using genetic code table 1.
+[11:59:31] Loading and checking input file: /lustre/scratch118/infgen/pathogen/pathpipe/viruses/seq-pipelines/Human/immunodeficiency_virus_1/TRACKING/479/97_HIV_T146/SLX/97_HIV_T146_236932/5008_5#7/spades_assembly//contigs.fa
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.4
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.9
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.17
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.18
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.19
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.20
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.21
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.22
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.23
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.24
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.25
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.26
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.27
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.28
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.29
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.30
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.31
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.32
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.33
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.34
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.35
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.36
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.37
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.38
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.39
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.40
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.41
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.42
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.43
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.44
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.45
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.46
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.47
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.48
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.49
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.50
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.51
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.52
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.53
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.54
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.55
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.56
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.57
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.58
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.59
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.60
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.61
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.62
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.63
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.64
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.65
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.66
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.67
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.68
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.69
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.70
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.71
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.72
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.73
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.74
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.75
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.76
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.77
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.78
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.79
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.80
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.81
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.82
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.83
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.84
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.85
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.86
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.87
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.88
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.89
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.90
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.91
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.92
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.93
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.94
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.95
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.96
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.97
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.98
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.99
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.100
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.101
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.102
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.103
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.104
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.105
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.106
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.107
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.108
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.109
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.110
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.111
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.112
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.113
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.114
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.115
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.116
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.117
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.118
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.119
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.120
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.121
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.122
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.123
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.124
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.125
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.126
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.127
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.128
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.129
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.130
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.131
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.132
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.133
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.134
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.135
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.136
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.137
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.138
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.139
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.140
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.141
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.142
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.143
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.144
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.145
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.146
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.147
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.148
+[11:59:31] Skipping short (<200 bp) contig: .5008_5_7.149
+[11:59:31] Wrote 14 contigs
+[11:59:31] Predicting tRNAs and tmRNAs
+[11:59:31] Running: aragorn -gc1 -w annotation/5008_5#7.fna
+[11:59:31] Found 0 tRNAs
+[11:59:31] Disabling rRNA search for Viruses.
+[11:59:31] Scanning for ncRNAs... please be patient.
+[11:59:43] Found 7 ncRNAs.
+[11:59:43] Total of 7 RNA features
+[11:59:43] Predicting coding sequences
+[11:59:43] Contigs total 8482 bp, so using meta mode
+[11:59:43] Running: prodigal -i annotation/5008_5#7.fna -c -m -g 1 -p meta -f sco -q
+[11:59:44] Not including CDS which overlaps existing RNA at ERS005795|SC|contig000006:10..435 on - strand
+[11:59:44] Found 6 CDS
+[11:59:44] Connecting features back to sequences
+[11:59:44] Skipping genus-specific proteins as can't see /lustre/scratch118/infgen/pathogen/pathpipe/prokka/Human
+[11:59:44] Annotating CDS, please be patient.
+[11:59:44] Will use 1 CPUs for similarity searching.
+[11:59:44] blast 6 (of 6) proteins against /lustre/scratch118/infgen/pathogen/pathpipe/prokka/kingdom/Viruses/sprot
+[11:59:44] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch118/infgen/pathogen/pathpipe/prokka/kingdom/Viruses/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /lustre/scratch118/infgen/pathogen/pathpipe/tmp/qrOX5Yo2pG/*.seq
+[11:59:45] Labelling remaining 2 proteins as 'hypothetical protein'
+[11:59:45] Found 4 unique /gene codes.
+[11:59:45] Fixed 0 colliding /gene names.
+[11:59:45] Assigned 13 locus_tags to CDS and RNA features.
+[11:59:45] Writing outputs to annotation/
+[11:59:45] Generating Genbank and Sequin files
+[11:59:45] Running: tbl2asn -N 1 -y 'Annotated using PROKKA 1.5 from http://www.vicbioinformatics.com' -Z annotation/5008_5#7.err -M n -V b -i annotation/5008_5#7.fsa -f annotation/5008_5#7.tbl 2> /dev/null
+[11:59:45] Deleting temporary file: annotation/errorsummary.val
+[11:59:45] Deleting temporary file: annotation/5008_5#7.dr
+[11:59:45] Deleting temporary file: annotation/5008_5#7.fixedproducts
+[11:59:45] Deleting temporary file: annotation/5008_5#7.ecn
+[11:59:45] Deleting temporary file: annotation/5008_5#7.val
+[11:59:45] Output files:
+[11:59:45] annotation/5008_5#7.log
+[11:59:45] annotation/5008_5#7.fna
+[11:59:45] annotation/5008_5#7.gff
+[11:59:45] annotation/5008_5#7.faa
+[11:59:45] annotation/5008_5#7.ffn
+[11:59:45] annotation/5008_5#7.tbl
+[11:59:45] annotation/5008_5#7.fsa
+[11:59:45] annotation/5008_5#7.err
+[11:59:45] Walltime used: 0.25 minutes
+[11:59:45] Share and enjoy!

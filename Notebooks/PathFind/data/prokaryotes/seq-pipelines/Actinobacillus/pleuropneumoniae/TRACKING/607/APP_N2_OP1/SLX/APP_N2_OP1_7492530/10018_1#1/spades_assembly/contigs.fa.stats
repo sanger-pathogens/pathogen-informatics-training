@@ -1,0 +1,9 @@
+stats for t/data/linked/prokaryotes/seq-pipelines/Actinobacillus/pleuropneumoniae/TRACKING/607/APP_N2_OP1/SLX/APP_N2_OP1_7492530/10018_1#1/spades_assembly/contigs.fa
+sum = 2895, n = 36, ave = 80.42, largest = 408
+N50 = 73, n = 12
+N60 = 70, n = 16
+N70 = 66, n = 20
+N80 = 62, n = 25
+N90 = 48, n = 30
+N100 = 46, n = 36
+N_count = 0

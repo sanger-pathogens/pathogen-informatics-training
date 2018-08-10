@@ -1,0 +1,80 @@
+>Feature ERS005795|SC|contig000001
+1867	155	CDS
+			gene	gag-pol
+			inference	ab initio prediction:Prodigal:2.60
+			inference	similar to AA sequence:UniProtKB:O12158
+			locus_tag	5008_5#7_00001
+			product	Pr160Gag-Pol
+			protein_id	gnl|SC|5008_5#7_00001
+>Feature ERS005795|SC|contig000002
+111	51	ncRNA
+			inference	COORDINATES:profile:Infernal:1.1
+			locus_tag	5008_5#7_00002
+			product	mir-TAR
+864	244	CDS
+			gene	nef
+			inference	ab initio prediction:Prodigal:2.60
+			inference	similar to AA sequence:UniProtKB:Q70627
+			locus_tag	5008_5#7_00003
+			product	Negative factor
+			protein_id	gnl|SC|5008_5#7_00003
+1147	866	CDS
+			gene	env
+			inference	ab initio prediction:Prodigal:2.60
+			inference	similar to AA sequence:UniProtKB:P05879
+			locus_tag	5008_5#7_00004
+			product	Env polyprotein
+			protein_id	gnl|SC|5008_5#7_00004
+>Feature ERS005795|SC|contig000003
+>Feature ERS005795|SC|contig000004
+455	282	CDS
+			inference	ab initio prediction:Prodigal:2.60
+			locus_tag	5008_5#7_00005
+			product	hypothetical protein
+			protein_id	gnl|SC|5008_5#7_00005
+596	468	CDS
+			inference	ab initio prediction:Prodigal:2.60
+			locus_tag	5008_5#7_00006
+			product	hypothetical protein
+			protein_id	gnl|SC|5008_5#7_00006
+>Feature ERS005795|SC|contig000005
+75	173	ncRNA
+			inference	COORDINATES:profile:Infernal:1.1
+			locus_tag	5008_5#7_00007
+			product	HIV_PBS
+190	229	ncRNA
+			inference	COORDINATES:profile:Infernal:1.1
+			locus_tag	5008_5#7_00008
+			product	HIV-1_DIS
+259	281	ncRNA
+			inference	COORDINATES:profile:Infernal:1.1
+			locus_tag	5008_5#7_00009
+			product	HIV-1_SL3
+287	306	ncRNA
+			inference	COORDINATES:profile:Infernal:1.1
+			locus_tag	5008_5#7_00010
+			product	HIV-1_SL4
+350	433	ncRNA
+			inference	COORDINATES:profile:Infernal:1.1
+			locus_tag	5008_5#7_00011
+			product	HIV_GSL3
+>Feature ERS005795|SC|contig000006
+357	245	ncRNA
+			inference	COORDINATES:profile:Infernal:1.1
+			locus_tag	5008_5#7_00012
+			product	HIV_POL-1_SL
+>Feature ERS005795|SC|contig000007
+487	275	CDS
+			gene	vpu
+			inference	ab initio prediction:Prodigal:2.60
+			inference	similar to AA sequence:UniProtKB:P19554
+			locus_tag	5008_5#7_00013
+			product	Viral protein U
+			protein_id	gnl|SC|5008_5#7_00013
+>Feature ERS005795|SC|contig000008
+>Feature ERS005795|SC|contig000009
+>Feature ERS005795|SC|contig000010
+>Feature ERS005795|SC|contig000011
+>Feature ERS005795|SC|contig000012
+>Feature ERS005795|SC|contig000013
+>Feature ERS005795|SC|contig000014

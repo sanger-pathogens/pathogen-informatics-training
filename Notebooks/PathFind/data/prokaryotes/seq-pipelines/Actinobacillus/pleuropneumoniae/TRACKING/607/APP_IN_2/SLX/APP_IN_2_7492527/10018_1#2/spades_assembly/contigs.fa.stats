@@ -1,0 +1,9 @@
+stats for /lustre/scratch118/infgen/pathogen/pathpipe/viruses/seq-pipelines/Human/immunodeficiency_virus_1/TRACKING/479/104_HIV_T146/SLX/104_HIV_T146_236929/5008_5#4/spades_assembly/contigs.fa
+sum = 5983, n = 64, ave = 93.48, largest = 769
+N50 = 95, n = 13
+N60 = 70, n = 22
+N70 = 63, n = 31
+N80 = 57, n = 40
+N90 = 50, n = 52
+N100 = 46, n = 64
+N_count = 0
