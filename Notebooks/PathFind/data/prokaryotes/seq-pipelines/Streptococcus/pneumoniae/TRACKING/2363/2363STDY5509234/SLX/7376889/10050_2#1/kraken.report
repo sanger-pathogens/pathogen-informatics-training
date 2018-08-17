@@ -1,0 +1,276 @@
+#Kraken version: kraken-0.10.6-a2d113dc8f
+#Database: /lustre/scratch108/pathogen/pathpipe/kraken/pi_qc_2015521
+  0.03	667	667	U	0	unclassified
+ 99.97	2032219	231	-	1	root
+ 99.94	2031718	8	-	131567	  cellular organisms
+ 99.93	2031444	39	D	2	    Bacteria
+ 99.93	2031376	179	P	1239	      Firmicutes
+ 99.92	2031195	264	C	91061	        Bacilli
+ 99.90	2030922	550	O	186826	          Lactobacillales
+ 99.88	2030364	34	F	1300	            Streptococcaceae
+ 99.87	2030327	131346	G	1301	              Streptococcus
+ 93.28	1896259	1634428	S	1313	                Streptococcus pneumoniae
+ 11.02	224036	224036	-	170187	                  Streptococcus pneumoniae TIGR4
+  0.26	5379	5379	-	171101	                  Streptococcus pneumoniae R6
+  0.25	5107	5107	-	574093	                  Streptococcus pneumoniae AP200
+  0.21	4251	4251	-	488221	                  Streptococcus pneumoniae 70585
+  0.18	3742	3742	-	487214	                  Streptococcus pneumoniae Hungary19A-6
+  0.18	3611	3611	-	488222	                  Streptococcus pneumoniae JJA
+  0.18	3560	3560	-	869309	                  Streptococcus pneumoniae SPNA45
+  0.12	2452	2452	-	189423	                  Streptococcus pneumoniae 670-6B
+  0.08	1654	1654	-	512566	                  Streptococcus pneumoniae G54
+  0.07	1476	1476	-	516950	                  Streptococcus pneumoniae CGSP14
+  0.07	1417	1417	-	869269	                  Streptococcus pneumoniae INV104
+  0.07	1343	1343	-	488223	                  Streptococcus pneumoniae P1031
+  0.06	1172	1172	-	869216	                  Streptococcus pneumoniae INV200
+  0.05	1114	1114	-	869303	                  Streptococcus pneumoniae SPN034156
+  0.05	999	999	-	697283	                  Streptococcus pneumoniae gamPNI0373
+  0.01	291	291	-	1130804	                  Streptococcus pneumoniae ST556
+  0.01	169	169	-	487213	                  Streptococcus pneumoniae Taiwan19F-14
+  0.00	16	16	-	869311	                  Streptococcus pneumoniae SPN032672
+  0.00	13	13	-	525381	                  Streptococcus pneumoniae TCH8431/19A
+  0.00	8	8	-	869312	                  Streptococcus pneumoniae SPN033038
+  0.00	7	7	-	869215	                  Streptococcus pneumoniae OXC141
+  0.00	6	6	-	869304	                  Streptococcus pneumoniae SPN034183
+  0.00	6	6	-	1408179	                  Streptococcus pneumoniae A026
+  0.00	2	2	-	869307	                  Streptococcus pneumoniae SPN994039
+  0.07	1383	0	S	257758	                Streptococcus pseudopneumoniae
+  0.07	1383	1383	-	1054460	                  Streptococcus pseudopneumoniae IS7493
+  0.04	716	0	S	28037	                Streptococcus mitis
+  0.04	716	716	-	365659	                  Streptococcus mitis B6
+  0.01	298	0	S	1303	                Streptococcus oralis
+  0.01	298	298	-	927666	                  Streptococcus oralis Uo5
+  0.01	127	7	-	671232	                Streptococcus anginosus group
+  0.01	108	4	S	1328	                  Streptococcus anginosus
+  0.00	99	99	-	862971	                    Streptococcus anginosus C238
+  0.00	5	5	-	862970	                    Streptococcus anginosus C1051
+  0.00	7	3	S	1338	                  Streptococcus intermedius
+  0.00	2	2	-	862967	                    Streptococcus intermedius B196
+  0.00	1	1	-	591365	                    Streptococcus intermedius JTH08
+  0.00	1	1	-	862966	                    Streptococcus intermedius C270
+  0.00	5	0	S	76860	                  Streptococcus constellatus
+  0.00	5	4	-	184250	                    Streptococcus constellatus subsp. pharyngis
+  0.00	1	1	-	696216	                      Streptococcus constellatus subsp. pharyngis C232
+  0.00	55	15	S	1311	                Streptococcus agalactiae
+  0.00	24	24	-	1309807	                  Streptococcus agalactiae ILRI005
+  0.00	14	14	-	1203670	                  Streptococcus agalactiae GD201008-001
+  0.00	1	0	-	216495	                  Streptococcus agalactiae serogroup III
+  0.00	1	1	-	211110	                    Streptococcus agalactiae NEM316
+  0.00	1	1	-	1231389	                  Streptococcus agalactiae SA20-06
+  0.00	37	10	S	1307	                Streptococcus suis
+  0.00	15	15	-	1007064	                  Streptococcus suis ST3
+  0.00	8	8	-	1004952	                  Streptococcus suis D12
+  0.00	3	3	-	1005042	                  Streptococcus suis D9
+  0.00	1	1	-	1005041	                  Streptococcus suis SS12
+  0.00	16	0	S	1305	                Streptococcus sanguinis
+  0.00	16	16	-	388919	                  Streptococcus sanguinis SK36
+  0.00	15	4	S	1314	                Streptococcus pyogenes
+  0.00	9	0	-	301447	                  Streptococcus pyogenes serotype M1
+  0.00	9	9	-	160490	                    Streptococcus pyogenes M1 GAS
+  0.00	1	0	-	404330	                  Streptococcus pyogenes serotype M2
+  0.00	1	1	-	370552	                    Streptococcus pyogenes MGAS10270
+  0.00	1	0	-	404331	                  Streptococcus pyogenes serotype M4
+  0.00	1	1	-	370554	                    Streptococcus pyogenes MGAS10750
+  0.00	14	4	S	1318	                Streptococcus parasanguinis
+  0.00	5	5	-	760570	                  Streptococcus parasanguinis ATCC 15912
+  0.00	5	5	-	1114965	                  Streptococcus parasanguinis FW213
+  0.00	10	0	S	195041	                Streptococcus oligofermentans
+  0.00	10	10	-	1302863	                  Streptococcus oligofermentans AS 1.3089
+  0.00	7	4	S	1308	                Streptococcus thermophilus
+  0.00	2	2	-	322159	                  Streptococcus thermophilus LMD-9
+  0.00	1	1	-	767463	                  Streptococcus thermophilus ND03
+  0.00	7	7	S	1156431	                Streptococcus sp. I-G2
+  0.00	6	0	-	119603	                Streptococcus dysgalactiae group
+  0.00	4	1	S	1336	                  Streptococcus equi
+  0.00	3	2	-	40041	                    Streptococcus equi subsp. zooepidemicus
+  0.00	1	1	-	1051072	                      Streptococcus equi subsp. zooepidemicus ATCC 35246
+  0.00	2	0	S	1334	                  Streptococcus dysgalactiae
+  0.00	2	1	-	119602	                    Streptococcus dysgalactiae subsp. equisimilis
+  0.00	1	1	-	617121	                      Streptococcus dysgalactiae subsp. equisimilis RE378
+  0.00	5	0	S	1302	                Streptococcus gordonii
+  0.00	5	0	-	29390	                  Streptococcus gordonii str. Challis
+  0.00	5	5	-	467705	                    Streptococcus gordonii str. Challis substr. CH1
+  0.00	5	1	S	1304	                Streptococcus salivarius
+  0.00	3	3	-	347253	                  Streptococcus salivarius JIM8777
+  0.00	1	1	-	1048332	                  Streptococcus salivarius CCHSS3
+  0.00	5	5	S	1156433	                Streptococcus sp. I-P16
+  0.00	4	4	S	1309	                Streptococcus mutans
+  0.00	3	0	S	1348	                Streptococcus parauberis
+  0.00	3	3	-	936154	                  Streptococcus parauberis KCTC 11537
+  0.00	3	0	S	1349	                Streptococcus uberis
+  0.00	3	3	-	218495	                  Streptococcus uberis 0140J
+  0.00	2	0	S	59310	                Streptococcus macedonicus
+  0.00	2	2	-	1116231	                  Streptococcus macedonicus ACA-DC 198
+  0.00	2	0	S	150055	                Streptococcus lutetiensis
+  0.00	2	2	-	1076934	                  Streptococcus lutetiensis 033
+  0.00	1	0	S	102684	                Streptococcus infantarius
+  0.00	1	0	-	150054	                  Streptococcus infantarius subsp. infantarius
+  0.00	1	1	-	1069533	                    Streptococcus infantarius subsp. infantarius CJ18
+  0.00	1	0	S	197614	                Streptococcus pasteurianus
+  0.00	1	1	-	981540	                  Streptococcus pasteurianus ATCC 43144
+  0.00	3	0	G	1357	              Lactococcus
+  0.00	2	2	S	1363	                Lactococcus garvieae
+  0.00	1	1	S	1358	                Lactococcus lactis
+  0.00	7	0	F	33958	            Lactobacillaceae
+  0.00	7	1	G	1578	              Lactobacillus
+  0.00	4	0	S	1579	                Lactobacillus acidophilus
+  0.00	4	4	-	272621	                  Lactobacillus acidophilus NCFM
+  0.00	1	1	S	1613	                Lactobacillus fermentum
+  0.00	1	0	S	1625	                Lactobacillus sanfranciscensis
+  0.00	1	1	-	714313	                  Lactobacillus sanfranciscensis TMW 1.1304
+  0.00	1	0	F	81852	            Enterococcaceae
+  0.00	1	1	G	1350	              Enterococcus
+  0.00	9	0	O	1385	          Bacillales
+  0.00	5	0	F	186817	            Bacillaceae
+  0.00	5	0	G	1386	              Bacillus
+  0.00	2	0	-	86661	                Bacillus cereus group
+  0.00	1	0	S	1392	                  Bacillus anthracis
+  0.00	1	1	-	568206	                    Bacillus anthracis str. CDC 684
+  0.00	1	0	S	155322	                  Bacillus toyonensis
+  0.00	1	1	-	1415784	                    Bacillus toyonensis BCT-7112
+  0.00	2	0	-	653685	                Bacillus subtilis group
+  0.00	2	0	S	1390	                  Bacillus amyloliquefaciens
+  0.00	1	1	-	1034836	                    Bacillus amyloliquefaciens XH7
+  0.00	1	0	-	1054400	                    Bacillus amyloliquefaciens subsp. plantarum
+  0.00	1	1	-	1225788	                      Bacillus amyloliquefaciens subsp. plantarum AS43.3
+  0.00	1	0	S	1398	                Bacillus coagulans
+  0.00	1	1	-	345219	                  Bacillus coagulans 36D1
+  0.00	2	0	F	90964	            Staphylococcaceae
+  0.00	2	0	G	1279	              Staphylococcus
+  0.00	1	1	S	1280	                Staphylococcus aureus
+  0.00	1	0	S	1282	                Staphylococcus epidermidis
+  0.00	1	1	-	176280	                  Staphylococcus epidermidis ATCC 12228
+  0.00	1	0	F	186820	            Listeriaceae
+  0.00	1	1	G	1637	              Listeria
+  0.00	1	0	F	186823	            Alicyclobacillaceae
+  0.00	1	0	G	1129704	              Kyrpidia
+  0.00	1	0	S	33943	                Kyrpidia tusciae
+  0.00	1	1	-	562970	                  Kyrpidia tusciae DSM 2912
+  0.00	2	0	C	186801	        Clostridia
+  0.00	1	0	O	53433	          Halanaerobiales
+  0.00	1	0	F	53434	            Halobacteroidaceae
+  0.00	1	0	G	42417	              Halobacteroides
+  0.00	1	0	S	42422	                Halobacteroides halobius
+  0.00	1	1	-	748449	                  Halobacteroides halobius DSM 5150
+  0.00	1	0	O	186802	          Clostridiales
+  0.00	1	0	F	31979	            Clostridiaceae
+  0.00	1	0	G	1485	              Clostridium
+  0.00	1	0	S	1513	                Clostridium tetani
+  0.00	1	1	-	1231072	                  Clostridium tetani 12124569
+  0.00	23	0	P	1224	      Proteobacteria
+  0.00	21	0	C	1236	        Gammaproteobacteria
+  0.00	13	0	O	135622	          Alteromonadales
+  0.00	13	0	F	72275	            Alteromonadaceae
+  0.00	13	0	G	226	              Alteromonas
+  0.00	13	0	S	28108	                Alteromonas macleodii
+  0.00	13	13	-	1300257	                  Alteromonas macleodii str. 'Ionian Sea U8'
+  0.00	7	0	O	91347	          Enterobacteriales
+  0.00	7	0	F	543	            Enterobacteriaceae
+  0.00	5	0	G	590	              Salmonella
+  0.00	5	0	S	28901	                Salmonella enterica
+  0.00	5	5	-	59201	                  Salmonella enterica subsp. enterica
+  0.00	1	0	G	561	              Escherichia
+  0.00	1	1	S	562	                Escherichia coli
+  0.00	1	0	G	629	              Yersinia
+  0.00	1	0	-	1649845	                Yersinia pseudotuberculosis complex
+  0.00	1	0	S	633	                  Yersinia pseudotuberculosis
+  0.00	1	1	-	273123	                    Yersinia pseudotuberculosis IP 32953
+  0.00	1	0	O	72273	          Thiotrichales
+  0.00	1	0	F	34064	            Francisellaceae
+  0.00	1	0	G	262	              Francisella
+  0.00	1	0	S	657445	                Francisella noatunensis
+  0.00	1	0	-	299583	                  Francisella noatunensis subsp. orientalis
+  0.00	1	1	-	1356861	                    Francisella noatunensis subsp. orientalis LADL--07-285A
+  0.00	1	0	C	28211	        Alphaproteobacteria
+  0.00	1	0	O	356	          Rhizobiales
+  0.00	1	0	F	41294	            Bradyrhizobiaceae
+  0.00	1	0	G	374	              Bradyrhizobium
+  0.00	1	1	S	114615	                Bradyrhizobium sp. ORS 278
+  0.00	1	0	-	68525	        delta/epsilon subdivisions
+  0.00	1	0	C	28221	          Deltaproteobacteria
+  0.00	1	0	O	29	            Myxococcales
+  0.00	1	0	-	80812	              Sorangiineae
+  0.00	1	0	F	49	                Polyangiaceae
+  0.00	1	0	G	39643	                  Sorangium
+  0.00	1	1	S	56	                    Sorangium cellulosum
+  0.00	3	0	P	201174	      Actinobacteria
+  0.00	3	0	C	1760	        Actinobacteria
+  0.00	3	0	O	85006	          Micrococcales
+  0.00	3	0	F	1268	            Micrococcaceae
+  0.00	2	0	G	32207	              Rothia
+  0.00	2	0	S	43675	                Rothia mucilaginosa
+  0.00	2	2	-	680646	                  Rothia mucilaginosa DY-18
+  0.00	1	1	G	1663	              Arthrobacter
+  0.00	2	0	-	68336	      Bacteroidetes/Chlorobi group
+  0.00	2	0	P	976	        Bacteroidetes
+  0.00	2	0	C	200643	          Bacteroidia
+  0.00	2	0	O	171549	            Bacteroidales
+  0.00	2	0	F	171552	              Prevotellaceae
+  0.00	2	0	G	838	                Prevotella
+  0.00	2	0	S	28132	                  Prevotella melaninogenica
+  0.00	2	2	-	553174	                    Prevotella melaninogenica ATCC 25845
+  0.00	1	0	P	508458	      Synergistetes
+  0.00	1	0	C	649775	        Synergistia
+  0.00	1	0	O	649776	          Synergistales
+  0.00	1	0	F	649777	            Synergistaceae
+  0.00	1	0	G	81461	              Thermanaerovibrio
+  0.00	1	0	S	81462	                Thermanaerovibrio acidaminovorans
+  0.00	1	1	-	525903	                  Thermanaerovibrio acidaminovorans DSM 6589
+  0.01	266	0	D	2759	    Eukaryota
+  0.01	266	0	-	33154	      Opisthokonta
+  0.01	266	0	K	33208	        Metazoa
+  0.01	266	0	-	6072	          Eumetazoa
+  0.01	266	0	-	33213	            Bilateria
+  0.01	266	0	-	33511	              Deuterostomia
+  0.01	266	0	P	7711	                Chordata
+  0.01	266	0	-	89593	                  Craniata
+  0.01	266	0	-	7742	                    Vertebrata
+  0.01	266	0	-	7776	                      Gnathostomata
+  0.01	266	0	-	117570	                        Teleostomi
+  0.01	266	0	-	117571	                          Euteleostomi
+  0.01	266	0	-	8287	                            Sarcopterygii
+  0.01	266	0	-	1338369	                              Dipnotetrapodomorpha
+  0.01	266	0	-	32523	                                Tetrapoda
+  0.01	266	0	-	32524	                                  Amniota
+  0.01	266	0	C	40674	                                    Mammalia
+  0.01	266	0	-	32525	                                      Theria
+  0.01	266	0	-	9347	                                        Eutheria
+  0.01	266	0	-	1437010	                                          Boreoeutheria
+  0.01	266	9	-	314146	                                            Euarchontoglires
+  0.01	251	0	O	9443	                                              Primates
+  0.01	251	0	-	376913	                                                Haplorrhini
+  0.01	251	0	-	314293	                                                  Simiiformes
+  0.01	251	0	-	9526	                                                    Catarrhini
+  0.01	251	0	-	314295	                                                      Hominoidea
+  0.01	251	0	F	9604	                                                        Hominidae
+  0.01	251	0	-	207598	                                                          Homininae
+  0.01	251	0	G	9605	                                                            Homo
+  0.01	251	251	S	9606	                                                              Homo sapiens
+  0.00	6	0	-	314147	                                              Glires
+  0.00	6	0	O	9989	                                                Rodentia
+  0.00	6	0	-	33553	                                                  Sciurognathi
+  0.00	6	0	-	337687	                                                    Muroidea
+  0.00	6	0	F	10066	                                                      Muridae
+  0.00	6	0	-	39107	                                                        Murinae
+  0.00	6	0	G	10088	                                                          Mus
+  0.00	6	0	-	862507	                                                            Mus
+  0.00	6	6	S	10090	                                                              Mus musculus
+  0.01	250	0	-	28384	  other sequences
+  0.01	250	0	-	81077	    artificial sequences
+  0.01	250	250	S	32630	      synthetic construct
+  0.00	20	0	D	10239	  Viruses
+  0.00	14	3	-	12333	    unclassified phages
+  0.00	5	5	S	1448273	      Streptococcus phage DCC1738
+  0.00	4	4	S	1448274	      Streptococcus phage K13
+  0.00	1	1	S	1267169	      Streptococcus phage phiBHN167
+  0.00	1	1	S	1448276	      Streptococcus phage IC1
+  0.00	6	0	-	35237	    dsDNA viruses, no RNA stage
+  0.00	3	0	F	10508	      Adenoviridae
+  0.00	3	0	G	10509	        Mastadenovirus
+  0.00	3	3	S	129951	          Human mastadenovirus C
+  0.00	3	0	O	28883	      Caudovirales
+  0.00	3	0	F	10699	        Siphoviridae
+  0.00	3	0	-	196894	          unclassified Siphoviridae
+  0.00	1	1	S	120574	            Streptococcus phage MM1
+  0.00	1	1	S	157924	            Streptococcus phage SM1
+  0.00	1	1	S	644007	            Streptococcus phage PH10
