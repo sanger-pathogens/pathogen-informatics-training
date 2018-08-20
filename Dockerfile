@@ -32,6 +32,8 @@ RUN conda config --add channels bioconda
 # Install SeroBA (also installs dependencies like Ariba, Bowtie2, kmc and Samtools)
 RUN conda install -c bioconda seroba
 
+RUN conda install -c conda-forge -c bioconda prokka
+
 # Reset original user
 USER $NB_UID
 
