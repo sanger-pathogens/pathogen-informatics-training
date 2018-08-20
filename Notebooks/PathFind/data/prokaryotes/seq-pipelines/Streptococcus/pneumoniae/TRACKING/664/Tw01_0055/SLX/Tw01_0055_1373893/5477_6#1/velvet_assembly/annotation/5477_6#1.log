@@ -1,0 +1,443 @@
+[04:03:30] Need 'less' - using /usr/bin/less
+[04:03:30] Need 'grep' - using /bin/grep
+[04:03:30] Need 'egrep' - using /bin/egrep
+[04:03:30] Need 'sed' - using /bin/sed
+[04:03:30] Need 'find' - using /usr/bin/find
+[04:03:30] Need 'tbl2asn' - using /software/pathogen/external/apps/usr/bin/tbl2asn
+[04:03:30] Need 'makeblastdb' - using /software/pubseq/bin/ncbi-blast-2.2.27+/bin/makeblastdb
+[04:03:30] Need 'blastp' - using /software/pubseq/bin/ncbi-blast-2.2.27+/bin/blastp
+[04:03:30] Need 'aragorn' - using /software/pathogen/external/apps/usr/bin/aragorn
+[04:03:30] Need 'prodigal' - using /software/pathogen/external/apps/usr/bin/prodigal
+[04:03:30] Need 'rnammer' - using /software/pathogen/external/apps/usr/bin/rnammer
+[04:03:30] Need 'parallel' - using /software/pathogen/external/apps/usr/local/bin/parallel
+[04:03:30] Need 'hmmscan' - using /software/pathogen/external/apps/usr/bin/hmmscan
+[04:03:30] Need 'cmscan' - using /software/pathogen/external/apps/usr/bin/cmscan
+[04:03:30] Determined aragorn version is 1.2.34
+[04:03:30] Determined prodigal version is 2.60
+[04:03:30] Determined rnammer version is 1.2
+[04:03:30] Determined infernal version is 1.1
+[04:03:30] Determined signalp version is 4.0
+[04:03:30] Using genetic code table 11.
+[04:03:30] Loading and checking input file: /lustre/scratch108/pathogen/pathpipe/prokaryotes/seq-pipelines/Streptococcus/pneumoniae/TRACKING/664/Tw01_0055/SLX/Tw01_0055_1373893/5477_6#1/velvet_assembly//contigs.fa
+[04:03:31] Wrote 66 contigs
+[04:03:31] Predicting tRNAs and tmRNAs
+[04:03:31] Running: aragorn -gc11 -w annotation/5477_6#1.fna
+[04:03:32] 1 tRNA-Arg [17084,17157] 35 (tct)
+[04:03:32] 2 tRNA-Glu [19594,19665] 34 (ttc)
+[04:03:32] 3 tRNA-Asn [19671,19744] 35 (gtt)
+[04:03:32] 1 tRNA-Lys c[86236,86311] 35 (ctt)
+[04:03:32] 1 tRNA-Val [3,75] 34 (tac)
+[04:03:32] 2 tRNA-Asp [78,150] 34 (gtc)
+[04:03:32] 3 tRNA-Lys [175,247] 34 (ttt)
+[04:03:32] 4 tRNA-Leu [252,335] 36 (tag)
+[04:03:32] 5 tRNA-Thr [353,425] 34 (tgt)
+[04:03:32] 6 tRNA-Gly [448,519] 33 (gcc)
+[04:03:32] 7 tRNA-Leu [527,612] 35 (taa)
+[04:03:32] 8 tRNA-Arg [622,695] 35 (acg)
+[04:03:32] 9 tRNA-Pro [710,785] 36 (tgg)
+[04:03:32] 10 tRNA-Met [789,864] 36 (cat)
+[04:03:32] 11 tRNA-Met [877,950] 35 (cat)
+[04:03:32] 12 tRNA-Ser [961,1050] 37 (tga)
+[04:03:32] 13 tRNA-Met [1064,1137] 35 (cat)
+[04:03:32] 14 tRNA-Phe [1141,1213] 34 (gaa)
+[04:03:32] 15 tRNA-Gly [1233,1303] 33 (tcc)
+[04:03:32] 16 tRNA-Ile [1338,1413] 36 (gat)
+[04:03:32] 17 tRNA-Ser [1418,1507] 36 (gct)
+[04:03:32] 18 tRNA-Val [1896,1968] 34 (tac)
+[04:03:32] 19 tRNA-Asp [1971,2043] 34 (gtc)
+[04:03:32] 20 tRNA-Lys [2068,2140] 34 (ttt)
+[04:03:32] 21 tRNA-Leu [2145,2228] 36 (tag)
+[04:03:32] 22 tRNA-Thr [2246,2318] 34 (tgt)
+[04:03:32] 23 tRNA-Gly [2341,2412] 33 (gcc)
+[04:03:32] 24 tRNA-Leu [2420,2505] 35 (taa)
+[04:03:32] 25 tRNA-Arg [2515,2588] 35 (acg)
+[04:03:32] 26 tRNA-Pro [2603,2678] 36 (tgg)
+[04:03:32] 27 tRNA-Cys c[40307,40379] 34 (gca)
+[04:03:32] 1 tRNA-Leu [10151,10236] 35 (aag)
+[04:03:32] 1 tRNA-Arg [14411,14484] 35 (ccg)
+[04:03:32] 1 tRNA-Ser [45350,45439] 36 (gga)
+[04:03:32] 2 tmRNA c[47830,48175] 83,118 AKNNTSYALAA*
+[04:03:32] 1 tRNA-Thr [10420,10492] 34 (ggt)
+[04:03:32] 1 tRNA-Leu c[47846,47931] 36 (caa)
+[04:03:32] 2 tRNA-Gln c[47939,48012] 34 (ttg)
+[04:03:32] 3 tRNA-His c[48024,48098] 35 (gtg)
+[04:03:32] 4 tRNA-Trp c[48111,48183] 34 (cca)
+[04:03:32] 5 tRNA-Tyr c[48186,48268] 36 (gta)
+[04:03:32] 6 tRNA-Phe c[48280,48352] 34 (gaa)
+[04:03:32] 7 tRNA-Met c[48356,48429] 35 (cat)
+[04:03:32] 8 tRNA-Ser c[48443,48532] 37 (tga)
+[04:03:32] 9 tRNA-Ile c[48614,48689] 36 (gat)
+[04:03:32] 10 tRNA-Gly c[48722,48794] 34 (tcc)
+[04:03:32] 11 tRNA-Val c[48799,48871] 34 (tac)
+[04:03:32] 1 tRNA-Arg [3762,3833] 34 (cct)
+[04:03:32] 1 tRNA-Tyr [10421,10501] 35 (gta)
+[04:03:32] 2 tRNA-Gln [10511,10582] 33 (ttg)
+[04:03:32] 1 tRNA-Glu [161,232] 34 (ttc)
+[04:03:32] 2 tRNA-Ala [2080,2154] 35 (tgc)
+[04:03:32] Found 52 tRNAs
+[04:03:32] Predicting Ribosomal RNAs
+[04:03:32] Running: rnammer -S bac  -xml annotation/rnammer.xml annotation/5477_6#1.fna
+[04:04:09] 1	5S ribosomal RNA	ERS015862|SC|contig000050	5259	5372	+
+[04:04:09] 2	23S ribosomal RNA	ERS015862|SC|contig000050	2280	5179	+
+[04:04:09] 3	16S ribosomal RNA	ERS015862|SC|contig000050	491	2024	+
+[04:04:09] Deleting temporary file: annotation/rnammer.xml
+[04:04:09] Found 3 rRNAs
+[04:04:09] Scanning for ncRNAs... please be patient.
+[04:46:38] Found 38 ncRNAs.
+[04:46:38] Total of 93 RNA features
+[04:46:38] Predicting coding sequences
+[04:46:38] Contigs total 2082748 bp, so using single mode
+[04:46:38] Running: prodigal -i annotation/5477_6#1.fna -c -m -g 11 -p single -f sco -q
+[04:46:43] Not including CDS which overlaps existing RNA at ERS015862|SC|contig000015:46232..46363 on - strand
+[04:46:43] Not including CDS which overlaps existing RNA at ERS015862|SC|contig000016:9811..10320 on + strand
+[04:46:43] Not including CDS which overlaps existing RNA at ERS015862|SC|contig000026:274..831 on + strand
+[04:46:44] Found 2023 CDS
+[04:46:44] Connecting features back to sequences
+[04:46:44] Option --gram not specified, will NOT check for signal peptides.
+[04:46:44] Using custom Streptococcus database for annotation
+[04:46:44] Annotating CDS, please be patient.
+[04:46:44] Will use 1 CPUs for similarity searching.
+[04:46:44] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[04:46:44] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[04:47:15] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[04:47:15] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[04:47:31] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[04:47:31] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[04:49:11] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[04:49:11] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[04:50:11] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[04:50:11] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[04:51:04] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[04:51:04] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[04:52:41] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[04:52:41] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[04:53:12] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[04:53:12] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[04:53:28] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[04:53:28] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[04:55:04] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[04:55:04] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[04:55:51] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[04:55:51] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[04:56:35] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[04:56:35] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[04:58:16] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[04:58:16] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[04:58:45] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[04:58:45] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[04:59:01] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[04:59:01] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:00:37] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[05:00:37] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:01:30] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[05:01:30] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:02:17] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[05:02:17] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:03:58] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[05:03:58] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:04:28] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[05:04:28] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:04:44] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[05:04:44] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:06:18] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[05:06:18] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:07:13] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[05:07:13] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:07:59] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[05:07:59] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:09:38] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[05:09:38] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:10:12] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[05:10:12] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:10:30] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[05:10:30] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:12:32] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[05:12:32] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:13:27] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[05:13:27] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:14:27] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[05:14:27] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:16:32] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[05:16:32] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:17:00] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[05:17:00] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:17:17] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[05:17:17] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:19:21] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[05:19:21] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:20:23] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[05:20:23] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:21:25] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[05:21:25] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:23:30] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[05:23:30] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:24:00] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[05:24:00] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:24:16] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[05:24:16] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:26:18] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[05:26:18] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:27:15] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[05:27:15] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:28:19] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[05:28:19] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:30:26] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[05:30:26] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:31:00] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[05:31:00] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:31:19] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[05:31:19] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:33:26] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[05:33:26] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:34:25] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[05:34:25] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:35:41] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[05:35:41] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:37:32] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[05:37:32] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:38:00] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[05:38:00] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:38:16] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[05:38:16] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:40:19] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[05:40:19] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:41:26] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[05:41:26] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:42:42] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[05:42:42] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:44:32] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[05:44:32] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:45:04] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[05:45:04] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:45:22] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[05:45:22] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:47:19] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[05:47:19] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:48:18] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[05:48:18] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:49:32] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[05:49:32] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:51:20] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[05:51:20] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:51:50] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[05:51:50] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:52:07] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[05:52:07] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:53:56] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[05:53:56] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:54:53] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[05:54:53] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:56:05] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[05:56:05] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:58:00] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[05:58:00] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:58:33] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[05:58:33] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[05:58:51] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[05:58:51] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:00:40] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[06:00:40] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:01:49] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[06:01:49] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:03:01] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[06:03:01] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:04:53] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[06:04:53] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:05:26] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[06:05:26] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:05:43] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[06:05:43] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:07:31] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[06:07:31] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:08:40] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[06:08:40] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:09:52] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[06:09:52] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:11:37] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[06:11:37] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:12:08] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[06:12:08] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:12:24] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[06:12:24] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:14:07] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[06:14:07] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:15:12] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[06:15:12] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:16:26] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[06:16:26] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:18:14] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[06:18:14] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:18:47] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[06:18:47] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:19:05] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[06:19:05] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:20:52] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[06:20:52] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:22:09] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[06:22:09] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:23:20] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[06:23:20] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:25:09] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[06:25:09] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:25:38] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[06:25:38] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:25:55] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[06:25:55] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:27:43] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[06:27:43] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:28:46] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[06:28:46] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:29:59] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[06:29:59] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:31:46] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[06:31:46] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:32:18] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[06:32:18] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:32:35] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[06:32:35] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:34:25] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[06:34:25] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:35:30] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[06:35:30] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:36:45] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[06:36:45] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:38:34] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[06:38:34] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:39:06] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[06:39:06] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:39:24] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[06:39:24] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:41:12] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[06:41:12] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:42:16] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[06:42:16] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:43:28] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[06:43:28] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:45:15] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[06:45:15] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:45:45] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[06:45:45] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:46:01] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[06:46:01] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:47:59] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[06:47:59] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:48:45] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[06:48:45] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:49:54] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[06:49:54] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:51:54] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[06:51:54] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:52:23] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[06:52:23] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:52:40] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[06:52:40] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:54:46] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[06:54:46] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:55:35] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[06:55:35] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:56:48] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[06:56:48] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:58:54] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[06:58:54] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:59:00] blast 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[06:59:00] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:59:03] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[06:59:03] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:59:26] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[06:59:26] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:59:38] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[06:59:38] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[06:59:52] hmmer3 2023 (of 2023) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[06:59:52] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/gOIhQwR0BR/*.seq
+[07:00:23] Labelling remaining 120 proteins as 'hypothetical protein'
+[07:00:23] Possible /pseudo 'putative metal-dependent membrane protease' at ERS015862|SC|contig000001 position 34005
+[07:00:23] Possible /pseudo 'ABC transporter substrate-binding lipoprotein' at ERS015862|SC|contig000001 position 38237
+[07:00:23] Possible /pseudo 'ABC transporter substrate-binding lipoprotein' at ERS015862|SC|contig000001 position 39221
+[07:00:23] Possible /pseudo 'integral membrane protein' at ERS015862|SC|contig000002 position 21357
+[07:00:23] Possible /pseudo 'zinc-dependent protease' at ERS015862|SC|contig000002 position 32160
+[07:00:23] Possible /pseudo 'PTS system mannose/fructose/N-acetylgalactosamine-specific transporter subunit IID' at ERS015862|SC|contig000002 position 95954
+[07:00:23] Possible /pseudo 'surface protein (fragment)' at ERS015862|SC|contig000002 position 106288
+[07:00:23] Possible /pseudo 'ABC transporter ATP-binding protein' at ERS015862|SC|contig000003 position 14211
+[07:00:23] Possible /pseudo 'membrane protein' at ERS015862|SC|contig000003 position 54086
+[07:00:23] Possible /pseudo 'Protein of unknown function (DUF3290)' at ERS015862|SC|contig000004 position 37095
+[07:00:23] Possible /pseudo 'ABC transporter membrane protein' at ERS015862|SC|contig000004 position 81415
+[07:00:23] Possible /pseudo 'transposase' at ERS015862|SC|contig000005 position 9543
+[07:00:23] Possible /pseudo 'cobalt or other cation ABC transporter ATP-binding protein' at ERS015862|SC|contig000005 position 65670
+[07:00:23] Possible /pseudo 'potassium uptake protein' at ERS015862|SC|contig000006 position 51799
+[07:00:23] Possible /pseudo 'pts system lactose-specific transporter subunit EIIBC' at ERS015862|SC|contig000006 position 54577
+[07:00:23] Possible /pseudo 'transposase' at ERS015862|SC|contig000007 position 8540
+[07:00:23] Possible /pseudo 'peptidase, U32 family' at ERS015862|SC|contig000007 position 13352
+[07:00:23] Possible /pseudo 'regulatory protein Spx' at ERS015862|SC|contig000007 position 31785
+[07:00:23] Possible /pseudo 'Predicted membrane protein' at ERS015862|SC|contig000007 position 43013
+[07:00:23] Possible /pseudo 'spermidine/putrescine ABC transporter permease' at ERS015862|SC|contig000007 position 46641
+[07:00:23] Possible /pseudo 'prephenate dehydratase' at ERS015862|SC|contig000007 position 65391
+[07:00:23] Possible /pseudo 'glycosyl transferase' at ERS015862|SC|contig000007 position 69727
+[07:00:23] Possible /pseudo 'zinc metallopeptidase' at ERS015862|SC|contig000009 position 64688
+[07:00:23] Possible /pseudo '1,4-beta-N-acetylmuramidase' at ERS015862|SC|contig000011 position 16722
+[07:00:23] Possible /pseudo 'ABC transporter ATP-binding protein' at ERS015862|SC|contig000011 position 60469
+[07:00:23] Possible /pseudo 'branched-chain amino acid transport protein' at ERS015862|SC|contig000012 position 52159
+[07:00:23] Possible /pseudo 'branched-chain amino acid ABC transporter permease' at ERS015862|SC|contig000012 position 53883
+[07:00:23] Possible /pseudo 'Cof family protein' at ERS015862|SC|contig000013 position 19685
+[07:00:23] Possible /pseudo 'membrane protein' at ERS015862|SC|contig000013 position 32369
+[07:00:23] Possible /pseudo 'O-acetylhomoserine sulfhydrylase' at ERS015862|SC|contig000013 position 47879
+[07:00:23] Possible /pseudo 'maltodextrin ABC transporter permease' at ERS015862|SC|contig000015 position 25046
+[07:00:23] Possible /pseudo 'lantibiotic synthetase' at ERS015862|SC|contig000017 position 2427
+[07:00:23] Possible /pseudo 'Tn5253 hypothetical protein' at ERS015862|SC|contig000017 position 15307
+[07:00:23] Possible /pseudo 'Tn916 hypothetical protein' at ERS015862|SC|contig000017 position 23082
+[07:00:23] Possible /pseudo 'Tn916 hypothetical protein' at ERS015862|SC|contig000017 position 39141
+[07:00:23] Possible /pseudo 'Tn916 hypothetical protein' at ERS015862|SC|contig000017 position 39755
+[07:00:23] Possible /pseudo 'Tn916 hypothetical protein' at ERS015862|SC|contig000017 position 43215
+[07:00:23] Possible /pseudo 'PcfD' at ERS015862|SC|contig000017 position 47854
+[07:00:23] Possible /pseudo 'Tn5253 hypothetical protein' at ERS015862|SC|contig000017 position 48587
+[07:00:23] Possible /pseudo 'transposase' at ERS015862|SC|contig000018 position 19981
+[07:00:23] Possible /pseudo 'choline binding protein J' at ERS015862|SC|contig000018 position 36410
+[07:00:23] Possible /pseudo 'phosphotransferase system sugar-specific EII component' at ERS015862|SC|contig000020 position 21009
+[07:00:23] Possible /pseudo 'competence protein' at ERS015862|SC|contig000020 position 31654
+[07:00:23] Possible /pseudo 'putative glycosyltransferase' at ERS015862|SC|contig000021 position 4658
+[07:00:23] Possible /pseudo 'glycosyl transferase' at ERS015862|SC|contig000021 position 8798
+[07:00:23] Possible /pseudo 'glycosyltransferase involved in cell wall biogenesis' at ERS015862|SC|contig000022 position 13796
+[07:00:23] Possible /pseudo 'glycosyltransferase involved in cell wall biogenesis' at ERS015862|SC|contig000022 position 14123
+[07:00:23] Possible /pseudo 'ABC transporter permease' at ERS015862|SC|contig000022 position 21307
+[07:00:23] Possible /pseudo 'argininosuccinate synthase' at ERS015862|SC|contig000022 position 42681
+[07:00:23] Possible /pseudo 'ketol-acid reductoisomerase' at ERS015862|SC|contig000023 position 14304
+[07:00:23] Possible /pseudo 'degenerate transposase' at ERS015862|SC|contig000023 position 23591
+[07:00:23] Possible /pseudo 'cell wall surface anchor family protein' at ERS015862|SC|contig000023 position 35248
+[07:00:23] Possible /pseudo 'cell wall surface anchor family protein' at ERS015862|SC|contig000023 position 37235
+[07:00:23] Possible /pseudo 'sortase' at ERS015862|SC|contig000023 position 40547
+[07:00:23] Possible /pseudo 'CrcB protein' at ERS015862|SC|contig000025 position 2925
+[07:00:23] Possible /pseudo 'valyl-tRNA synthetase' at ERS015862|SC|contig000030 position 21023
+[07:00:23] Possible /pseudo 'phosphopentomutase' at ERS015862|SC|contig000031 position 8737
+[07:00:23] Possible /pseudo 'putative sortase-sorted surface anchored protein (pseudogene)' at ERS015862|SC|contig000032 position 18533
+[07:00:23] Possible /pseudo 'caax amino protease family protein' at ERS015862|SC|contig000033 position 12392
+[07:00:23] Possible /pseudo 'peptide ABC transporter permease' at ERS015862|SC|contig000035 position 2940
+[07:00:23] Possible /pseudo 'peptide ABC transporter permease' at ERS015862|SC|contig000035 position 3053
+[07:00:23] Possible /pseudo 'sugar ABC transporter permease' at ERS015862|SC|contig000035 position 11214
+[07:00:23] Possible /pseudo 'ABC transporter permease' at ERS015862|SC|contig000037 position 5880
+[07:00:23] Possible /pseudo 'serine/threonine protein kinase' at ERS015862|SC|contig000038 position 12976
+[07:00:23] Possible /pseudo 'permease' at ERS015862|SC|contig000039 position 8391
+[07:00:23] Possible /pseudo 'ABC transporter ATP-binding protein/permease' at ERS015862|SC|contig000041 position 6247
+[07:00:23] Possible /pseudo 'GNAT family acetyltransferase' at ERS015862|SC|contig000043 position 3951
+[07:00:23] Found 1115 unique /gene codes.
+[07:00:23] Fixed 118 colliding /gene names.
+[07:00:23] Assigned 2116 locus_tags to CDS and RNA features.
+[07:00:23] Writing outputs to annotation/
+[07:00:25] Generating Genbank and Sequin files
+[07:00:25] Running: tbl2asn -N 1 -y 'Annotated using PROKKA 1.5 from http://www.vicbioinformatics.com' -Z annotation/5477_6#1.err -M n -V b -i annotation/5477_6#1.fsa -f annotation/5477_6#1.tbl 2> /dev/null
+[07:00:27] Deleting temporary file: annotation/errorsummary.val
+[07:00:27] Deleting temporary file: annotation/5477_6#1.dr
+[07:00:27] Deleting temporary file: annotation/5477_6#1.fixedproducts
+[07:00:27] Deleting temporary file: annotation/5477_6#1.ecn
+[07:00:27] Deleting temporary file: annotation/5477_6#1.val
+[07:00:27] Output files:
+[07:00:27] annotation/5477_6#1.log
+[07:00:27] annotation/5477_6#1.fna
+[07:00:27] annotation/5477_6#1.gff
+[07:00:27] annotation/5477_6#1.faa
+[07:00:27] annotation/5477_6#1.ffn
+[07:00:27] annotation/5477_6#1.tbl
+[07:00:27] annotation/5477_6#1.fsa
+[07:00:27] annotation/5477_6#1.sqn
+[07:00:27] annotation/5477_6#1.err
+[07:00:27] annotation/5477_6#1.gbk
+[07:00:27] Walltime used: 176.95 minutes
+[07:00:27] Share and enjoy!

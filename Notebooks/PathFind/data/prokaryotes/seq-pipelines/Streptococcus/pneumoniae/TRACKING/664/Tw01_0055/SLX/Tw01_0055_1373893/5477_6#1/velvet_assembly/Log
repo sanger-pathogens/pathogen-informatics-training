@@ -1,0 +1,153 @@
+Mon Dec 24 23:00:10 2012
+ velveth velvet_assembly_data_31 31 -shortPaired -fastq.gz /lustre/scratch108/pathogen/pathpipe/prokaryotes/seq-pipelines/Streptococcus/pneumoniae/TRACKING/664/Tw01_0055/SLX/Tw01_0055_1373893/5477_6#1/pool_1.fastq.gz
+Version 1.2.07
+Copyright 2007, 2008 Daniel Zerbino (zerbino@ebi.ac.uk)
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Compilation settings:
+CATEGORIES = 2
+MAXKMERLENGTH = 31
+
+Mon Dec 24 23:10:06 2012
+ velvetg velvet_assembly_data_31 -clean yes
+Version 1.2.07
+Copyright 2007, 2008 Daniel Zerbino (zerbino@ebi.ac.uk)
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Compilation settings:
+CATEGORIES = 2
+MAXKMERLENGTH = 31
+
+Final graph has 22791 nodes and n50 of 873, max 6429, total 2241753, using 0/7067462 reads
+Mon Dec 24 23:16:04 2012
+ velvetg velvet_assembly_data_31 -clean yes -exp_cov 138 -cov_cutoff 68.2272
+Version 1.2.07
+Copyright 2007, 2008 Daniel Zerbino (zerbino@ebi.ac.uk)
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Compilation settings:
+CATEGORIES = 2
+MAXKMERLENGTH = 31
+
+Final graph has 1244 nodes and n50 of 55741, max 122697, total 2088819, using 6968270/7067462 reads
+Mon Dec 24 23:24:15 2012
+ velvetg velvet_assembly_data_31 -clean yes -exp_cov 138 -cov_cutoff 42.1728
+Version 1.2.07
+Copyright 2007, 2008 Daniel Zerbino (zerbino@ebi.ac.uk)
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Compilation settings:
+CATEGORIES = 2
+MAXKMERLENGTH = 31
+
+Final graph has 1268 nodes and n50 of 55741, max 122655, total 2089044, using 6968445/7067462 reads
+Mon Dec 24 23:25:15 2012
+ velvetg velvet_assembly_data_31 -clean yes -exp_cov 138 -cov_cutoff 26.0627904
+Version 1.2.07
+Copyright 2007, 2008 Daniel Zerbino (zerbino@ebi.ac.uk)
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Compilation settings:
+CATEGORIES = 2
+MAXKMERLENGTH = 31
+
+Final graph has 1285 nodes and n50 of 55710, max 122655, total 2089261, using 6961493/7067462 reads
+Mon Dec 24 23:26:09 2012
+ velvetg velvet_assembly_data_31 -clean yes -exp_cov 138 -cov_cutoff 16.1100096
+Version 1.2.07
+Copyright 2007, 2008 Daniel Zerbino (zerbino@ebi.ac.uk)
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Compilation settings:
+CATEGORIES = 2
+MAXKMERLENGTH = 31
+
+Final graph has 1300 nodes and n50 of 55710, max 122655, total 2089330, using 6961493/7067462 reads
+Mon Dec 24 23:26:59 2012
+ velvetg velvet_assembly_data_31 -clean yes -exp_cov 138 -cov_cutoff 32.2168140672
+Version 1.2.07
+Copyright 2007, 2008 Daniel Zerbino (zerbino@ebi.ac.uk)
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Compilation settings:
+CATEGORIES = 2
+MAXKMERLENGTH = 31
+
+Final graph has 1277 nodes and n50 of 55710, max 122655, total 2089197, using 6961457/7067462 reads
+Mon Dec 24 23:28:02 2012
+ velvetg velvet_assembly_data_31 -clean yes -exp_cov 138 -cov_cutoff 22.2628089064704
+Version 1.2.07
+Copyright 2007, 2008 Daniel Zerbino (zerbino@ebi.ac.uk)
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Compilation settings:
+CATEGORIES = 2
+MAXKMERLENGTH = 31
+
+Final graph has 1295 nodes and n50 of 55710, max 122655, total 2089296, using 6961491/7067462 reads
+Mon Dec 24 23:28:48 2012
+ velvetg velvet_assembly_data_31 -clean yes -exp_cov 138 -cov_cutoff 28.4143840958013
+Version 1.2.07
+Copyright 2007, 2008 Daniel Zerbino (zerbino@ebi.ac.uk)
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Compilation settings:
+CATEGORIES = 2
+MAXKMERLENGTH = 31
+
+Final graph has 1278 nodes and n50 of 55710, max 122655, total 2089204, using 6961492/7067462 reads
+Mon Dec 24 23:29:43 2012
+ velvetg velvet_assembly_data_31 -clean yes -exp_cov 138 -cov_cutoff 24.6127106287948
+Version 1.2.07
+Copyright 2007, 2008 Daniel Zerbino (zerbino@ebi.ac.uk)
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Compilation settings:
+CATEGORIES = 2
+MAXKMERLENGTH = 31
+
+Final graph has 1289 nodes and n50 of 55710, max 122655, total 2089227, using 6961493/7067462 reads
+Mon Dec 24 23:30:15 2012
+ velvetg velvet_assembly_data_31 -clean yes -exp_cov 138 -cov_cutoff 26.9621448314048
+Version 1.2.07
+Copyright 2007, 2008 Daniel Zerbino (zerbino@ebi.ac.uk)
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Compilation settings:
+CATEGORIES = 2
+MAXKMERLENGTH = 31
+
+Final graph has 1285 nodes and n50 of 55710, max 122655, total 2089261, using 6961493/7067462 reads
+Mon Dec 24 23:30:51 2012
+ velvetg velvet_assembly_data_31 -clean yes -exp_cov 138 -cov_cutoff 25.5101944941918
+Version 1.2.07
+Copyright 2007, 2008 Daniel Zerbino (zerbino@ebi.ac.uk)
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Compilation settings:
+CATEGORIES = 2
+MAXKMERLENGTH = 31
+
+Final graph has 1285 nodes and n50 of 55710, max 122655, total 2089263, using 6961493/7067462 reads
+Mon Dec 24 23:31:53 2012
+ velvetg velvet_assembly_data_31 -clean yes -exp_cov 138 -cov_cutoff 25.1666411013952
+Version 1.2.07
+Copyright 2007, 2008 Daniel Zerbino (zerbino@ebi.ac.uk)
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Compilation settings:
+CATEGORIES = 2
+MAXKMERLENGTH = 31
+
+Final graph has 1285 nodes and n50 of 55710, max 122655, total 2089263, using 6961493/7067462 reads
+Mon Dec 24 23:32:25 2012
+ velvetg velvet_assembly_data_31 -clean yes -exp_cov 138 -cov_cutoff 24.9555494653765
+Version 1.2.07
+Copyright 2007, 2008 Daniel Zerbino (zerbino@ebi.ac.uk)
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Compilation settings:
+CATEGORIES = 2
+MAXKMERLENGTH = 31
+
+Final graph has 1289 nodes and n50 of 55710, max 122655, total 2089227, using 6961493/7067462 reads
