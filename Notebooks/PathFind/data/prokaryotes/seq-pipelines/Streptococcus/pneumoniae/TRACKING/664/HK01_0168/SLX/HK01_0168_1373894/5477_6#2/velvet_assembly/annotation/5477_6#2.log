@@ -1,0 +1,1503 @@
+[22:20:58] Need 'less' - using /usr/bin/less
+[22:20:58] Need 'grep' - using /bin/grep
+[22:20:58] Need 'egrep' - using /bin/egrep
+[22:20:58] Need 'sed' - using /bin/sed
+[22:20:58] Need 'find' - using /usr/bin/find
+[22:20:58] Need 'tbl2asn' - using /software/pathogen/external/apps/usr/bin/tbl2asn
+[22:20:58] Need 'makeblastdb' - using /software/pubseq/bin/ncbi-blast-2.2.27+/bin/makeblastdb
+[22:20:58] Need 'blastp' - using /software/pubseq/bin/ncbi-blast-2.2.27+/bin/blastp
+[22:20:58] Need 'aragorn' - using /software/pathogen/external/apps/usr/bin/aragorn
+[22:20:58] Need 'prodigal' - using /software/pathogen/external/apps/usr/bin/prodigal
+[22:20:58] Need 'rnammer' - using /software/pathogen/external/apps/usr/bin/rnammer
+[22:20:58] Need 'parallel' - using /software/pathogen/external/apps/usr/local/bin/parallel
+[22:20:58] Need 'hmmscan' - using /software/pathogen/external/apps/usr/bin/hmmscan
+[22:20:58] Need 'cmscan' - using /software/pathogen/external/apps/usr/bin/cmscan
+[22:20:58] Determined aragorn version is 1.2.34
+[22:20:58] Determined prodigal version is 2.60
+[22:20:58] Determined rnammer version is 1.2
+[22:20:58] Determined infernal version is 1.1
+[22:20:59] Determined signalp version is 4.0
+[22:20:59] Using genetic code table 11.
+[22:20:59] Loading and checking input file: /lustre/scratch108/pathogen/pathpipe/prokaryotes/seq-pipelines/Streptococcus/pneumoniae/TRACKING/664/HK01_0168/SLX/HK01_0168_1373894/5477_6#2/velvet_assembly//contigs.fa
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.527
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.538
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.584
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.599
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.609
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.647
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.695
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.734
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.735
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.736
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.737
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.738
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.739
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.740
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.741
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.742
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.743
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.744
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.745
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.746
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.747
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.748
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.749
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.750
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.751
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.752
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.753
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.754
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.755
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.756
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.757
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.758
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.759
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.760
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.761
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.762
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.763
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.764
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.765
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.766
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.767
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.768
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.769
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.770
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.771
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.772
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.773
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.774
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.775
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.776
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.777
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.778
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.779
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.780
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.781
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.782
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.783
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.784
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.785
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.786
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.787
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.788
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.789
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.790
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.791
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.792
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.793
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.794
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.795
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.796
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.797
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.798
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.799
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.800
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.801
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.802
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.803
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.804
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.805
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.806
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.807
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.808
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.809
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.810
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.811
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.812
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.813
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.814
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.815
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.816
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.817
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.818
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.819
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.820
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.821
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.822
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.823
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.824
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.825
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.826
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.827
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.828
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.829
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.830
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.831
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.832
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.833
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.834
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.835
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.836
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.837
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.838
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.839
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.840
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.841
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.842
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.843
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.844
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.845
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.846
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.847
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.848
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.849
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.850
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.851
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.852
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.853
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.854
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.855
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.856
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.857
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.858
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.859
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.860
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.861
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.862
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.863
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.864
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.865
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.866
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.867
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.868
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.869
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.870
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.871
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.872
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.873
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.874
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.875
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.876
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.877
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.878
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.879
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.880
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.881
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.882
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.883
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.884
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.885
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.886
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.887
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.888
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.889
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.890
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.891
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.892
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.893
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.894
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.895
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.896
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.897
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.898
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.899
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.900
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.901
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.902
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.903
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.904
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.905
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.906
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.907
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.908
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.909
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.910
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.911
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.912
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.913
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.914
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.915
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.916
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.917
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.918
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.919
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.920
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.921
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.922
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.923
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.924
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.925
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.926
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.927
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.928
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.929
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.930
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.931
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.932
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.933
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.934
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.935
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.936
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.937
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.938
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.939
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.940
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.941
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.942
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.943
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.944
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.945
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.946
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.947
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.948
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.949
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.950
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.951
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.952
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.953
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.954
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.955
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.956
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.957
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.958
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.959
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.960
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.961
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.962
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.963
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.964
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.965
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.966
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.967
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.968
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.969
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.970
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.971
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.972
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.973
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.974
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.975
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.976
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.977
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.978
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.979
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.980
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.981
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.982
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.983
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.984
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.985
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.986
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.987
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.988
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.989
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.990
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.991
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.992
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.993
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.994
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.995
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.996
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.997
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.998
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.999
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1000
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1001
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1002
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1003
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1004
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1005
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1006
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1007
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1008
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1009
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1010
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1011
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1012
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1013
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1014
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1015
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1016
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1017
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1018
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1019
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1020
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1021
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1022
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1023
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1024
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1025
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1026
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1027
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1028
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1029
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1030
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1031
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1032
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1033
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1034
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1035
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1036
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1037
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1038
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1039
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1040
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1041
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1042
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1043
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1044
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1045
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1046
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1047
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1048
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1049
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1050
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1051
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1052
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1053
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1054
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1055
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1056
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1057
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1058
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1059
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1060
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1061
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1062
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1063
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1064
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1065
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1066
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1067
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1068
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1069
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1070
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1071
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1072
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1073
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1074
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1075
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1076
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1077
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1078
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1079
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1080
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1081
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1082
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1083
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1084
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1085
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1086
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1087
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1088
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1089
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1090
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1091
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1092
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1093
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1094
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1095
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1096
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1097
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1098
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1099
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1100
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1101
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1102
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1103
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1104
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1105
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1106
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1107
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1108
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1109
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1110
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1111
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1112
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1113
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1114
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1115
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1116
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1117
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1118
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1119
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1120
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1121
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1122
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1123
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1124
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1125
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1126
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1127
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1128
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1129
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1130
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1131
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1132
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1133
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1134
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1135
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1136
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1137
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1138
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1139
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1140
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1141
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1142
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1143
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1144
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1145
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1146
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1147
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1148
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1149
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1150
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1151
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1152
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1153
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1154
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1155
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1156
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1157
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1158
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1159
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1160
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1161
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1162
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1163
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1164
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1165
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1166
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1167
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1168
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1169
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1170
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1171
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1172
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1173
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1174
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1175
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1176
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1177
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1178
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1179
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1180
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1181
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1182
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1183
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1184
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1185
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1186
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1187
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1188
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1189
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1190
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1191
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1192
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1193
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1194
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1195
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1196
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1197
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1198
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1199
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1200
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1201
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1202
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1203
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1204
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1205
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1206
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1207
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1208
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1209
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1210
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1211
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1212
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1213
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1214
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1215
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1216
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1217
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1218
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1219
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1220
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1221
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1222
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1223
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1224
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1225
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1226
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1227
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1228
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1229
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1230
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1231
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1232
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1233
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1234
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1235
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1236
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1237
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1238
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1239
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1240
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1241
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1242
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1243
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1244
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1245
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1246
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1247
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1248
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1249
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1250
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1251
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1252
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1253
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1254
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1255
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1256
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1257
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1258
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1259
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1260
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1261
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1262
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1263
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1264
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1265
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1266
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1267
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1268
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1269
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1270
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1271
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1272
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1273
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1274
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1275
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1276
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1277
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1278
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1279
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1280
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1281
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1282
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1283
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1284
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1285
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1286
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1287
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1288
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1289
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1290
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1291
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1292
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1293
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1294
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1295
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1296
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1297
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1298
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1299
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1300
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1301
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1302
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1303
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1304
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1305
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1306
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1307
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1308
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1309
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1310
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1311
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1312
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1313
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1314
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1315
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1316
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1317
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1318
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1319
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1320
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1321
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1322
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1323
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1324
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1325
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1326
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1327
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1328
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1329
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1330
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1331
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1332
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1333
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1334
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1335
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1336
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1337
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1338
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1339
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1340
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1341
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1342
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1343
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1344
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1345
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1346
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1347
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1348
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1349
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1350
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1351
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1352
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1353
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1354
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1355
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1356
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1357
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1358
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1359
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1360
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1361
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1362
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1363
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1364
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1365
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1366
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1367
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1368
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1369
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1370
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1371
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1372
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1373
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1374
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1375
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1376
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1377
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1378
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1379
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1380
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1381
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1382
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1383
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1384
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1385
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1386
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1387
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1388
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1389
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1390
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1391
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1392
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1393
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1394
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1395
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1396
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1397
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1398
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1399
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1400
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1401
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1402
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1403
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1404
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1405
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1406
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1407
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1408
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1409
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1410
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1411
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1412
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1413
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1414
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1415
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1416
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1417
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1418
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1419
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1420
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1421
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1422
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1423
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1424
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1425
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1426
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1427
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1428
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1429
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1430
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1431
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1432
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1433
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1434
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1435
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1436
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1437
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1438
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1439
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1440
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1441
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1442
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1443
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1444
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1445
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1446
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1447
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1448
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1449
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1450
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1451
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1452
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1453
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1454
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1455
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1456
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1457
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1458
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1459
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1460
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1461
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1462
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1463
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1464
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1465
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1466
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1467
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1468
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1469
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1470
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1471
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1472
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1473
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1474
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1475
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1476
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1477
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1478
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1479
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1480
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1481
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1482
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1483
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1484
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1485
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1486
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1487
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1488
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1489
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1490
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1491
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1492
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1493
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1494
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1495
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1496
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1497
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1498
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1499
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1500
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1501
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1502
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1503
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1504
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1505
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1506
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1507
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1508
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1509
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1510
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1511
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1512
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1513
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1514
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1515
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1516
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1517
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1518
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1519
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1520
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1521
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1522
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1523
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1524
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1525
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1526
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1527
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1528
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1529
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1530
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1531
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1532
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1533
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1534
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1535
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1536
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1537
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1538
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1539
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1540
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1541
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1542
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1543
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1544
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1545
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1546
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1547
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1548
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1549
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1550
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1551
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1552
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1553
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1554
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1555
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1556
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1557
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1558
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1559
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1560
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1561
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1562
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1563
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1564
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1565
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1566
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1567
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1568
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1569
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1570
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1571
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1572
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1573
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1574
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1575
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1576
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1577
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1578
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1579
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1580
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1581
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1582
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1583
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1584
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1585
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1586
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1587
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1588
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1589
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1590
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1591
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1592
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1593
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1594
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1595
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1596
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1597
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1598
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1599
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1600
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1601
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1602
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1603
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1604
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1605
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1606
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1607
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1608
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1609
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1610
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1611
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1612
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1613
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1614
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1615
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1616
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1617
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1618
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1619
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1620
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1621
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1622
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1623
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1624
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1625
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1626
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1627
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1628
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1629
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1630
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1631
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1632
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1633
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1634
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1635
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1636
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1637
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1638
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1639
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1640
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1641
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1642
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1643
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1644
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1645
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1646
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1647
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1648
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1649
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1650
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1651
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1652
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1653
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1654
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1655
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1656
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1657
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1658
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1659
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1660
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1661
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1662
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1663
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1664
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1665
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1666
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1667
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1668
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1669
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1670
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1671
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1672
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1673
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1674
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1675
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1676
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1677
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1678
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1679
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1680
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1681
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1682
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1683
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1684
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1685
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1686
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1687
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1688
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1689
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1690
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1691
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1692
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1693
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1694
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1695
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1696
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1697
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1698
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1699
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1700
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1701
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1702
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1703
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1704
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1705
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1706
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1707
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1708
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1709
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1710
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1711
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1712
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1713
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1714
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1715
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1716
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1717
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1718
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1719
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1720
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1721
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1722
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1723
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1724
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1725
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1726
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1727
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1728
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1729
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1730
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1731
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1732
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1733
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1734
+[22:20:59] Skipping short (<200 bp) contig: ERS015863.5477_6_2.1735
+[22:20:59] Wrote 726 contigs
+[22:20:59] Predicting tRNAs and tmRNAs
+[22:20:59] Running: aragorn -gc11 -w annotation/5477_6#2.fna
+[22:21:00] 1 tRNA-Glu [2285,2356] 34 (ttc)
+[22:21:00] 2 tRNA-Asn [2362,2435] 35 (gtt)
+[22:21:00] 1 tRNA-Leu [5966,6051] 35 (aag)
+[22:21:00] 1 tRNA-Cys c[9995,10068] 34 (gca)
+[22:21:00] 1 tmRNA [11138,11482] 83,118 AKNNTSYALAA*
+[22:21:00] 2 tRNA-Ser c[11676,11766] 36 (gga)
+[22:21:00] 1 tRNA-Phe [2390,2487] 39 (aaa)
+[22:21:00] 1 tRNA-Lys [2233,2308] 35 (ctt)
+[22:21:00] 1 tRNA-Thr c[921,993] 34 (ggt)
+[22:21:00] 1 tRNA-Leu c[12207,12292] 36 (caa)
+[22:21:00] 1 tRNA-Tyr [9797,9877] 35 (gta)
+[22:21:00] 2 tRNA-Gln [9887,9958] 33 (ttg)
+[22:21:00] 1 tRNA-Asn [2,75] 35 (gtt)
+[22:21:00] 1 tRNA-Ala c[3219,3293] 35 (tgc)
+[22:21:00] 2 tRNA-Glu c[5141,5212] 34 (ttc)
+[22:21:00] 1 tRNA-Arg c[558,631] 35 (tct)
+[22:21:00] 1 tRNA-Ser c[4227,4316] 36 (gct)
+[22:21:00] 2 tRNA-Ile c[4321,4396] 36 (gat)
+[22:21:00] 3 tRNA-Gly c[4431,4501] 33 (tcc)
+[22:21:00] 4 tRNA-Phe c[4521,4593] 34 (gaa)
+[22:21:00] 5 tRNA-Met c[4597,4670] 35 (cat)
+[22:21:00] 6 tRNA-Ser c[4681,4770] 37 (tga)
+[22:21:00] 7 tRNA-Met c[4781,4854] 35 (cat)
+[22:21:00] 8 tRNA-Met c[4867,4942] 36 (cat)
+[22:21:00] 9 tRNA-Pro c[4946,5021] 36 (tgg)
+[22:21:00] 10 tRNA-Arg c[5036,5109] 35 (acg)
+[22:21:00] 11 tRNA-Leu c[5119,5204] 35 (taa)
+[22:21:00] 12 tRNA-Gly c[5212,5283] 33 (gcc)
+[22:21:00] 13 tRNA-Thr c[5306,5378] 34 (tgt)
+[22:21:00] 14 tRNA-Leu c[5396,5479] 36 (tag)
+[22:21:00] 15 tRNA-Lys c[5484,5556] 34 (ttt)
+[22:21:00] 16 tRNA-Asp c[5581,5653] 34 (gtc)
+[22:21:00] 17 tRNA-Val c[5656,5728] 34 (tac)
+[22:21:00] 1 tRNA-Arg [3754,3825] 34 (cct)
+[22:21:00] 1 tRNA-Arg [2660,2733] 35 (ccg)
+[22:21:00] 1 tRNA-Gln c[1836,1] 34 (ttg)
+[22:21:00] tRNA c[1836,1] has start(1836) > end (1) - skipping.
+[22:21:00] 1 tRNA-Met c[152,225] 35 (cat)
+[22:21:00] 2 tRNA-Ser c[236,325] 37 (tga)
+[22:21:00] 3 tRNA-Ile c[407,482] 36 (gat)
+[22:21:00] 4 tRNA-Gly c[515,587] 34 (tcc)
+[22:21:00] 5 tRNA-Val c[592,664] 34 (tac)
+[22:21:00] 1 tRNA-His c[11,85] 35 (gtg)
+[22:21:00] 2 tRNA-Trp c[98,170] 34 (cca)
+[22:21:00] 3 tRNA-Tyr c[173,255] 36 (gta)
+[22:21:00] 4 tRNA-Phe c[267,339] 34 (gaa)
+[22:21:00] 5 tRNA-Met c[343,416] 35 (cat)
+[22:21:00] 6 tRNA-Ser c[427,516] 37 (tga)
+[22:21:00] 7 tRNA-Ile c[598,673] 36 (gat)
+[22:21:00] 8 tRNA-Gly c[706,778] 34 (tcc)
+[22:21:00] 9 tRNA-Val c[782,2] 35 (tac)
+[22:21:00] tRNA c[782,2] has start(782) > end (2) - skipping.
+[22:21:00] 1 tRNA-Thr c[190,3] 33 (ggt)
+[22:21:00] tRNA c[190,3] has start(190) > end (3) - skipping.
+[22:21:00] Found 48 tRNAs
+[22:21:00] Predicting Ribosomal RNAs
+[22:21:00] Running: rnammer -S bac  -xml annotation/rnammer.xml annotation/5477_6#2.fna
+[22:22:27] 1	5S ribosomal RNA	ERS015863|SC|contig000104	1	114	-
+[22:22:27] 2	23S ribosomal RNA	ERS015863|SC|contig000104	194	3093	-
+[22:22:27] 3	16S ribosomal RNA	ERS015863|SC|contig000104	3349	4882	-
+[22:22:27] Deleting temporary file: annotation/rnammer.xml
+[22:22:27] Found 3 rRNAs
+[22:22:27] Scanning for ncRNAs... please be patient.
+[00:12:49] Found 44 ncRNAs.
+[00:12:49] Total of 95 RNA features
+[00:12:49] Predicting coding sequences
+[00:12:49] Contigs total 2546922 bp, so using single mode
+[00:12:49] Running: prodigal -i annotation/5477_6#2.fna -c -m -g 11 -p single -f sco -q
+[00:12:53] Not including CDS which overlaps existing RNA at ERS015863|SC|contig000003:13824..14795 on - strand
+[00:12:54] Not including CDS which overlaps existing RNA at ERS015863|SC|contig000027:2341..3882 on + strand
+[00:12:54] Not including CDS which overlaps existing RNA at ERS015863|SC|contig000042:1855..2412 on + strand
+[00:12:54] Not including CDS which overlaps existing RNA at ERS015863|SC|contig000044:1093..1602 on - strand
+[00:12:55] Found 2361 CDS
+[00:12:55] Connecting features back to sequences
+[00:12:55] Option --gram not specified, will NOT check for signal peptides.
+[00:12:55] Using custom Streptococcus database for annotation
+[00:12:55] Annotating CDS, please be patient.
+[00:12:55] Will use 1 CPUs for similarity searching.
+[00:12:55] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[00:12:55] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:13:23] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[00:13:23] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:13:39] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[00:13:39] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:15:06] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[00:15:06] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:15:56] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[00:15:56] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:16:50] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[00:16:50] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:18:18] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[00:18:18] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:18:47] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[00:18:47] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:19:04] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[00:19:04] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:20:33] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[00:20:33] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:21:19] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[00:21:19] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:22:13] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[00:22:13] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:23:40] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[00:23:40] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:24:11] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[00:24:11] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:24:28] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[00:24:28] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:25:58] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[00:25:58] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:26:52] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[00:26:52] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:27:52] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[00:27:52] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:29:14] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[00:29:14] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:29:46] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[00:29:46] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:30:03] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[00:30:03] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:31:28] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[00:31:28] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:32:15] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[00:32:15] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:33:09] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[00:33:09] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:34:32] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[00:34:32] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:35:01] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[00:35:01] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:35:16] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[00:35:16] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:36:44] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[00:36:44] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:37:44] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[00:37:44] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:38:35] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[00:38:35] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:40:01] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[00:40:01] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:40:30] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[00:40:30] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:40:46] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[00:40:46] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:42:11] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[00:42:11] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:43:06] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[00:43:06] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:44:01] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[00:44:01] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:45:25] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[00:45:25] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:45:54] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[00:45:54] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:46:10] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[00:46:10] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:47:39] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[00:47:39] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:48:31] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[00:48:31] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:49:20] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[00:49:20] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:50:45] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[00:50:45] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:51:13] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[00:51:13] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:51:28] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[00:51:28] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:52:53] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[00:52:53] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:53:44] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[00:53:44] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:54:39] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[00:54:39] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:55:58] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[00:55:58] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:56:31] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[00:56:31] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:56:48] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[00:56:48] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:58:18] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[00:58:18] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[00:59:13] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[00:59:13] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:00:07] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[01:00:07] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:01:29] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[01:01:29] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:01:56] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[01:01:56] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:02:10] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[01:02:10] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:03:36] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[01:03:36] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:04:23] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[01:04:23] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:05:17] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[01:05:17] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:06:35] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[01:06:35] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:07:00] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[01:07:00] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:07:14] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[01:07:14] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:08:39] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[01:08:39] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:09:25] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[01:09:25] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:10:18] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[01:10:18] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:11:36] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[01:11:36] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:12:04] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[01:12:04] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:12:19] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[01:12:19] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:13:46] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[01:13:46] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:14:34] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[01:14:34] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:15:27] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[01:15:27] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:16:57] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[01:16:57] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:17:26] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[01:17:26] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:17:39] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[01:17:39] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:18:43] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[01:18:43] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:19:19] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[01:19:19] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:19:57] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[01:19:57] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:21:03] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[01:21:03] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:21:25] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[01:21:25] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:21:37] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[01:21:37] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:22:37] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[01:22:37] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:23:10] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[01:23:10] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:23:47] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[01:23:47] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:24:54] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[01:24:54] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:25:12] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[01:25:12] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:25:22] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[01:25:22] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:26:24] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[01:26:24] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:26:56] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[01:26:56] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:27:36] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[01:27:36] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:28:44] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[01:28:44] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:29:12] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[01:29:12] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:29:26] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[01:29:26] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:30:34] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[01:30:34] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:31:15] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[01:31:15] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:31:55] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[01:31:55] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:33:05] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[01:33:05] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:33:32] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[01:33:32] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:33:47] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[01:33:47] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:34:53] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[01:34:53] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:35:30] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[01:35:30] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:36:10] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[01:36:10] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:37:22] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[01:37:22] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:37:52] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[01:37:52] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:38:08] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[01:38:08] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:39:23] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[01:39:23] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:40:03] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[01:40:03] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:40:47] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[01:40:47] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:41:54] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[01:41:54] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:42:22] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[01:42:22] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:42:37] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[01:42:37] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:43:46] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[01:43:46] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:44:29] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[01:44:29] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:45:12] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[01:45:12] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:46:21] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[01:46:21] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:46:47] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[01:46:47] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:47:01] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[01:47:01] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:48:09] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[01:48:09] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:48:47] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[01:48:47] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:49:28] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[01:49:28] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:50:37] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[01:50:37] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:51:05] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[01:51:05] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:51:20] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[01:51:20] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:52:29] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[01:52:29] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:53:09] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[01:53:09] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:53:52] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[01:53:52] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:55:10] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[01:55:10] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:55:40] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[01:55:40] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:55:56] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[01:55:56] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:57:12] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[01:57:12] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:57:56] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[01:57:56] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:58:42] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[01:58:42] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[01:59:55] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[01:59:55] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[02:00:24] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[02:00:24] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[02:00:41] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[02:00:41] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[02:02:09] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[02:02:09] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[02:03:00] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[02:03:00] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[02:03:57] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[02:03:57] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[02:05:22] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus
+[02:05:22] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/genus/Streptococcus -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[02:05:39] blast 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot
+[02:05:39] Running: nice parallel -j 1 blastp -query {} -db /lustre/scratch108/pathogen/pathpipe/prokka/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -out {}.out -num_descriptions 1 -num_alignments 1 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[02:05:48] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm
+[02:05:48] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/CLUSTERS.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[02:06:45] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm
+[02:06:45] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Cdd.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[02:07:15] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm
+[02:07:15] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/TIGRFAMs.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[02:07:46] hmmer3 2361 (of 2361) proteins against /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm
+[02:07:46] Running: nice parallel -j 1 hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 -o {}.out /lustre/scratch108/pathogen/pathpipe/prokka/hmm/Pfam.hmm {} 2>/dev/null ::: /tmp/cAX9ucI1QH/*.seq
+[02:08:44] Labelling remaining 191 proteins as 'hypothetical protein'
+[02:08:44] Possible /pseudo 'membrane protein' at ERS015863|SC|contig000001 position 2870
+[02:08:44] Possible /pseudo 'sugar ABC transporter permease' at ERS015863|SC|contig000002 position 2276
+[02:08:44] Possible /pseudo 'peptide ABC transporter permease' at ERS015863|SC|contig000002 position 10469
+[02:08:44] Possible /pseudo 'ABC transporter periplasmic' at ERS015863|SC|contig000002 position 14528
+[02:08:44] Possible /pseudo 'Tn5253 hypothetical protein' at ERS015863|SC|contig000003 position 1214
+[02:08:44] Possible /pseudo 'lantibiotic ABC transporter' at ERS015863|SC|contig000003 position 10008
+[02:08:44] Possible /pseudo 'Tn5253 hypothetical protein' at ERS015863|SC|contig000003 position 13465
+[02:08:44] Possible /pseudo 'Tn5253 hypothetical protein' at ERS015863|SC|contig000003 position 29092
+[02:08:44] Possible /pseudo 'zinc-dependent protease' at ERS015863|SC|contig000004 position 14324
+[02:08:44] Possible /pseudo 'mannose-6-phosphate isomerase' at ERS015863|SC|contig000005 position 469
+[02:08:44] Possible /pseudo 'branched-chain amino acid ABC transporter permease' at ERS015863|SC|contig000005 position 11134
+[02:08:44] Possible /pseudo 'branched-chain amino acid transport protein' at ERS015863|SC|contig000005 position 12854
+[02:08:44] Possible /pseudo 'Tn916 hypothetical protein' at ERS015863|SC|contig000008 position 24986
+[02:08:44] Possible /pseudo 'glycosyltransferase involved in cell wall biogenesis' at ERS015863|SC|contig000009 position 2213
+[02:08:44] Possible /pseudo 'phosphoribosylaminoimidazole carboxylase ATPase subunit' at ERS015863|SC|contig000009 position 22927
+[02:08:44] Possible /pseudo 'mobilisation protein' at ERS015863|SC|contig000011 position 19419
+[02:08:44] Possible /pseudo 'phage protein' at ERS015863|SC|contig000013 position 20695
+[02:08:44] Possible /pseudo 'phosphotransferase system sugar-specific EII component' at ERS015863|SC|contig000014 position 21112
+[02:08:44] Possible /pseudo 'putative sortase-sorted surface anchored protein (pseudogene)' at ERS015863|SC|contig000017 position 17714
+[02:08:44] Possible /pseudo 'regulatory protein Spx' at ERS015863|SC|contig000020 position 9623
+[02:08:44] Possible /pseudo 'O-acetylhomoserine sulfhydrylase' at ERS015863|SC|contig000021 position 5836
+[02:08:44] Possible /pseudo 'Tn916 hypothetical protein' at ERS015863|SC|contig000022 position 2016
+[02:08:44] Possible /pseudo 'Tn916 hypothetical protein' at ERS015863|SC|contig000022 position 5577
+[02:08:44] Possible /pseudo 'Tn916 hypothetical protein' at ERS015863|SC|contig000022 position 6049
+[02:08:44] Possible /pseudo 'phage protein' at ERS015863|SC|contig000032 position 4951
+[02:08:44] Possible /pseudo 'phage protein' at ERS015863|SC|contig000032 position 6656
+[02:08:44] Possible /pseudo 'zinc metallopeptidase' at ERS015863|SC|contig000033 position 13142
+[02:08:44] Possible /pseudo 'sortase' at ERS015863|SC|contig000035 position 957
+[02:08:44] Possible /pseudo 'cell wall surface anchor family protein' at ERS015863|SC|contig000035 position 4306
+[02:08:44] Possible /pseudo 'cell wall surface anchor family protein' at ERS015863|SC|contig000035 position 6526
+[02:08:44] Possible /pseudo 'bacteriocin BlpO' at ERS015863|SC|contig000038 position 717
+[02:08:44] Possible /pseudo 'ABC transporter ATP-binding protein' at ERS015863|SC|contig000039 position 13183
+[02:08:44] Possible /pseudo 'UDP-glucose 6-dehydrogenase' at ERS015863|SC|contig000040 position 2378
+[02:08:44] Possible /pseudo '30S ribosomal protein S15' at ERS015863|SC|contig000047 position 5941
+[02:08:44] Possible /pseudo 'dicarboxylate/amino acid:cation (Na+ or H+) symporter family protein' at ERS015863|SC|contig000056 position 3242
+[02:08:44] Possible /pseudo 'glycosyl transferase' at ERS015863|SC|contig000061 position 2149
+[02:08:44] Possible /pseudo 'alanine dehydrogenase' at ERS015863|SC|contig000062 position 4271
+[02:08:44] Possible /pseudo 'alanine dehydrogenase' at ERS015863|SC|contig000062 position 4531
+[02:08:44] Possible /pseudo 'GNAT family acetyltransferase' at ERS015863|SC|contig000071 position 3141
+[02:08:44] Possible /pseudo 'membrane protein' at ERS015863|SC|contig000073 position 1336
+[02:08:44] Possible /pseudo 'acetyl xylan esterase' at ERS015863|SC|contig000077 position 710
+[02:08:44] Possible /pseudo 'permease' at ERS015863|SC|contig000080 position 7767
+[02:08:44] Possible /pseudo 'type 2 lantibiotic, SP_1948 family' at ERS015863|SC|contig000082 position 803
+[02:08:44] Possible /pseudo 'Ser/Thr protein phosphatase family protein' at ERS015863|SC|contig000087 position 6061
+[02:08:44] Possible /pseudo 'ABC transporter substrate-binding lipoprotein' at ERS015863|SC|contig000090 position 1116
+[02:08:44] Possible /pseudo 'transposase' at ERS015863|SC|contig000092 position 8927
+[02:08:44] Possible /pseudo 'phosphoesterase' at ERS015863|SC|contig000097 position 7639
+[02:08:44] Possible /pseudo 'Cof family protein' at ERS015863|SC|contig000098 position 1666
+[02:08:44] Possible /pseudo 'neopullulanase' at ERS015863|SC|contig000099 position 5476
+[02:08:44] Possible /pseudo 'neopullulanase' at ERS015863|SC|contig000099 position 5647
+[02:08:44] Possible /pseudo 'prephenate dehydratase' at ERS015863|SC|contig000100 position 6054
+[02:08:44] Possible /pseudo 'maltodextrin ABC transporter permease' at ERS015863|SC|contig000101 position 951
+[02:08:44] Possible /pseudo '2-isopropylmalate synthase' at ERS015863|SC|contig000115 position 2320
+[02:08:44] Possible /pseudo 'translation factor' at ERS015863|SC|contig000115 position 5032
+[02:08:44] Possible /pseudo 'ABC transporter permease' at ERS015863|SC|contig000117 position 5013
+[02:08:44] Possible /pseudo 'surface anchored protein' at ERS015863|SC|contig000117 position 6436
+[02:08:44] Possible /pseudo 'integrase' at ERS015863|SC|contig000123 position 5462
+[02:08:44] Possible /pseudo 'DRTGG domain/CBS domain-containing protein' at ERS015863|SC|contig000137 position 3365
+[02:08:44] Possible /pseudo 'phage protein' at ERS015863|SC|contig000138 position 4911
+[02:08:44] Possible /pseudo 'spermidine/putrescine ABC transporter permease' at ERS015863|SC|contig000147 position 537
+[02:08:44] Possible /pseudo 'phosphopentomutase' at ERS015863|SC|contig000148 position 1587
+[02:08:44] Possible /pseudo 'membrane protein' at ERS015863|SC|contig000154 position 2327
+[02:08:44] Possible /pseudo 'glutamate dehydrogenase' at ERS015863|SC|contig000163 position 507
+[02:08:44] Possible /pseudo 'serine/threonine protein kinase' at ERS015863|SC|contig000170 position 514
+[02:08:44] Possible /pseudo 'serine/threonine protein kinase' at ERS015863|SC|contig000170 position 957
+[02:08:44] Possible /pseudo 'CrcB protein' at ERS015863|SC|contig000176 position 2917
+[02:08:44] Possible /pseudo 'restriction endonuclease R.XbaI' at ERS015863|SC|contig000177 position 2750
+[02:08:44] Possible /pseudo 'Uncharacterized protein conserved in bacteria' at ERS015863|SC|contig000185 position 1820
+[02:08:44] Possible /pseudo 'choline binding protein J' at ERS015863|SC|contig000188 position 897
+[02:08:44] Possible /pseudo 'DNA-binding phage protein' at ERS015863|SC|contig000191 position 945
+[02:08:44] Possible /pseudo 'phage protein' at ERS015863|SC|contig000191 position 2189
+[02:08:44] Possible /pseudo 'DNA or RNA helicases of superfamily II' at ERS015863|SC|contig000196 position 2885
+[02:08:44] Possible /pseudo 'UDP-galactopyranose mutase Glf' at ERS015863|SC|contig000213 position 2101
+[02:08:44] Possible /pseudo 'transposase' at ERS015863|SC|contig000234 position 496
+[02:08:44] Possible /pseudo 'KilA domain-containing protein' at ERS015863|SC|contig000248 position 1541
+[02:08:44] Possible /pseudo 'phage protein' at ERS015863|SC|contig000339 position 472
+[02:08:44] Possible /pseudo 'phage protein' at ERS015863|SC|contig000339 position 741
+[02:08:44] Possible /pseudo 'phage protein' at ERS015863|SC|contig000339 position 1677
+[02:08:44] Possible /pseudo 'phage protein' at ERS015863|SC|contig000339 position 2874
+[02:08:44] Found 1139 unique /gene codes.
+[02:08:44] Fixed 171 colliding /gene names.
+[02:08:45] Assigned 2456 locus_tags to CDS and RNA features.
+[02:08:45] Writing outputs to annotation/
+[02:08:47] Generating Genbank and Sequin files
+[02:08:47] Running: tbl2asn -N 1 -y 'Annotated using PROKKA 1.5 from http://www.vicbioinformatics.com' -Z annotation/5477_6#2.err -M n -V b -i annotation/5477_6#2.fsa -f annotation/5477_6#2.tbl 2> /dev/null
+[02:08:50] Deleting temporary file: annotation/errorsummary.val
+[02:08:50] Deleting temporary file: annotation/5477_6#2.dr
+[02:08:50] Deleting temporary file: annotation/5477_6#2.fixedproducts
+[02:08:50] Deleting temporary file: annotation/5477_6#2.ecn
+[02:08:50] Deleting temporary file: annotation/5477_6#2.val
+[02:08:50] Output files:
+[02:08:50] annotation/5477_6#2.log
+[02:08:50] annotation/5477_6#2.fna
+[02:08:50] annotation/5477_6#2.gff
+[02:08:50] annotation/5477_6#2.faa
+[02:08:50] annotation/5477_6#2.ffn
+[02:08:50] annotation/5477_6#2.tbl
+[02:08:50] annotation/5477_6#2.fsa
+[02:08:50] annotation/5477_6#2.sqn
+[02:08:50] annotation/5477_6#2.err
+[02:08:50] annotation/5477_6#2.gbk
+[02:08:50] Walltime used: 227.87 minutes
+[02:08:50] Thank you, come again.
