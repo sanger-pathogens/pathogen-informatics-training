@@ -1,0 +1,63 @@
+ 69.55	276219	276219	U	0	unclassified
+ 30.45	120922	1	-	1	root
+ 30.45	120921	0	-	131567	  cellular organisms
+ 30.45	120921	866	D	2	    Bacteria
+ 30.19	119897	71	P	1224	      Proteobacteria
+ 30.17	119826	1302	C	1236	        Gammaproteobacteria
+ 29.84	118524	0	O	135625	          Pasteurellales
+ 29.84	118524	1470	F	712	            Pasteurellaceae
+ 28.77	114246	11243	G	713	              Actinobacillus
+ 25.74	102213	73583	S	715	                Actinobacillus pleuropneumoniae
+  4.13	16405	0	-	434270	                  Actinobacillus pleuropneumoniae serovar 3
+  4.13	16405	16405	-	434271	                    Actinobacillus pleuropneumoniae serovar 3 str. JL03
+  1.99	7885	0	-	209841	                  Actinobacillus pleuropneumoniae serovar 7
+  1.99	7885	7885	-	537457	                    Actinobacillus pleuropneumoniae serovar 7 str. AP76
+  1.09	4340	0	-	44294	                  Actinobacillus pleuropneumoniae serovar 5
+  1.09	4340	4340	-	416269	                    Actinobacillus pleuropneumoniae serovar 5b str. L20
+  0.20	790	0	S	716	                Actinobacillus suis
+  0.20	790	790	-	696748	                  Actinobacillus suis H91-0380
+  0.70	2771	1453	G	724	              Haemophilus
+  0.22	883	592	S	727	                Haemophilus influenzae
+  0.04	142	142	-	262727	                  Haemophilus influenzae R2846
+  0.03	132	132	-	262728	                  Haemophilus influenzae R2866
+  0.00	17	17	-	862964	                  Haemophilus influenzae 10810
+  0.11	435	0	S	729	                Haemophilus parainfluenzae
+  0.11	435	435	-	862965	                  Haemophilus parainfluenzae T3T1
+  0.01	20	0	G	476528	              Bibersteinia
+  0.01	20	0	S	47735	                Bibersteinia trehalosi
+  0.01	20	20	-	1171377	                  Bibersteinia trehalosi USDA-ARS-USMARC-192
+  0.00	12	0	G	75984	              Mannheimia
+  0.00	12	11	S	75985	                Mannheimia haemolytica
+  0.00	1	1	-	1249526	                  Mannheimia haemolytica USDA-ARS-USMARC-185
+  0.00	4	0	G	697331	              Basfia
+  0.00	4	0	S	157673	                Mannheimia succiniciproducens
+  0.00	4	4	-	221988	                  Mannheimia succiniciproducens MBEL55E
+  0.00	1	0	G	155493	              Gallibacterium
+  0.00	1	0	S	750	                Gallibacterium anatis
+  0.00	1	1	-	1005058	                  Gallibacterium anatis UMN179
+  0.04	158	1	P	1239	      Firmicutes
+  0.04	157	17	C	91061	        Bacilli
+  0.04	139	0	O	186826	          Lactobacillales
+  0.04	139	0	F	1300	            Streptococcaceae
+  0.03	137	7	G	1301	              Streptococcus
+  0.03	128	111	S	1307	                Streptococcus suis
+  0.00	4	4	-	1004952	                  Streptococcus suis D12
+  0.00	4	4	-	1340847	                  Streptococcus suis T15
+  0.00	3	3	-	1004951	                  Streptococcus suis ST1
+  0.00	3	3	-	1007064	                  Streptococcus suis ST3
+  0.00	2	2	-	1005042	                  Streptococcus suis D9
+  0.00	1	1	-	993512	                  Streptococcus suis A7
+  0.00	1	0	S	1346	                Streptococcus iniae
+  0.00	1	1	-	1318633	                  Streptococcus iniae SF1
+  0.00	1	0	S	102684	                Streptococcus infantarius
+  0.00	1	0	-	150054	                  Streptococcus infantarius subsp. infantarius
+  0.00	1	1	-	1069533	                    Streptococcus infantarius subsp. infantarius CJ18
+  0.00	2	0	G	1357	              Lactococcus
+  0.00	2	0	S	1358	                Lactococcus lactis
+  0.00	2	2	-	1359	                  Lactococcus lactis subsp. cremoris
+  0.00	1	0	O	1385	          Bacillales
+  0.00	1	0	F	186817	            Bacillaceae
+  0.00	1	0	G	1386	              Bacillus
+  0.00	1	0	-	653685	                Bacillus subtilis group
+  0.00	1	0	S	1423	                  Bacillus subtilis
+  0.00	1	1	-	936156	                    Bacillus subtilis BSn5
