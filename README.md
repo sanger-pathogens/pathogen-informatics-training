@@ -6,6 +6,7 @@ A set of bioinformatics training courses developed by Pathogen Informatics at We
 ## Content
   * [Introduction](#introduction)
   * [Installation](#installation)
+    * [Docker](#docker) 
   * [Usage](#usage)
   * [License](#license)
   * [Feedback/Issues](#feedbackissues)
@@ -33,6 +34,34 @@ If you are running Jupyter on MacOS you may have to install the bash kernel. To 
     python -m bash_kernel.install
   
 The courses assume that you have the relevant tools installed (e.g. [ARIBA](https://github.com/sanger-pathogens/ariba) and [SeroBA](https://github.com/sanger-pathogens/seroba)). Further information about the relevant dependencies can be found inside each individual notebook.
+
+### Docker
+The following tutorials can be run in a Docker container:
+
+ * UNIX for Bioinformatics
+ * Introduction to BLAST
+ * Antimicrobial Resistance Identification using ARIBA
+ * Serotype Detection using SeroBA
+
+First install Docker, then pull down the Docker image:
+
+    docker pull sangerpathogens/pathogen-informatics-training
+
+To start the Notebook, run:
+
+    docker run -p 8888:8888 -d pi_training jupyter notebook
+
+This will print a URL with a token. Copy and paste this in your browser. This will open the notebook in the "Notebooks" directroy. Click on the index.ipynb and navigate your way to the desired notebook from there.
+
+If for some reason you need to close the tutorial and want to continue at a later date (provided that you have saved your progress in the notebooks using the save button), you can restart the container by running:
+
+    docker start -a CONTAINER_ID
+
+Where CONTAINER_ID is the id of the container. You can find out what the id of the container is by running:
+
+    docker container ls -a
+
+Again, copy the URL into your browser and you are ready to pick up where you left off.
 
 ## Usage
 Clone this repository:
