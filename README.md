@@ -49,7 +49,7 @@ First install Docker, then pull down the Docker image:
 
 To start the Notebook, run:
 
-    docker run -p 8888:8888 -d pi_training jupyter notebook
+    docker run -p 8888:8888 -d sangerpathogens/pathogen-informatics-training jupyter notebook
 
 This will print a URL with a token. Copy and paste this in your browser. This will open the notebook in the "Notebooks" directroy. Click on the index.ipynb and navigate your way to the desired notebook from there.
 
