@@ -1,0 +1,58 @@
+#Kraken version: kraken-0.10.6-a2d113dc8f
+#Database: /lustre/scratch108/pathogen/pathpipe/kraken/pi_qc_2015521
+  1.28	45117	45117	U	0	unclassified
+ 98.72	3488614	1135	-	1	root
+ 98.64	3485586	28	-	131567	  cellular organisms
+ 98.63	3485452	3570	D	2	    Bacteria
+ 98.53	3481849	19807	P	1239	      Firmicutes
+ 97.97	3461888	9416	C	91061	        Bacilli
+ 97.70	3452438	563	O	186826	          Lactobacillales
+ 97.68	3451749	190	F	1300	            Streptococcaceae
+ 97.67	3451556	318992	G	1301	              Streptococcus
+ 87.58	3094908	2866246	S	1313	                Streptococcus pneumoniae
+  1.08	38078	38078	-	487214	                  Streptococcus pneumoniae Hungary19A-6
+  0.85	29886	29886	-	170187	                  Streptococcus pneumoniae TIGR4
+  0.77	27203	27203	-	488222	                  Streptococcus pneumoniae JJA
+  0.57	20244	20244	-	189423	                  Streptococcus pneumoniae 670-6B
+  0.54	18935	18935	-	488221	                  Streptococcus pneumoniae 70585
+  0.43	15363	15363	-	869309	                  Streptococcus pneumoniae SPNA45
+  0.40	14201	14201	-	171101	                  Streptococcus pneumoniae R6
+  0.35	12235	12235	-	574093	                  Streptococcus pneumoniae AP200
+  0.31	10855	10855	-	512566	                  Streptococcus pneumoniae G54
+  0.26	9106	9106	-	869303	                  Streptococcus pneumoniae SPN034156
+  0.23	8146	8146	-	869216	                  Streptococcus pneumoniae INV200
+  0.21	7454	7454	-	697283	                  Streptococcus pneumoniae gamPNI0373
+  0.13	4747	4747	-	516950	                  Streptococcus pneumoniae CGSP14
+  0.10	3457	3457	-	488223	                  Streptococcus pneumoniae P1031
+  0.09	3200	3200	-	487213	                  Streptococcus pneumoniae Taiwan19F-14
+  0.05	1764	1764	-	869269	                  Streptococcus pneumoniae INV104
+  0.04	1575	1575	-	525381	                  Streptococcus pneumoniae TCH8431/19A
+  0.04	1253	1253	-	1408179	                  Streptococcus pneumoniae A026
+  0.02	675	675	-	1130804	                  Streptococcus pneumoniae ST556
+  0.01	214	214	-	869304	                  Streptococcus pneumoniae SPN034183
+  0.28	10010	0	S	257758	                Streptococcus pseudopneumoniae
+  0.28	10010	10010	-	1054460	                  Streptococcus pseudopneumoniae IS7493
+  0.28	9945	0	S	28037	                Streptococcus mitis
+  0.28	9945	9945	-	365659	                  Streptococcus mitis B6
+  0.18	6259	418	S	1304	                Streptococcus salivarius
+  0.11	4029	4029	-	1200793	                  Streptococcus salivarius K12
+  0.05	1633	1633	-	1074494	                  Streptococcus salivarius M18
+  0.01	178	178	-	1048332	                  Streptococcus salivarius CCHSS3
+  0.10	3528	3528	S	1156431	                Streptococcus sp. I-G2
+  0.08	2705	0	S	1303	                Streptococcus oralis
+  0.08	2705	2705	-	927666	                  Streptococcus oralis Uo5
+  0.07	2428	208	-	671232	                Streptococcus anginosus group
+  0.06	2161	3	S	1338	                  Streptococcus intermedius
+  0.06	2154	2154	-	862966	                    Streptococcus intermedius C270
+  0.04	1458	1327	S	1307	                Streptococcus suis
+  0.01	341	64	S	1318	                Streptococcus parasanguinis
+  0.01	259	259	-	1114965	                  Streptococcus parasanguinis FW213
+  0.01	262	0	S	1305	                Streptococcus sanguinis
+  0.01	262	262	-	388919	                  Streptococcus sanguinis SK36
+  0.01	210	203	S	1308	                Streptococcus thermophilus
+  0.05	1614	0	-	28384	  other sequences
+  0.05	1614	0	-	81077	    artificial sequences
+  0.05	1614	1614	S	32630	      synthetic construct
+  0.01	279	73	D	10239	  Viruses
+  0.01	205	0	-	12333	    unclassified phages
+  0.01	205	205	S	1448276	      Streptococcus phage IC1

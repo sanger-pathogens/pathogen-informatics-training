@@ -1,0 +1,9 @@
+stats for /lustre/scratch108/pathogen/pathpipe/prokaryotes/seq-pipelines/Streptococcus/pneumoniae/TRACKING/664/Tw01_0055/SLX/Tw01_0055_1373893/5477_6#1/spades_assembly/contigs.fa
+sum = 2082748, n = 66, ave = 31556.79, largest = 131205
+N50 = 61250, n = 13
+N60 = 56457, n = 16
+N70 = 48873, n = 20
+N80 = 31337, n = 25
+N90 = 18390, n = 34
+N100 = 320, n = 66
+N_count = 13
