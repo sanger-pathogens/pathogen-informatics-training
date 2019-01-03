@@ -1,0 +1,3622 @@
+\documentclass[11pt]{article}
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+\usepackage{sectsty}
+\allsectionsfont{\color{blue}\fontfamily{lmss}\selectfont}
+\usepackage{fontspec}
+\setmainfont{XCharter}
+
+\usepackage{listings}
+\lstset{
+basicstyle=\small\ttfamily,
+tabsize=8,
+columns=flexible,
+breaklines=true,
+frame=tb,
+rulecolor=\color[rgb]{0.8,0.8,0.7},
+backgroundcolor=\color[rgb]{1,1,0.91},
+postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}}
+}
+\usepackage{fontawesome}
+
+
+\usepackage{mdframed}
+\newmdenv[
+  backgroundcolor=gray,
+  fontcolor=white,
+  nobreak=true,
+]{terminalinput}
+
+
+
+\usepackage{parskip}
+
+
+
+
+    \usepackage[T1]{fontenc}
+    % Nicer default font than Computer Modern for most use cases
+    \usepackage{palatino}
+
+    % Basic figure setup, for now with no caption control since it's done
+    % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
+    \usepackage{graphicx}
+    % We will generate all images so they have a width \maxwidth. This means
+    % that they will get their normal width if they fit onto the page, but
+    % are scaled down if they would overflow the margins.
+    \makeatletter
+    \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+    \else\Gin@nat@width\fi}
+    \makeatother
+    \let\Oldincludegraphics\includegraphics
+    % Set max figure width to be 80% of text width, for now hardcoded.
+\renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth, height=.55\textheight, keepaspectratio]{#1}}
+    % Ensure that by default, figures have no caption (until we provide a
+    % proper Figure object with a Caption API and a way to capture that
+    % in the conversion process - todo).
+    \usepackage{caption}
+    \DeclareCaptionLabelFormat{nolabel}{}
+    \captionsetup{labelformat=nolabel, textfont=bf}
+
+    \usepackage{adjustbox} % Used to constrain images to a maximum size
+    \usepackage{xcolor} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+    \usepackage{geometry} % Used to adjust the document margins
+    \usepackage{amsmath} % Equations
+    \usepackage{amssymb} % Equations
+    \usepackage{textcomp} % defines textquotesingle
+    % Hack from http://tex.stackexchange.com/a/47451/13684:
+    \AtBeginDocument{%
+        \def\PYZsq{\textquotesingle}% Upright quotes in Pygmentized code
+    }
+    \usepackage{upquote} % Upright quotes for verbatim code
+    \usepackage{eurosym} % defines \euro
+    \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
+    \usepackage[utf8x]{inputenc} % Allow utf-8 characters in the tex document
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics
+                         % to support a larger range
+    % The hyperref package gives us a pdf with properly built
+    % internal navigation ('pdf bookmarks' for the table of contents,
+    % internal cross-reference links, web links for URLs, etc.)
+    \usepackage{hyperref}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
+                                % normalem makes italics be italics, not underlines
+
+
+
+
+    % Colors for the hyperref package
+    \definecolor{urlcolor}{rgb}{0,.145,.698}
+    \definecolor{linkcolor}{rgb}{.71,0.21,0.01}
+    \definecolor{citecolor}{rgb}{.12,.54,.11}
+
+    % ANSI colors
+    \definecolor{ansi-black}{HTML}{3E424D}
+    \definecolor{ansi-black-intense}{HTML}{282C36}
+    \definecolor{ansi-red}{HTML}{E75C58}
+    \definecolor{ansi-red-intense}{HTML}{B22B31}
+    \definecolor{ansi-green}{HTML}{00A250}
+    \definecolor{ansi-green-intense}{HTML}{007427}
+    \definecolor{ansi-yellow}{HTML}{DDB62B}
+    \definecolor{ansi-yellow-intense}{HTML}{B27D12}
+    \definecolor{ansi-blue}{HTML}{208FFB}
+    \definecolor{ansi-blue-intense}{HTML}{0065CA}
+    \definecolor{ansi-magenta}{HTML}{D160C4}
+    \definecolor{ansi-magenta-intense}{HTML}{A03196}
+    \definecolor{ansi-cyan}{HTML}{60C6C8}
+    \definecolor{ansi-cyan-intense}{HTML}{258F8F}
+    \definecolor{ansi-white}{HTML}{C5C1B4}
+    \definecolor{ansi-white-intense}{HTML}{A1A6B2}
+
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+
+    % Additional commands for more recent versions of Pandoc
+    \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
+    \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{{#1}}}
+    \newcommand{\ImportTok}[1]{{#1}}
+    \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{{#1}}}}
+    \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{{#1}}}
+    \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{{#1}}}
+    \newcommand{\BuiltInTok}[1]{{#1}}
+    \newcommand{\ExtensionTok}[1]{{#1}}
+    \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{{#1}}}
+    \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
+    \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+
+
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatability definitions
+    \def\gt{>}
+    \def\lt{<}
+    % Document parameters
+    \title{index}
+
+
+
+
+    % Pygments definitions
+
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@mb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ch\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cpf\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % Exact colors from NB
+    \definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
+    \definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
+
+
+
+
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=urlcolor,
+      linkcolor=linkcolor,
+      citecolor=citecolor,
+      }
+    % Slightly bigger margins than the latex defaults
+
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+
+
+
+\renewcommand{\PY}[2]{{#2}}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\rhead{\color{gray}\sf\small\rightmark}
+\lhead{\nouppercase{\color{gray}\sf\small\leftmark}}
+\cfoot{\color{gray}\sf\thepage}
+\renewcommand{\footrulewidth}{1pt}
+\begin{document}
+
+
+
+
+
+
+    \hypertarget{pathfind-scripts}{%
+\section{PathFind scripts}\label{pathfind-scripts}}
+
+    \hypertarget{introduction}{%
+\subsection{Introduction}\label{introduction}}
+
+A series of scripts were developed so that users can access imported
+sequence data and the results of the analysis pipelines. These are
+referred to as the \textbf{PathFind} or \textbf{pf} scripts. The source
+code for the Perl module which is used to run the pf scripts can be
+found on the \href{https://github.com/sanger-pathogens}{sanger-pathogens
+Git repository} as
+\href{https://github.com/sanger-pathogens/Bio-Path-Find}{Bio-Path-Find}.
+
+    \hypertarget{learning-outcomes}{%
+\subsection{Learning outcomes}\label{learning-outcomes}}
+
+By the end of this tutorial you can expect to be able to:
+
+\begin{itemize}
+\tightlist
+\item
+  Find the pipeline status for your lane(s) using the pf scripts
+\item
+  Find the data for your lane(s) using the pf scripts
+\item
+  Find the quality control (QC) results for your lane(s) using the pf
+  scripts
+\item
+  Find the analysis pipeline results for your lane(s) using the pf
+  scripts
+\item
+  Find a reference using the pf scripts
+\end{itemize}
+
+    \hypertarget{tutorial-sections}{%
+\subsection{Tutorial sections}\label{tutorial-sections}}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{introduction.ipynb}{Introduction}
+\item
+  \href{finding-your-data.ipynb}{Finding your data}
+\item
+  \href{information-and-accessions.ipynb}{Sample information and
+  accessions}
+\item
+  \href{pipeline-status.ipynb}{Analysis pipeline status}
+\item
+  \href{qc-pipeline-results.ipynb}{QC pipeline results}
+\item
+  \href{mapping-pipeline-results.ipynb}{Mapping pipeline results}
+\item
+  \href{snp-pipeline-results.ipynb}{SNP pipeline results}
+\item
+  \href{assembly-pipeline-results.ipynb}{Assembly pipeline results}
+\item
+  \href{annotation-pipeline-results.ipynb}{Annotation pipeline results}
+\item
+  \href{rnaseq-pipeline-results.ipynb}{RNA-Seq expression pipeline
+  results}
+\item
+  \href{finding-a-reference.ipynb}{Finding a reference}
+\item
+  \href{troubleshooting.ipynb}{Troubleshooting}
+\end{itemize}
+
+    \hypertarget{authors}{%
+\subsection{Authors}\label{authors}}
+
+This tutorial was created by \href{https://github.com/vaofford}{Victoria
+Offord}.
+
+    \hypertarget{running-the-commands-from-this-tutorial}{%
+\subsection{Running the commands from this
+tutorial}\label{running-the-commands-from-this-tutorial}}
+
+You can run the commands in this tutorial either directly from the
+Jupyter notebook (if using Jupyter), or by typing the commands in your
+terminal window.
+
+\hypertarget{running-commands-on-jupyter}{%
+\subsubsection{Running commands on
+Jupyter}\label{running-commands-on-jupyter}}
+
+If you are using Jupyter, command cells (like the one below) can be run
+by selecting the cell and clicking \textit{Cell -\textgreater{} Run} from
+the menu above or using \textit{Ctrl Enter} to run the command. Let's give
+this a try by printing our working directory using the \texttt{pwd}
+command and listing the files within it. Run the commands in the two
+cells below.
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{n+nb}{pwd}
+\end{Verbatim}
+\end{terminalinput}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} ls \PYZhy{}l
+\end{Verbatim}
+\end{terminalinput}
+
+    \hypertarget{running-commands-in-the-terminal}{%
+\subsubsection{Running commands in the
+terminal}\label{running-commands-in-the-terminal}}
+
+You can also follow this tutorial by typing all the commands you see
+into a terminal window. This is similar to the ``Command Prompt'' window
+on MS Windows systems, which allows the user to type DOS commands to
+manage files.
+
+To get started, select the cell below with the mouse and then either
+press control and enter or choose \textit{Cell -\textgreater{} Run} in the
+menu at the top of the page.
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{n+nb}{echo} \PY{n+nb}{cd} \PY{n+nv}{\PYZdl{}PWD}
+\end{Verbatim}
+\end{terminalinput}
+
+    Open a new terminal on your computer and type the command that was
+output by the previous cell followed by the enter key. The command will
+look similar to this:
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{n+nb}{cd} /home/manager/pathogen\PYZhy{}informatics\PYZhy{}training/Notebooks/PathFind/
+\end{Verbatim}
+\end{terminalinput}
+
+    Now you can follow the instructions in the tutorial from here.
+
+    \hypertarget{prerequisites}{%
+\subsection{Prerequisites}\label{prerequisites}}
+
+This tutorial assumes that you have
+\href{https://github.com/sanger-pathogens/Bio-Path-Find}{Bio-Path-Find}
+installed on your computer.
+
+To be able to access the tutorial dataset, we need to add a few lines to
+our configuration file which tell it where to write the log file and the
+location of the tutorial data. We also need to add the paths for our
+tutorial reference sequences to \texttt{data/refs.index}.
+
+\textbf{Please run the following commands.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} ./setup\PYZus{}config.sh
+\end{Verbatim}
+\end{terminalinput}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}}./setup\PYZus{}refs.sh
+\end{Verbatim}
+\end{terminalinput}
+
+    \begin{lstlisting}
+(no output)
+    \end{lstlisting}
+
+    You will be asked to run the following command in each section of the
+tutorial. This tells the system where to find our configuration file.
+Please run the command now.
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{n+nb}{export} \PY{n+nv}{PF\PYZus{}CONFIG\PYZus{}FILE}\PY{o}{=}\PY{n+nv}{\PYZdl{}PWD}/data/pathfind.conf
+\end{Verbatim}
+\end{terminalinput}
+
+    To check that you have installed Bio-Path-Find correctly and that you
+can access the tutorial, please run the following command:
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf \PYZhy{}h
+\end{Verbatim}
+\end{terminalinput}
+
+    This should return the help message for the pf scripts.
+
+    \hypertarget{lets-get-started}{%
+\subsection{Let's get started!}\label{lets-get-started}}
+
+To get started with the tutorial, head to the first section:
+\href{introduction.ipynb}{Introduction}.
+
+
+    % Add a bibliography block to the postdoc
+
+
+
+\newpage
+
+
+
+
+
+
+    \hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+    \hypertarget{automated-analysis-pipelines}{%
+\subsection{Automated analysis
+pipelines}\label{automated-analysis-pipelines}}
+
+\href{http://mediawiki.internal.sanger.ac.uk/index.php/Pathogen_Informatics}{Pathogen
+Informatics} maintain a series of databases which track the progress of
+pathogen studies and samples. These samples may have been through the
+Sanger sequencing pipeline (internal) or imported from other sources
+(external).
+
+Once the sample data is in the Pathogen Informatics databases, it is
+then available to the automated analysis pipelines. Pathogen Informatics
+maintain the following automated analysis pipelines:
+
+\begin{itemize}
+\tightlist
+\item
+  \href{http://mediawiki.internal.sanger.ac.uk/index.php/Pathogen_Sequencing_Informatics\#QC_Pipeline}{Quality
+  control (QC)}
+\item
+  \href{http://mediawiki.internal.sanger.ac.uk/index.php/Pathogen_Informatics_Mapping_Pipeline}{Mapping}
+\item
+  \href{http://mediawiki.internal.sanger.ac.uk/index.php/Pathogen_Informatics_SNP_Calling_Pipeline}{SNP
+  calling}
+\item
+  \href{http://mediawiki.internal.sanger.ac.uk/index.php/Pathogen_Informatics_Bacterial_Assembly_Pipeline}{Bacterial},
+  \href{http://mediawiki.internal.sanger.ac.uk/index.php/Pathogen_Informatics_Eukaryote_Assembly_Pipeline}{Eukaryote}
+  and
+  \href{http://mediawiki.internal.sanger.ac.uk/index.php/Pathogen_Informatics_Automated_PacBio_Assembly_Pipeline}{Pacbio}
+  assembly
+\item
+  \href{http://mediawiki.internal.sanger.ac.uk/index.php/Pathogen_Informatics_Automated_Annotation_Pipeline}{Annotation}
+\item
+  \href{http://mediawiki.internal.sanger.ac.uk/index.php/Pathogen_Informatics_RNA-Seq_Expression_Pipeline}{RNA-Seq
+  expression}
+\end{itemize}
+
+For more information on study registration, external data tracking and
+the automated analysis pipelines, please see the
+\href{http://mediawiki.internal.sanger.ac.uk/index.php/Pathogen_Informatics}{Pathogen
+Informatics wiki}.
+
+\hypertarget{accessing-pathogen-data-and-analysis-results}{%
+\subsection{Accessing pathogen data and analysis
+results}\label{accessing-pathogen-data-and-analysis-results}}
+
+A series of scripts were developed so that users can access imported
+sequence data and the results of the analysis pipelines. These are
+referred to as the \textbf{pathfind} or \textbf{pf} scripts.
+
+\begin{longtable}[]{@{}ll@{}}
+\hline
+\begin{minipage}[b]{0.47\columnwidth}\raggedright
+Command\strut
+\end{minipage} & \begin{minipage}[b]{0.47\columnwidth}\raggedright
+Description\strut
+\end{minipage}\tabularnewline
+\hline
+\endhead
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+\textbf{pf status}\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+used to find the pipeline progress for a given study, sample or
+lane\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+\textbf{pf data}\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+used to find the FASTQ or PacBio files for a given study, sample or
+lane\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+\textbf{pf info}\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+used to match sample internal ids and and supplier ids for a given
+study, sample or lane\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+\textbf{pf accession}\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+used to obtain accession numbers for a given study, sample or lane\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+\textbf{pf supplementary}\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+used to get supplementary information about a given study, sample or
+lane\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+\textbf{pf qc}\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+used to find the Kraken results for a given study, sample or lane\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+\textbf{pf map}\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+used to find the location of BAM files produced by the mapping
+pipeline\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+\textbf{pf snp}\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+used to find the location of VCF files produced by the SNP calling
+pipeline\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+\textbf{pf assembly}\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+used to find the location of the contig FASTA files produced by the
+assembly pipeline\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+\textbf{pf annotation}\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+used to find the location of the GFF files produced by the annotation
+pipeline\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+\textbf{pf rnaseq}\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+used to find the location of expression counts produced by the RNA-Seq
+analysis pipeline\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+\textbf{pf ref}\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+used to find the location of a reference on pathogen disk\strut
+\end{minipage}\tabularnewline
+\hline
+\end{longtable}
+
+The pf scripts return information or locations for each lane that is
+found. To run the individual scripts the command structure we use is
+\texttt{pf} followed by the command you want to use i.e. \texttt{data}
+or \texttt{status} and then the options for that command.
+
+\begin{verbatim}
+pf <command> [options]
+\end{verbatim}
+
+For example, to use \texttt{pf\ data} it would be:
+
+\begin{verbatim}
+pf data [options]
+\end{verbatim}
+
+To specify which lanes we want to retrieve, we use the
+\textbf{\texttt{-\/-type}} (\textbf{\texttt{-t}} or
+\textbf{\texttt{-\/-type}}) and \textbf{\texttt{-\/-id}}
+(\textbf{\texttt{-i}} or \textbf{\texttt{-\/-id}}) options. These are
+\textbf{required} options for all of the \texttt{pf} commands except for
+\texttt{pf\ ref}.
+
+There are four commonly used ID types (\textbf{\texttt{-t}}) you can use
+to search for information:
+
+\begin{itemize}
+\item
+  \textbf{study}\\
+  \textit{retrieve all lanes associated with a study using a study ID}
+\item
+  \textbf{lane}\\
+  \textit{retrieve a single lane using a lane name}
+\item
+  \textbf{sample}\\
+  \textit{retrieve a single sample using a sample name}
+\item
+  \textbf{file}\\
+  \textit{retrieve all lanes which are listed in the file using the
+  filename as the identifier}
+\end{itemize}
+
+For \texttt{pf\ data} this would look like:
+
+\begin{verbatim}
+pf data -i <id> -t <ID type>
+\end{verbatim}
+
+\hypertarget{getting-help}{%
+\subsubsection{Getting help}\label{getting-help}}
+
+You can look at an overview of all the pf commands using:
+
+\begin{verbatim}
+pf -h
+\end{verbatim}
+
+Or, you can look at the usage and available options for a particular
+command using:
+
+\begin{verbatim}
+pf <command> -h
+\end{verbatim}
+
+    \hypertarget{exercise-1}{%
+\subsection{Exercise 1}\label{exercise-1}}
+
+This exercise uses \texttt{pf\ data} to walk you through using the four
+most commonly used ID types to search for information.
+
+\textbf{First, let's tell the system the location of our tutorial
+configuration file.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{n+nb}{export} \PY{n+nv}{PF\PYZus{}CONFIG\PYZus{}FILE}\PY{o}{=}\PY{n+nv}{\PYZdl{}PWD}/data/pathfind.conf
+\end{Verbatim}
+\end{terminalinput}
+
+    \hypertarget{retrieving-all-lanes-associated-with-a-study}{%
+\subsubsection{Retrieving all lanes associated with a
+study}\label{retrieving-all-lanes-associated-with-a-study}}
+
+To retrieve all of the lanes which are associated with a study we will
+set the type (\textbf{\texttt{-t}}) to \textbf{study} and the id
+(\textbf{\texttt{-i}}) to \textbf{664}.
+
+\textbf{Let's try searching for lanes associated with study 664.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf data \PYZhy{}t study \PYZhy{}i 664
+\end{Verbatim}
+\end{terminalinput}
+
+    We can also search for a study using its name. In
+\href{http://psd-support.internal.sanger.ac.uk:6600/studies/664/information}{Sequencescape}
+we can see that the name of study 644 is \textit{``Streptococcus
+pneumoniae global lineages''}.
+
+\textbf{Let's try searching using the study name.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf data \PYZhy{}t study \PYZhy{}i \PY{l+s+s2}{\PYZdq{}Streptococcus pneumoniae global lineages\PYZdq{}}
+\end{Verbatim}
+\end{terminalinput}
+
+    Finally, we can count the number of lanes that were returned using
+\texttt{wc\ -l}.
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf data \PYZhy{}t study \PYZhy{}i \PY{l+m}{664} \PY{p}{|} wc \PYZhy{}l
+\end{Verbatim}
+\end{terminalinput}
+
+    \hypertarget{retrieving-a-single-lane}{%
+\subsubsection{Retrieving a single
+lane}\label{retrieving-a-single-lane}}
+
+When we don't want all the lanes from a study, we can search for
+individual lanes. To do this we need to set the type
+(\textbf{\texttt{-t}}) to \textbf{lane} and give the lane name as our
+identifier (\textbf{\texttt{-i}}).
+
+\textbf{Let's try searching for a lane using the lane name.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf data \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1
+\end{Verbatim}
+\end{terminalinput}
+
+    \hypertarget{retrieving-a-run}{%
+\subsubsection{Retrieving a run}\label{retrieving-a-run}}
+
+If there are multiple lanes you want to retrieve from a run, we can
+search for all lanes associated with that run. To do this we need to set
+the type (\textbf{\texttt{-t}}) to \textbf{lane} and give the run as our
+identifier (\textbf{\texttt{-i}}).
+
+\textbf{Let's try searching for lanes associated with run 5477\_6.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf data \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6
+\end{Verbatim}
+\end{terminalinput}
+
+    \hypertarget{retrieving-a-single-sample}{%
+\subsubsection{Retrieving a single
+sample}\label{retrieving-a-single-sample}}
+
+Perhaps you don't have the lane name but you do have the sample name. To
+seach using a sample name we need to set the type (\textbf{\texttt{-t}})
+to \textbf{sample} and give the sample name as the id
+(\textbf{\texttt{-i}}).
+
+\textbf{Let's try searching for a sample using the sample name.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf data \PYZhy{}t sample \PYZhy{}i Tw01\PYZus{}0055
+\end{Verbatim}
+\end{terminalinput}
+
+    \hypertarget{retrieving-multiple-lanes-using-a-file}{%
+\subsubsection{Retrieving multiple lanes using a
+file}\label{retrieving-multiple-lanes-using-a-file}}
+
+Last, but not least, we can retrieve information for a list of lanes
+which are stored in a file. First, let's take a look at our file of
+lanes.
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} cat data/lanes.txt
+\end{Verbatim}
+\end{terminalinput}
+
+    Here you can see we have one lane per line in our file. To use this
+file, we need to set the type (\textbf{\texttt{-t}}) to \textbf{file}
+and give the file name as the id (\textbf{\texttt{-i}}).
+
+\textbf{Let's try searching for information on the lanes in
+``data/lanes.txt''.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf data \PYZhy{}t file \PYZhy{}i data/lanes.txt
+\end{Verbatim}
+\end{terminalinput}
+
+    \hypertarget{questions}{%
+\subsection{Questions}\label{questions}}
+
+\textbf{Q1: How many lanes are associated with study 607?}\\
+\textit{Hint: you can use \texttt{wc\ -l} to count the number of lines
+(lanes) returned by \texttt{pf\ data}}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q2: How many lanes are returned if you search using the file
+``data/lanes\_to\_search.txt''?}\\
+\textit{Hint: you can use \texttt{wc\ -l} to count the number of lines
+(lanes) returned by \texttt{pf\ data}}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \hypertarget{whats-next}{%
+\subsection{What's next?}\label{whats-next}}
+
+For a quick recap of what the tutorial covers and the software you will
+need, head back to the \href{index.ipynb}{tutorial overview}.
+
+Otherwise, let's get started with looking at
+\href{finding-your-data.ipynb}{finding your data}.
+
+
+    % Add a bibliography block to the postdoc
+
+
+
+\newpage
+
+
+
+
+
+
+    \hypertarget{finding-your-data}{%
+\section{Finding your data}\label{finding-your-data}}
+
+    \hypertarget{introduction}{%
+\subsection{Introduction}\label{introduction}}
+
+To search for the location(s) of data stored in the pathogen databases,
+we can use \texttt{pf\ data}. In the \href{intro.ipynb}{previous}
+section, we looked at two options which are used by most of the pf
+scripts, \textbf{type} (\textbf{\texttt{-t}}) and \textbf{id}
+(\textbf{\texttt{-i}}).
+
+In this section of the tutorial we will be looking at several other
+functions which \texttt{pf\ data} can perform that may be useful when
+finding, sharing or using your sequencing data.
+
+By default, \texttt{pf\ data} will return a directory. It not only
+contains the imported sequence data, but also the results of any of the
+analysis pipelines which have been run on that data.
+
+In this section of the tutorial we will cover:
+
+\begin{itemize}
+\tightlist
+\item
+  the \texttt{pf\ data} command format
+\item
+  using \texttt{pf\ data} to find the top level directory where sequence
+  data and analysis pipeline results are stored
+\item
+  using \texttt{pf\ data} to find sequence data files
+\item
+  using \texttt{pf\ data} to symlink files and directories
+\item
+  using \texttt{pf\ data} to compress files and directories
+\item
+  using \texttt{pf\ data} to generate sequencing data statistics
+\end{itemize}
+
+\hypertarget{filetypes}{%
+\subsubsection{Filetypes}\label{filetypes}}
+
+However, you might not want to know the top level directory location.
+You might want to know where the sequence data files are and what they
+are called so that you can use them in a downstream analysis. To do
+this, we ask \texttt{pf\ data} to find the sequence files using the
+\textbf{filetype} (\textbf{--filetype} or \textbf{-f}).
+
+\hypertarget{symlinking}{%
+\subsubsection{Symlinking}\label{symlinking}}
+
+Pathogen Informatics asks users not to copy sequence data or results
+that are already in the pathogen databases. This is because copying data
+uses up precious disk space.
+
+Instead we ask users to \textbf{symlink} the data. Symlinks contain no
+data, simply referencing the location of the original file or directory.
+To most commands, the symlink looks like the original file, but the
+operations the command performs (e.g.~reading from the file) are
+directed to the original file which the symlink is pointed to.
+
+You can symlink a file or directory that's returned by a
+\texttt{pf\ data} search by using the \textbf{\texttt{-\/-symlink}} or
+\textbf{\texttt{-l}} option.
+
+\hypertarget{archiving-or-compressing-data}{%
+\subsubsection{Archiving or compressing
+data}\label{archiving-or-compressing-data}}
+
+You may want to transfer or share some of your sequencing data. The
+simplest way to do this is to \textbf{archive} or \textbf{compress} the
+data you want to transfer. To compress data returned by
+\texttt{pf\ data} you can use the \textbf{\texttt{-\/-archive}} or
+\textbf{\texttt{-a}} option. This will compress the returned data and
+return a file with the extension ``.tar.gz'' that is much smaller and
+easier to share or transport.
+
+\hypertarget{getting-general-information-and-statistics}{%
+\subsubsection{Getting general information and
+statistics}\label{getting-general-information-and-statistics}}
+
+For some of the \texttt{pf} scripts, you can also get an overview of the
+data returned by \texttt{pf\ data} using the \textbf{\texttt{-\/-stats}}
+or \textbf{\texttt{-s}} option. This will write a spreadsheet which
+contains statistics and general information.
+
+These include, but are not limited to:
+
+\begin{itemize}
+\item
+  \textbf{general information}\\
+  study ID, sample name, lane name\ldots{}
+\item
+  \textbf{sequencing information}\\
+  number of cycles, number of reads, number of bases\ldots{}
+\item
+  \textbf{quality control (QC) results}\\
+  reference used, percentage mapped, percentage paired, depth of
+  coverage\ldots{}
+\item
+  \textbf{pipeline status}\\
+  QC, mapping, SNP calling, assembly, annotation, RNA-Seq\ldots{}
+\end{itemize}
+
+    \hypertarget{exercise-2}{%
+\subsection{Exercise 2}\label{exercise-2}}
+
+\textbf{First, let's tell the system the location of our tutorial
+configuration file.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{n+nb}{export} \PY{n+nv}{PF\PYZus{}CONFIG\PYZus{}FILE}\PY{o}{=}\PY{n+nv}{\PYZdl{}PWD}/data/pathfind.conf
+\end{Verbatim}
+\end{terminalinput}
+
+    You can see the available options for \texttt{pf\ data} using the
+\textbf{\texttt{-\/-help}} or \textbf{\texttt{-h}} option.
+
+\textbf{Let's take a look at the usage information for
+\texttt{pf\ data}}.
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf data \PYZhy{}h
+\end{Verbatim}
+\end{terminalinput}
+
+    Here we can see that basic \texttt{pf\ data} command uses just the
+\textbf{type} (\textbf{\texttt{-\/-type}} or \textbf{\texttt{-t}}) and
+\textbf{id} (\textbf{\texttt{-\/-id}} or \textbf{\texttt{-i}}) options.
+
+\begin{verbatim}
+ pf data --id <id> --type <ID type> [options]
+\end{verbatim}
+
+\textbf{Let's search for the location of data associated with lane
+5477\_6\#1.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf data \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1
+\end{Verbatim}
+\end{terminalinput}
+
+    The disk location \texttt{pf\ data} returned is the \textbf{top level}
+directory where all of data and results associated with lane 5477\_6\#1
+are stored.
+
+\hypertarget{filetypes}{%
+\subsubsection{Filetypes}\label{filetypes}}
+
+We may want to find the sequence data files which were imported so that
+we can use them for a subsequent analysis.
+
+\textbf{Let's find the FASTQ files which were imported for lane
+5477\_6\#1.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf data \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1 \PYZhy{}f fastq
+\end{Verbatim}
+\end{terminalinput}
+
+    As this is Illumina paired end data, there are two gzipped (.gz)
+FASTQ-formatted sequence data files returned which correspond to the
+left (\_1) and right (\_2) reads.
+
+    \hypertarget{symlinking}{%
+\subsubsection{Symlinking}\label{symlinking}}
+
+We don't want to copy these files to where we're running the analysis
+because this uses up disk space unnecessarily. Instead, we'll symlink
+them.
+
+\textbf{First, let's try symlinking our two FASTA files from lane
+5477\_6\#1.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf data \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1 \PYZhy{}f fastq \PYZhy{}l
+\end{Verbatim}
+\end{terminalinput}
+
+    This should return a message like ``Creating links in
+`pathfind\_5477\_6\_1'\,'' which tells you where your files have been
+symlinked to. Here we can see that a new directory has been created with
+the prefix ``pathfind\_'' and our lane name ``5477\_6\_1''. You'll also
+notice that the ``\#'' in our lane name has been replcated by an
+underscore (``\_'').
+
+\textbf{Now, let's look in the new directory with \texttt{ls}.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} ls pathfind\PYZus{}5477\PYZus{}6\PYZus{}1
+\end{Verbatim}
+\end{terminalinput}
+
+    There we see our two files ``5477\_6\#1\_1.fastq.gz'' and
+``5477\_6\#1\_1.fastq.gz''.
+
+But, if we take a closer look using \texttt{ls\ -l} we can see that
+those files are symlinks to our tutorial data files.
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} ls \PYZhy{}l pathfind\PYZus{}5477\PYZus{}6\PYZus{}1
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Now, let's try symlinking to a new directory called
+``my\_lanes''.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf data \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1 \PYZhy{}f fastq \PYZhy{}l my\PYZus{}lanes
+\end{Verbatim}
+\end{terminalinput}
+
+    We can now see that a new directory called ``my\_lanes'' has been
+created.
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} ls
+\end{Verbatim}
+\end{terminalinput}
+
+    And inside the ``my lanes'' directory are our two symlinked files.
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} ls \PYZhy{}l my\PYZus{}lanes
+\end{Verbatim}
+\end{terminalinput}
+
+    So, we've been symlinking our FASTQ files. But, what if we want to
+symlink all of the data and results associated with our lane.
+
+\textbf{Instead of symlinking just our sequence data, let's symlink all
+of the data and results for lane 5477\_6\#1 to a new directory called
+``my\_lane\_data''.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf data \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1 \PYZhy{}l my\PYZus{}lane\PYZus{}data
+\end{Verbatim}
+\end{terminalinput}
+
+    Looking inside ``my\_lane\_data'' we see a directory which has the same
+name as our lane, 5477\_6\#1. This directory is symlinked to the
+tutorial data directory for this lane.
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} ls \PYZhy{}l my\PYZus{}lane\PYZus{}data
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Finally, let's try symlinking the data and results for all lanes
+associated with a study.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf data \PYZhy{}t study \PYZhy{}i \PY{l+m}{664} \PYZhy{}l my\PYZus{}study\PYZus{}lanes
+\end{Verbatim}
+\end{terminalinput}
+
+    Here we see 11 symlinked directories which have the names of the 11
+lanes associated with study 664.
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} ls \PYZhy{}l my\PYZus{}study\PYZus{}lanes
+\end{Verbatim}
+\end{terminalinput}
+
+    \hypertarget{archiving-data}{%
+\subsubsection{Archiving data}\label{archiving-data}}
+
+Sometimes, you may want to transfer or share your data. The simplest way
+to do this is to archive or compress the sequence data.
+
+\textbf{Let's archive the data for lane 5477\_6\#1.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf data \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1 \PYZhy{}a
+\end{Verbatim}
+\end{terminalinput}
+
+    Here we see ``pathfind\_5477\_6\_1.tar.gz'' has been created.
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} ls
+\end{Verbatim}
+\end{terminalinput}
+
+    We can uncompress ``pathfind\_5477\_6\_1.tar.gz'' using \texttt{tar}.
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} tar xf pathfind\PYZus{}5477\PYZus{}6\PYZus{}1.tar.gz
+\end{Verbatim}
+\end{terminalinput}
+
+    This gives us a directory which shares the name of the lane we were
+looking for (with `\#' replaced with an `\_'). Inside that directory are
+our two sequence data files ``5477\_6\#1\_1.fastq.gz'' and
+``5477\_6\#1\_2.fastq.gz'' as well as ``stats.csv'' which contains some
+general information and statistics.
+
+    \hypertarget{getting-general-information-and-statistics}{%
+\subsubsection{Getting general information and
+statistics}\label{getting-general-information-and-statistics}}
+
+    We can get some general information and statistics about our sequence
+data using the \texttt{-s} or \texttt{-\/-stats} option with
+\texttt{pf\ data}.
+
+\textbf{Let's try getting some statistics for lane 5477\_6\#1.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf data \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1 \PYZhy{}s
+\end{Verbatim}
+\end{terminalinput}
+
+    You can see this has generated a new file called
+``5477\_6\_1.pathfind\_stats.csv''.
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} ls
+\end{Verbatim}
+\end{terminalinput}
+
+    We can take a quick look at the contents of this file using
+\texttt{cat}.
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} cat 5477\PYZus{}6\PYZus{}1.pathfind\PYZus{}stats.csv
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Now, let's try getting some statistics for all lanes in our file
+``lanes.txt'' and calling the output file ``my\_lane\_stats.csv''.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf data \PYZhy{}t file \PYZhy{}i data/lanes.txt \PYZhy{}s my\PYZus{}lane\PYZus{}stats.csv
+\end{Verbatim}
+\end{terminalinput}
+
+    You should get a message which says your statistics have been written to
+``my\_lane\_stats.csv''. We can take a look at this file. Perhaps just
+getting the first few columns using \texttt{awk}.
+
+\textit{Note: we use `-F' with \texttt{awk} to tell it that the data we're
+parsing is comma-separated.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} awk \PYZhy{}F\PY{l+s+s1}{\PYZsq{},\PYZsq{}} \PY{l+s+s1}{\PYZsq{}\PYZob{}print \PYZdl{}1\PYZdq{}\PYZbs{}t\PYZdq{}\PYZdl{}2\PYZdq{}\PYZbs{}t\PYZdq{}\PYZdl{}3\PYZcb{}\PYZsq{}} my\PYZus{}lane\PYZus{}stats.csv
+\end{Verbatim}
+\end{terminalinput}
+
+    Here we can see that there is one row per lane in the statistics file
+(see the ``Lane Name'' column).
+
+    \hypertarget{questions}{%
+\subsection{Questions}\label{questions}}
+
+\textbf{Q1: What is the location of the top level directory for data and
+results associated with lane 10018\_1\#1?}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q2: What is the location of the FASTQ file(s) associated with
+lane 10018\_1\#1?}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+
+
+
+\newpage
+
+
+
+
+
+    \textbf{Q3: Symlink the FASTQ files from study 607 into a directory
+called ``study\_607\_links''. How many FASTQ files were symlinked to
+"study\_607\_links?}\\
+\textit{Hint: you can use wc -l to count the number of files in the
+directory}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q4: What reference was used to map lane 10018\_1\#1 during QC
+and what percentage of the reads were mapped to the reference?}\\
+\textit{Hint: you'll need to get some statistics}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \hypertarget{whats-next}{%
+\subsection{What's next?}\label{whats-next}}
+
+For a quick recap of what the pf scripts are, head back to the
+\href{introduction.ipynb}{introduction}.
+
+Otherwise, let's move on to
+\href{information-and-accessions.ipynb}{sample information and
+accessions}.
+
+
+    % Add a bibliography block to the postdoc
+
+
+
+\newpage
+
+
+
+
+
+
+    \hypertarget{sample-information-and-accessions}{%
+\section{Sample information and
+accessions}\label{sample-information-and-accessions}}
+
+    \hypertarget{introduction}{%
+\subsection{Introduction}\label{introduction}}
+
+    Once your samples have been sequenced or imported, it can be useful to
+match up the internal lane identifiers with the sample and supplier
+identifiers. We can look at the relationship between lane and sample
+using \texttt{pf\ info} which will return values for:
+
+\begin{itemize}
+\tightlist
+\item
+  Lane name
+\item
+  Sample name
+\item
+  Supplier name
+\item
+  Public name
+\item
+  Strain
+\end{itemize}
+
+Alternatively, you might want to know the EBI sample and submission
+numbers for a particular lane or sample. To get this, you can use
+\texttt{pf\ accession} which will return:
+
+\begin{itemize}
+\tightlist
+\item
+  Sample name
+\item
+  Sample accession
+\item
+  Lane name
+\item
+  Lane accession
+\end{itemize}
+
+For more information about EBI accession number format please see
+\href{https://www.ebi.ac.uk/ena/submit/read-data-format\#accession_number_format}{www.ebi.ac.uk/ena/submit/read-data-format}.
+
+You can also use pf to generate a spreadsheet with supplementary data,
+which can be useful for publication. \texttt{pf\ supplementary} will
+return:
+
+\begin{itemize}
+\tightlist
+\item
+  Sample name
+\item
+  Sample accession
+\item
+  Lane name
+\item
+  Lane accession
+\item
+  Supplier name
+\item
+  Public name
+\item
+  Strain
+\item
+  Study ID
+\item
+  Study accession
+\end{itemize}
+
+Optionally, \texttt{pf\ supplementary} can also return the sample
+description.
+
+In this section of the tutorial we will cover:
+
+\begin{itemize}
+\tightlist
+\item
+  using \texttt{pf\ info} to get sample metadata
+\item
+  using \texttt{pf\ accession} to get sample accessions
+\item
+  using \texttt{pf\ supplementary} to get supplementary data.
+\end{itemize}
+
+    \hypertarget{exercise-3}{%
+\subsection{Exercise 3}\label{exercise-3}}
+
+    \textbf{First, let's tell the system the location of our tutorial
+configuration file.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{n+nb}{export} \PY{n+nv}{PF\PYZus{}CONFIG\PYZus{}FILE}\PY{o}{=}\PY{n+nv}{\PYZdl{}PWD}/data/pathfind.conf
+\end{Verbatim}
+\end{terminalinput}
+
+    \hypertarget{metadata}{%
+\subsubsection{Metadata}\label{metadata}}
+
+We can get the metadata associated with our lanes using
+\texttt{pf\ info}.
+
+\textbf{Let's take a look at the usage information for
+\texttt{pf\ info}.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf info \PYZhy{}h
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Let's get the sample name that corresponds to lane 5477\_6\#1.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf info \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1
+\end{Verbatim}
+\end{terminalinput}
+
+    Here we can see that several pieces of metadata have been returned. One
+of these is the sample name: \textbf{Tw01\_0055}.
+
+\textbf{Now, let's get the sample names for all lanes associated with
+study 664.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf info \PYZhy{}t study \PYZhy{}i 664
+\end{Verbatim}
+\end{terminalinput}
+
+    We can write this information to file using the \texttt{-o} or
+\texttt{-\/-outfile} option.
+
+\textbf{Let's write our lane metadata to file.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf info \PYZhy{}t study \PYZhy{}i \PY{l+m}{664} \PYZhy{}o
+\end{Verbatim}
+\end{terminalinput}
+
+    This has generated a new file ``infofind.csv'' which contains our
+comma-separated lane metadata.
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} cat infofind.csv
+\end{Verbatim}
+\end{terminalinput}
+
+    We can also give the output file a different name.
+
+\textbf{Let's call the metadata file for study 664
+``study\_664\_info.csv''.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf info \PYZhy{}t study \PYZhy{}i \PY{l+m}{664} \PYZhy{}o study\PYZus{}664\PYZus{}info.csv
+\end{Verbatim}
+\end{terminalinput}
+
+    This generates the file ``study\_664\_info.csv'' which contains our
+metadata.
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} cat study\PYZus{}664\PYZus{}info.csv
+\end{Verbatim}
+\end{terminalinput}
+
+    \hypertarget{accessions}{%
+\subsubsection{Accessions}\label{accessions}}
+
+If available, we can also get the EBI raw sequence data and sample
+accessions for the lanes associated with study 664 using
+\texttt{pf\ accession}.
+
+
+
+\newpage
+
+
+
+\textbf{Let's take a look at the usage information for
+\texttt{pf\ accession}.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf accession \PYZhy{}h
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Let's get the EBI accessions for all lanes associated with study
+664.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf accession \PYZhy{}t study \PYZhy{}i 664
+\end{Verbatim}
+\end{terminalinput}
+
+    As with \texttt{pf\ info} we can also write the output of
+\texttt{pf\ accession} to a comma-delimited file.
+
+\textbf{Let's write the accessions associated with study 664 to a file
+called ``study\_664\_accessions.csv''.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf accession \PYZhy{}t study \PYZhy{}i \PY{l+m}{664} \PYZhy{}o study\PYZus{}664\PYZus{}accessions.csv
+\end{Verbatim}
+\end{terminalinput}
+
+    This generates the file ``study\_664\_accessions.csv'' which contains
+our comma-separated accessions.
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} cat study\PYZus{}664\PYZus{}accessions.csv
+\end{Verbatim}
+\end{terminalinput}
+
+    Finally, we can get the EBI URLs to download the raw data using the
+\texttt{-f} or \texttt{-\/-fastq} option. By default, these will be
+written to a file called ``fastq\_urls.txt''.
+
+\textbf{Let's get the URLs for downloading the FASTQ files for study 667
+from the European Nucleodtide Archive (ENA).}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf accession \PYZhy{}t study \PYZhy{}i \PY{l+m}{664} \PYZhy{}f
+\end{Verbatim}
+\end{terminalinput}
+
+    This generated a file called ``fastq\_urls.txt'' which contained the
+URLs to download the raw sequencing data, one URL per file.
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} cat fastq\PYZus{}urls.txt
+\end{Verbatim}
+\end{terminalinput}
+
+    \hypertarget{supplementary-data}{%
+\subsubsection{Supplementary data}\label{supplementary-data}}
+
+We can get the supplementary data associated with our lanes using
+\texttt{pf\ supplementary}.
+
+\textbf{Let's take a look at the usage information for
+\texttt{pf\ supplementary}.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf supplementary \PYZhy{}h
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Let's get the supplementary data for all lanes associated with
+study 664.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf supplementary \PYZhy{}t study \PYZhy{}i 664
+\end{Verbatim}
+\end{terminalinput}
+
+    As with \texttt{pf\ info} and \texttt{pf\ accession} we can also write
+the output of \texttt{pf\ supplementary} to a comma-delimited file.
+
+\textbf{Let's write the supplementary data associated with study 664 to
+a file called ``study\_664\_supplementary.csv''.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf supplementary \PYZhy{}t study \PYZhy{}i \PY{l+m}{664} \PYZhy{}o study\PYZus{}664\PYZus{}supplementary.csv
+\end{Verbatim}
+\end{terminalinput}
+
+    This generates the file ``study\_664\_supplementary.csv'' which contains
+our comma-separated supplementary data.
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} cat study\PYZus{}664\PYZus{}supplementary.csv
+\end{Verbatim}
+\end{terminalinput}
+
+    Finally, we can include sample description in the supplementary
+information by using the \texttt{-d} or \texttt{-\/-description} option.
+
+\textbf{Let's get the supplementary data for all lanes associated with
+study 664, including the sample description}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf supplementary \PYZhy{}t study \PYZhy{}i \PY{l+m}{664} \PYZhy{}d
+\end{Verbatim}
+\end{terminalinput}
+
+    \hypertarget{questions}{%
+\subsection{Questions}\label{questions}}
+
+    \textbf{Q1: What is the sample name that corresponds with lane
+10018\_1\#1?}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q2: What lane name(s) correspond with sample APP\_T1\_OP2?}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q3: What are the sample and lane names of the last lane in the
+file ``data/lanes\_to\_search.txt''.}\\
+\textit{Hint: use \texttt{tail\ -1} to get the last line of the output}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q4: What are the sample and lane accessions for lane
+5477\_6\#1?}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q5: What are the two URLs which can be used to download the
+FASTQ files for lane 5477\_6\#1 from the ENA?}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \hypertarget{whats-next}{%
+\subsection{What's next?}\label{whats-next}}
+
+You can head back to \href{finding-your-data.ipynb}{finding your data}.
+
+Otherwise, let's move on to looking at
+\href{pipeline-status.ipynb}{analysis pipeline status}.
+
+
+    % Add a bibliography block to the postdoc
+
+
+
+\newpage
+
+
+
+
+
+
+    \hypertarget{analysis-pipeline-status}{%
+\section{Analysis pipeline status}\label{analysis-pipeline-status}}
+
+    \hypertarget{introduction}{%
+\subsection{Introduction}\label{introduction}}
+
+You can use the \texttt{pf\ status} script to return information about
+the status of your samples within the automated analysis pipelines,
+allowing you to see which pipelines have been run on the data.
+
+The automated analysis pipelines available include:
+
+\begin{itemize}
+\tightlist
+\item
+  Quality control (QC)
+\item
+  Mapping
+\item
+  SNP calling
+\item
+  Bacterial, Eukaryote and Pacbio assembly
+\item
+  Annotation
+\item
+  RNA-Seq expression
+\end{itemize}
+
+Running \texttt{pf\ status} will return a table with one row per lane
+and one column per pipeline. In that table, you will see either a `-'
+meaning that the pipeline hasn't been run or, if the pipelines have been
+requested, `Running', `Done' or `Failed' for each of the lanes.
+
+Let's take lane 5477\_6\#1 as an example. Here is the output from
+\texttt{pf\ status}.
+
+\begin{longtable}[]{@{}cccccccccc@{}}
+\hline
+Name & Import & QC & Mapping & Archive & Improve & SNP call & RNASeq &
+Assemble & Annotate\tabularnewline
+\hline
+\endhead
+5477\_6\#1 & Done & Done & Done & Done & - & Done & - & Done &
+Done\tabularnewline
+\hline
+\end{longtable}
+
+This tells us that for lane 5477\_6\#1, the import, QC, mapping,
+archive, SNP calling, assembly and annotation pipelines have been run
+and are finished (Done).
+
+In this section of the tutorial we will cover:
+
+\begin{itemize}
+\tightlist
+\item
+  using \texttt{pf\ status} to determine the status of samples in the
+  various pathogen informatics pipelines
+\end{itemize}
+
+    \hypertarget{exercise-4}{%
+\subsection{Exercise 4}\label{exercise-4}}
+
+\textbf{First, let's tell the system the location of our tutorial
+configuration file.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{n+nb}{export} \PY{n+nv}{PF\PYZus{}CONFIG\PYZus{}FILE}\PY{o}{=}\PY{n+nv}{\PYZdl{}PWD}/data/pathfind.conf
+\end{Verbatim}
+\end{terminalinput}
+
+    We can get the status of all lanes associated with a study by setting
+the type (\texttt{-t} or \texttt{-\/-type}) to ``study'' and giving the
+study ID or name as the identifier (\texttt{-i} or \texttt{-\/-id}).
+
+\textbf{Let's get the status of the lanes associated with study 664.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf status \PYZhy{}t study \PYZhy{}i 664
+\end{Verbatim}
+\end{terminalinput}
+
+    Here you can see that the import, QC, mapping, archive, SNP calling,
+assembly and annotation pipelines have been run and are finished (Done)
+for all of the lanes associated with study 664.
+
+\textbf{Let's try this again using the study name, ``Streptococcus
+pneumoniae global lineages'', instead.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf status \PYZhy{}t study \PYZhy{}i \PY{l+s+s2}{\PYZdq{}Streptococcus pneumoniae global lineages\PYZdq{}}
+\end{Verbatim}
+\end{terminalinput}
+
+    You can see that we get the same result as if we'd used the study ID.
+It's important to remember to put the study name in quotes (") because
+it has spaces in in.
+
+\textbf{Let's try using our study name without the quotes.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf status \PYZhy{}t study \PYZhy{}i Streptococcus pneumoniae global lineages
+\end{Verbatim}
+\end{terminalinput}
+
+    Oh, errors and the usage. This is why you should get into the habbit of
+putting the study name between double quotes.
+
+\textbf{Let's get the status of the lane 5477\_6\#1.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf status \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1
+\end{Verbatim}
+\end{terminalinput}
+
+    Alternatively, we can get the sample name for that lane with
+\texttt{pf\ info} and use the sample name to get the status.
+
+\textbf{Let's get the corresponding sample name for lane 5477\_6\#1.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf info \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Now let's use the sample name that was returned, Tw01\_0055, to
+get the status.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf status \PYZhy{}t sample \PYZhy{}i Tw01\PYZus{}0055
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Finally, let's get the status of the lanes in
+``data/lanes.txt''.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf status \PYZhy{}t file \PYZhy{}i data/lanes.txt
+\end{Verbatim}
+\end{terminalinput}
+
+    \hypertarget{questions}{%
+\subsection{Questions}\label{questions}}
+
+    \textbf{Q1: Has the assembly pipeline been run on lane 10018\_1\#1? If
+so, what is the status?}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q2: Which lanes in study 607 has the assembly pipeline been run
+on?}\\
+\textit{Hint: you could use \texttt{awk} to get the assembly column (9th
+column)}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q3: How many lanes in study 607 has the mapping pipeline been
+run on?}\\
+\textit{Hint: you could use \texttt{awk} to get the mapping column (4th
+column) and \texttt{wc} to count the number of lines returned}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \hypertarget{whats-next}{%
+\subsection{What's next?}\label{whats-next}}
+
+For a quick recap of how to get metadata and accessions, head back to
+\href{information-and-accessions.ipynb}{sample information and
+accessions}.
+
+Otherwise, let's move on to how to get your
+\href{qc-pipeline-results.ipynb}{QC pipeline results}.
+
+
+    % Add a bibliography block to the postdoc
+
+
+
+\newpage
+
+
+
+
+
+
+    \hypertarget{quality-control-qc-pipeline-results}{%
+\section{Quality control (QC) pipeline
+results}\label{quality-control-qc-pipeline-results}}
+
+    \hypertarget{introduction}{%
+\subsection{Introduction}\label{introduction}}
+
+When your sample data is in the Pathogen Informatics databases, it
+becomes available to the automated analysis pipelines. After the
+analysis pipelines have been requested and run, you can use the
+\texttt{pf} scripts to return the results of each of the automated
+analysis pipelines.
+
+First up, we're going to look at how you can get the output from the QC
+pipeline. The
+\href{http://mediawiki.internal.sanger.ac.uk/index.php/Pathogen_Sequencing_Informatics\#QC_Pipeline}{QC
+pipeline} generates a series of QC statistics about your data and runs
+\href{https://ccb.jhu.edu/software/kraken/}{Kraken} which assigns each
+read to a taxon and will broadly tell you what's been sequenced. To get
+the QC results, we use \texttt{pf\ qc} which returns the location of the
+Kraken report for a given study, sample or lane.
+
+In this section of the tutorial we will cover:
+
+\begin{itemize}
+\tightlist
+\item
+  using \texttt{pf\ qc} to get Kraken reports
+\item
+  using \texttt{pf\ qc} to get a summary of the Kraken report at
+  different taxonomic levels
+\end{itemize}
+
+    \hypertarget{exercise-5}{%
+\subsection{Exercise 5}\label{exercise-5}}
+
+    \textbf{First, let's tell the system the location of our tutorial
+configuration file.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{n+nb}{export} \PY{n+nv}{PF\PYZus{}CONFIG\PYZus{}FILE}\PY{o}{=}\PY{n+nv}{\PYZdl{}PWD}/data/pathfind.conf
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Let's take a look at the \texttt{pf\ qc} usage.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf qc \PYZhy{}h
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Now, let's get the QC pipeline results for lane 5477\_6\#1.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf qc \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1
+\end{Verbatim}
+\end{terminalinput}
+
+    This returned the location of the Kraken report on disk.
+
+\textbf{Let's take a quick look at the Kraken report.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf qc \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1 \PY{p}{|} xargs head
+\end{Verbatim}
+\end{terminalinput}
+
+    Notice that we used \texttt{xargs} to give the filename that was
+returned to another command, in this case \texttt{head}.
+
+We can get a summary of this Kraken report using the
+\texttt{-\/-summary} or \texttt{-s} option that will generate a new file
+called ``qc\_summary.csv'' containing the taxon level Kraken results.
+
+\textbf{Let's get our \textit{taxon} (strain) level QC summary for lane
+5477\_6\#1.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf qc \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1 \PYZhy{}s
+\end{Verbatim}
+\end{terminalinput}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} head qc\PYZus{}summary.csv
+\end{Verbatim}
+\end{terminalinput}
+
+    Here you can see the taxon level Kraken results i.e 1.08\% of the reads
+were assigned to the \textit{Streptococcus pneumoniae} strain
+Hungary19A-6.
+
+We can look at the results for different taxonomic levels using the
+\texttt{-\/-level} or \texttt{-L} option.
+
+\textbf{Let's try looking at the species level QC results for lane
+5477\_6\#1.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf qc \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1 \PYZhy{}L S \PYZhy{}s qc\PYZus{}species\PYZus{}summary.csv \PYZhy{}F
+\end{Verbatim}
+\end{terminalinput}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} head qc\PYZus{}species\PYZus{}summary.csv
+\end{Verbatim}
+\end{terminalinput}
+
+    Here we can see that 87.61\% of the reads were classified as
+\textit{Streptococcus pneumoniae}. This is promising as the sample is from
+\textit{Streptococcus pneumoniae}.
+
+    \hypertarget{qc-grind}{%
+\subsubsection{QC Grind}\label{qc-grind}}
+
+The QC pipeline also generates a series of QC statistics for a given
+study, sample or lane which can be found on
+\href{http://pathweb.internal.sanger.ac.uk:8000/cgi-bin/overview.pl}{QC
+Grind}.
+
+    \hypertarget{questions}{%
+\subsection{Questions}\label{questions}}
+
+\textbf{Q1: What percentage of the reads from lane 10018\_1\#1 were
+``unclassified'' by Kraken?}\\
+\textit{Hint: you can use \texttt{xargs} and \texttt{head} to look at the
+start of the Kraken report returned by \texttt{pf\ qc}}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q2: What percentage of the reads from the lane 10018\_1\#1 were
+classified to the genus \textit{Actinobacillus} by Kraken?}\\
+\textit{Hint: look at the level options in the \texttt{pf\ qc} usage}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \hypertarget{whats-next}{%
+\subsection{What's next?}\label{whats-next}}
+
+For a quick recap of how to get metadata and accessions, head back to
+\href{pipeline-status.ipynb}{analysis pipeline status}.
+
+Otherwise, let's move on to how to get your
+\href{mapping-pipeline-results.ipynb}{mapping pipeline results}.
+
+
+    % Add a bibliography block to the postdoc
+
+
+
+\newpage
+
+
+
+
+
+
+    \hypertarget{mapping-pipeline-results}{%
+\section{Mapping pipeline results}\label{mapping-pipeline-results}}
+
+    \hypertarget{introduction}{%
+\subsection{Introduction}\label{introduction}}
+
+When your sample data is in the Pathogen Informatics databases, it
+becomes available to the automated analysis pipelines. After the
+analysis pipelines have been requested and run, you can use the
+\texttt{pf} scripts to return the results of each of the automated
+analysis pipelines.
+
+The
+\href{http://mediawiki.internal.sanger.ac.uk/index.php/Pathogen_Informatics_Mapping_Pipeline}{mapping
+pipeline} maps your raw sequence reads to a reference that you selected.
+We can use \texttt{pf\ map} to return the location of the BAM files that
+were produced by the mapping pipeline.
+
+In this section of the tutorial we will cover:
+
+\begin{itemize}
+\tightlist
+\item
+  using \texttt{pf\ map} to get BAM files generated by the mapping
+  pipeline
+\item
+  filtering \texttt{pf\ map} results by mapper and reference
+\item
+  using \texttt{pf\ map} to symlink BAM files generated by the mapping
+  pipeline
+\item
+  using \texttt{pf\ map} to get mapping statistics
+\end{itemize}
+
+    \hypertarget{exercise-6}{%
+\subsection{Exercise 6}\label{exercise-6}}
+
+    \textbf{First, let's tell the system the location of our tutorial
+configuration file.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{n+nb}{export} \PY{n+nv}{PF\PYZus{}CONFIG\PYZus{}FILE}\PY{o}{=}\PY{n+nv}{\PYZdl{}PWD}/data/pathfind.conf
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Let's take a look at the \texttt{pf\ map} usage.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf map \PYZhy{}h
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Now, let's get the mapping pipeline results for lane
+5477\_6\#1.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf map \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1
+\end{Verbatim}
+\end{terminalinput}
+
+    This returns the locations of the BAM files which were produced by the
+mapping pipeline.
+
+A quick way to get information about which mapper and reference were
+used by the mapping pipeline is to use the \texttt{-\/-details} or
+\texttt{-d} option.
+
+\textbf{Let's get the mapping details for lane 5477\_6\#1.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf map \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1 \PYZhy{}d
+\end{Verbatim}
+\end{terminalinput}
+
+    Here we can see that ``smalt'' was use as the \textbf{mapper} and
+``Streptococcus\_pneumoniae\_Taiwan19F-14\_v1'' was used as the
+\textbf{reference}.
+
+You can request the mapping pipeline be run more than once using
+different mappers or reference. To filter the output by mapper we can
+use the \texttt{-\/-mapper} or \texttt{-M} option and the
+\texttt{-\/-reference} or \texttt{-R} option to filter by reference.
+
+
+\newpage
+
+
+
+\textbf{Let's look for mapping pipeline results for lane 5477\_6\#1
+which used the mapper ``smalt''.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf map \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1 \PYZhy{}M smalt
+\end{Verbatim}
+\end{terminalinput}
+
+    Here we got the same results as before. But, what if we try looking for
+results produced by a different mapper?
+
+\textbf{Let's look for mapping pipeline results for lane 5477\_6\#1
+which used the mapper ``bwa''.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf map \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1 \PYZhy{}M bwa
+\end{Verbatim}
+\end{terminalinput}
+
+    This gave us ``No data found'' as BWA hasn't been run on this lane.
+
+\textbf{Let's look for mapping pipeline results for lane 5477\_6\#1
+which used the reference
+``Streptococcus\_pneumoniae\_Taiwan19F-14\_v1''.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf map \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1 \PY{l+s+se}{\PYZbs{}}
+            \PYZhy{}R \PY{l+s+s2}{\PYZdq{}Streptococcus\PYZus{}pneumoniae\PYZus{}Taiwan19F\PYZhy{}14\PYZus{}v1\PYZdq{}}
+\end{Verbatim}
+\end{terminalinput}
+
+    Notice that we only get one BAM file (.bam) and its index (.bai)
+returned. This is because the mapping pipeline has been run twice on
+this lane, once using the reference
+``Streptococcus\_pneumoniae\_Taiwan19F-14\_v1'' and once with
+``Streptococcus\_pneumoniae\_ATCC\_700669\_v1''.
+
+We could then symlink the BAM files into a directory using the
+\texttt{-\/-symlink} or \texttt{-l} option.
+
+\textbf{Let's symlink our BAM files for lane 5477\_6\#1 to
+``my\_bam\_files''.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf map \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1 \PY{l+s+se}{\PYZbs{}}
+            \PYZhy{}R \PY{l+s+s2}{\PYZdq{}Streptococcus\PYZus{}pneumoniae\PYZus{}Taiwan19F\PYZhy{}14\PYZus{}v1\PYZdq{}} \PY{l+s+se}{\PYZbs{}}
+            \PYZhy{}l my\PYZus{}bam\PYZus{}files
+\end{Verbatim}
+\end{terminalinput}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} ls my\PYZus{}bam\PYZus{}files
+\end{Verbatim}
+\end{terminalinput}
+
+    We can also get some statistics from our mapping results using the
+\texttt{-\/-stats} or \texttt{-s} option.
+
+\textbf{Let's get some mapping statistics for lane 5477\_6\#1.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf map \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1 \PYZhy{}s
+\end{Verbatim}
+\end{terminalinput}
+
+    This generated a new file called ``5477\_6\_1.mapping\_stats.csv'' which
+contains our mapping statistics.
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} cat 5477\PYZus{}6\PYZus{}1.mapping\PYZus{}stats.csv
+\end{Verbatim}
+\end{terminalinput}
+
+    Notice that there are two rows for lane 5477\_6\#1. This is because the
+mapping pipeline was run twice on this lane using different references.
+
+    \hypertarget{questions}{%
+\subsection{Questions}\label{questions}}
+
+\textbf{Q1: How many BAM files are returned by default for lane
+5477\_6\#10?}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q2: Which mappers have been used with the mapping pipeline for
+lane 5477\_6\#10?}\\
+\textit{Hint: the mapper is in the 3rd column of the details}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q3: Which references have been used with the mapping pipeline
+for lane 5477\_6\#10?}\\
+\textit{Hint: the reference is in the 2nd column of the details}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q4: What percentage of the reads from lane 5477\_6\#10 were
+mapped to ``Streptococcus\_pneumoniae\_OXC141\_v1''?}\\
+\textit{Hint: you can use \texttt{awk} to filter the statistics file by
+column 8 (reference) (make sure you set -F',' as the stats are
+comma-delimited!)}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \hypertarget{whats-next}{%
+\subsection{What's next?}\label{whats-next}}
+
+For a quick recap of how to get QC pipeline results, head back to
+\href{qc-pipeline-results.ipynb}{QC pipeline results}.
+
+Otherwise, let's move on to how to get your
+\href{snp-pipeline-results.ipynb}{SNP pipeline results}.
+
+
+    % Add a bibliography block to the postdoc
+
+
+
+\newpage
+
+
+
+
+
+
+    \hypertarget{snp-pipeline-results}{%
+\section{SNP pipeline results}\label{snp-pipeline-results}}
+
+    \hypertarget{introduction}{%
+\subsection{Introduction}\label{introduction}}
+
+When your sample data is in the Pathogen Informatics databases, it
+becomes available to the automated analysis pipelines. After the
+analysis pipelines have been requested and run, you can use the
+\texttt{pf} scripts to return the results of each of the automated
+analysis pipelines.
+
+The
+\href{http://mediawiki.internal.sanger.ac.uk/index.php/Pathogen_Informatics_SNP_Calling_Pipeline}{SNP
+calling pipeline} is composed of two parts, SNP calling and pseudogenome
+construction. We can use \texttt{pf\ snp} to return the location of the
+variant calling format (VCF) files that were produced by the SNP calling
+pipeline.
+
+In this section of the tutorial we will cover:
+
+\begin{itemize}
+\tightlist
+\item
+  using \texttt{pf\ snp} to get VCF files generated by the SNP calling
+  pipeline
+\item
+  filtering \texttt{pf\ snp} results by mapper and reference
+\item
+  using \texttt{pf\ snp} to symlink VCF files generated by the SNP
+  calling pipeline
+\item
+  using \texttt{pf\ snp} to generate a pseudogenome
+\end{itemize}
+
+    \hypertarget{exercise-7}{%
+\subsection{Exercise 7}\label{exercise-7}}
+
+    \textbf{First, let's tell the system the location of our tutorial
+configuration file.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{n+nb}{export} \PY{n+nv}{PF\PYZus{}CONFIG\PYZus{}FILE}\PY{o}{=}\PY{n+nv}{\PYZdl{}PWD}/data/pathfind.conf
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Let's take a look at the \texttt{pf\ snp} usage.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf snp \PYZhy{}h
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Now, let's get the SNP calling pipeline results for lane
+5477\_6\#1.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf snp \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1
+\end{Verbatim}
+\end{terminalinput}
+
+    This returns the locations of the gzipped VCF files (.vcf.gz) and their
+indices (.vcf.gz.tbi) which were produced by the SNP calling pipeline.
+
+The mapping pipeline is run before the SNP calling pipeline. A quick way
+to get information about which mapper and reference were used by the
+mapping pipeline is to use the \texttt{-\/-details} or \texttt{-d}
+option.
+
+\textbf{Let's get the SNP calling details for lane 5477\_6\#1.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf snp \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1 \PYZhy{}d
+\end{Verbatim}
+\end{terminalinput}
+
+    Here we can see that ``smalt'' was use as the \textbf{mapper} for both
+the ``Streptococcus\_pneumoniae\_ATCC\_700669\_v1'' and
+``Streptococcus\_pneumoniae\_Taiwan19F-14\_v1'' \textbf{references}.
+
+You can request the SNP calling pipeline be run more than once using
+different mappers or reference. To filter the output by mapper we can
+use the \texttt{-\/-mapper} or \texttt{-M} option and the
+\texttt{-\/-reference} or \texttt{-R} option to filter by reference.
+
+\textbf{Let's look for SNP calling pipeline results for lane 5477\_6\#1
+which used the mapper ``smalt''.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf snp \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1 \PYZhy{}M smalt
+\end{Verbatim}
+\end{terminalinput}
+
+    Here we got the same results as before. But, what if we try looking for
+results produced by a different mapper?
+
+\textbf{Let's look for SNP calling pipeline results for lane 5477\_6\#1
+which used the mapper ``bwa''.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf snp \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1 \PYZhy{}M bwa
+\end{Verbatim}
+\end{terminalinput}
+
+    This gave us ``No data found'' as BWA mapping hasn't been run on this
+lane.
+
+\textbf{Let's look for SNP calling pipeline results for lane 5477\_6\#1
+which used the reference
+``Streptococcus\_pneumoniae\_Taiwan19F-14\_v1''.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf snp \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1 \PY{l+s+se}{\PYZbs{}}
+            \PYZhy{}R \PY{l+s+s2}{\PYZdq{}Streptococcus\PYZus{}pneumoniae\PYZus{}Taiwan19F\PYZhy{}14\PYZus{}v1\PYZdq{}}
+\end{Verbatim}
+\end{terminalinput}
+
+    Notice that we only get one VCF file (.bam) and its index (.tbi)
+returned. This is because the SNP calling pipeline has been run twice on
+this lane, once using the reference
+``Streptococcus\_pneumoniae\_Taiwan19F-14\_v1'' and once with
+``Streptococcus\_pneumoniae\_ATCC\_700669\_v1''.
+
+We could then symlink the gzipped VCF files into a directory using the
+\texttt{-\/-symlink} or \texttt{-l} option.
+
+\textbf{Let's symlink our gzipped VCF files for lane 5477\_6\#1 to
+``my\_vcf\_files''.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf snp \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1 \PY{l+s+se}{\PYZbs{}}
+            \PYZhy{}R \PY{l+s+s2}{\PYZdq{}Streptococcus\PYZus{}pneumoniae\PYZus{}Taiwan19F\PYZhy{}14\PYZus{}v1\PYZdq{}} \PY{l+s+se}{\PYZbs{}}
+            \PYZhy{}l my\PYZus{}vcf\PYZus{}files
+\end{Verbatim}
+\end{terminalinput}
+
+    Finally, we can generate the \textbf{pseudogenome}, a custom genome that
+incorporates filtered variants with respect to the reference. To
+generate the pseudogenome, we use the \texttt{-\/-pseudogenome} or
+\texttt{-p} option.
+
+\textbf{Let's get the pseudogenomes for lane 5477\_6\#1.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf snp \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1 \PYZhy{}p
+\end{Verbatim}
+\end{terminalinput}
+
+    Notice that there are two pseudogenome files for lane 5477\_6\#1. This
+is because the SNP calling has been run twice.
+
+    \hypertarget{questions}{%
+\subsection{Questions}\label{questions}}
+
+\textbf{Q1: How many lanes from run 10018\_1 has the SNP calling
+pipeline been completed on?}\\
+\textit{Hint: is there another \texttt{pf} command you can use to check
+the status of run?}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q2: How many gzipped VCF files are returned by default for lane
+10018\_1\#20?}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q3: Which mapper and reference was used by the SNP calling
+pipeline for lane 10018\_1\#20?}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q4: Generate the pseudogenome for lane 10018\_1\#20 excluding
+the reference.}\\
+\textit{Hint: look at the \texttt{pf\ snp} usage}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q5: Symlink the gzipped VCF files generated by the SNP calling
+pipeline for run 10018\_1 to a new directory called ``10010\_1\_vcfs''.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \hypertarget{whats-next}{%
+\subsection{What's next?}\label{whats-next}}
+
+For a quick recap of how to get QC pipeline results, head back to
+\href{mapping-pipeline-results.ipynb}{mapping pipeline results}.
+
+Otherwise, let's move on to how to get your
+\href{assembly-pipeline-results.ipynb}{assembly pipeline results}.
+
+
+    % Add a bibliography block to the postdoc
+
+
+
+\newpage
+
+
+
+
+
+
+    \hypertarget{assembly-pipeline-results}{%
+\section{Assembly pipeline results}\label{assembly-pipeline-results}}
+
+    \hypertarget{introduction}{%
+\subsection{Introduction}\label{introduction}}
+
+When your sample data is in the Pathogen Informatics databases, it
+becomes available to the automated analysis pipelines. After the
+analysis pipelines have been requested and run, you can use the
+\texttt{pf} scripts to return the results of each of the automated
+analysis pipelines.
+
+The genome assembly pipeline used depends on sequence data and organism:
+
+\begin{itemize}
+\tightlist
+\item
+  \href{http://mediawiki.internal.sanger.ac.uk/index.php/Pathogen_Informatics_Bacterial_Assembly_Pipeline}{bacteria
+  assembly}
+\item
+  \href{http://mediawiki.internal.sanger.ac.uk/index.php/Pathogen_Informatics_Viral_Assembly_Pipeline}{virus
+  assembly}
+\item
+  \href{http://mediawiki.internal.sanger.ac.uk/index.php/Pathogen_Informatics_Eukaryote_Assembly_Pipeline}{eukaryote
+  assembly}
+\item
+  \href{http://mediawiki.internal.sanger.ac.uk/index.php/Pathogen_Informatics_Automated_PacBio_Assembly_Pipeline}{pacbio
+  assembly}
+\end{itemize}
+
+We can use \texttt{pf\ assembly} to return the location of assembly
+pipeline results.
+
+In this section of the tutorial we will cover:
+
+\begin{itemize}
+\tightlist
+\item
+  using \texttt{pf\ assembly} to get assembly pipeline results
+\item
+  filtering \texttt{pf\ assembly} results by program
+\item
+  using \texttt{pf\ assembly} to symlink assembly pipeline results
+\item
+  using \texttt{pf\ assembly} to get assembly statistics
+\end{itemize}
+
+    \hypertarget{exercise-8}{%
+\subsection{Exercise 8}\label{exercise-8}}
+
+    \textbf{First, let's tell the system the location of our tutorial
+configuration file.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{n+nb}{export} \PY{n+nv}{PF\PYZus{}CONFIG\PYZus{}FILE}\PY{o}{=}\PY{n+nv}{\PYZdl{}PWD}/data/pathfind.conf
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Let's take a look at the \texttt{pf\ assembly} usage.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf assembly \PYZhy{}h
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Now, let's get the assembly pipeline results for run
+5477\_6\#1.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf assembly \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1
+\end{Verbatim}
+\end{terminalinput}
+
+    This returns the locations of the FASTA-formatted contig files which
+were produced by the assembly pipeline.
+
+By default, \texttt{pf\ assembly} will return the scaffolded contigs.
+But, what if you want to see all of the assembled contigs. To get these
+we can use the \texttt{-\/-filetype} or \texttt{-f} option.
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf assembly \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1 \PYZhy{}f all
+\end{Verbatim}
+\end{terminalinput}
+
+    This returns a third file, ``unscaffolded\_contigs.fa''.
+
+Notice that the results are located in a directories which are named
+after the assembler that was used to generate the assembly e.g.
+``spades\_assembly''. This tells us that
+\href{http://cab.spbu.ru/software/spades/}{SPAdes} was the program used
+to generate the assembly. A quick way to filter assembly pipeline
+results by program is to use the \texttt{-\/-progam} or \texttt{-P}
+option.
+
+\textbf{Let's get all assembly pipeline results for run 5477\_6 which
+were generated using ``spades''.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf assembly \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6 \PYZhy{}P spades
+\end{Verbatim}
+\end{terminalinput}
+
+    Here we can see that SPAdes was used to generate assemblies for lanes
+5477\_6\#1 and 5477\_6\#3. We can symlink these assemblies into a
+directory using the \texttt{-\/-symlink} or \texttt{-l} option.
+
+\textbf{Let's symlink the assembly pipeline results for run 5477\_6
+which were generated with SPAdes to ``5477\_6\_spades''.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf assembly \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6 \PYZhy{}P spades \PYZhy{}l 5477\PYZus{}6\PYZus{}spades
+\end{Verbatim}
+\end{terminalinput}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} ls 5477\PYZus{}6\PYZus{}spades
+\end{Verbatim}
+\end{terminalinput}
+
+    We can also get some statistics from our assembly results using the
+\texttt{-\/-stats} or \texttt{-s} option.
+
+\textbf{Let's get some assembly statistics for lane 10018\_1\#2.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf assembly \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1 \PYZhy{}s
+\end{Verbatim}
+\end{terminalinput}
+
+    This generated a new file called ``5477\_6\_1.assemblyfind\_stats.csv''
+which contains our assembly statistics.
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} cat 5477\PYZus{}6\PYZus{}1.assemblyfind\PYZus{}stats.csv
+\end{Verbatim}
+\end{terminalinput}
+
+    \hypertarget{questions}{%
+\subsection{Questions}\label{questions}}
+
+\textbf{Q1: How many assembly files are returned by default for lane
+10018\_1\#50?}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q2: Which program was used to generate the assembly for lane
+10018\_1\#51?}\\
+\textit{Hint: look at the location path}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+
+
+\newpage
+
+
+
+    \textbf{Q3: Symlink the assembly/assemblies generated by ``IVA'' for run
+10018\_1 into a new directory called ``iva\_results''.}\\
+\textit{Hint: don't forget to filter the results if more than one program
+has been used}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q4: How many contigs were assembled by velvet for lane
+5477\_6\#2 and what is the N50?}\\
+\textit{Hint: you'll need to get some statistics for this lane and filter
+by program}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \hypertarget{whats-next}{%
+\subsection{What's next?}\label{whats-next}}
+
+For a quick recap of how to get QC pipeline results, head back to
+\href{snp-pipeline-results.ipynb}{SNP calling pipeline results}.
+
+Otherwise, let's move on to how to get your
+\href{annotation-pipeline-results.ipynb}{annotation pipeline results}.
+
+
+    % Add a bibliography block to the postdoc
+
+
+
+\newpage
+
+
+
+
+
+
+    \hypertarget{annotation-pipeline-results}{%
+\section{Annotation pipeline
+results}\label{annotation-pipeline-results}}
+
+    \hypertarget{introduction}{%
+\subsection{Introduction}\label{introduction}}
+
+When your sample data is in the Pathogen Informatics databases, it
+becomes available to the automated analysis pipelines. After the
+analysis pipelines have been requested and run, you can use the
+\texttt{pf} scripts to return the results of each of the automated
+analysis pipelines.
+
+The
+\href{http://mediawiki.internal.sanger.ac.uk/index.php/Pathogen_Informatics_Automated_Annotation_Pipeline}{annotation
+pipeline} prepares genomes for submission to EMBL/GenBank in a
+standardised manner, with all the annotation files tracked centrally and
+available with the \texttt{pf\ annotation} command.
+
+In this section of the tutorial we will cover:
+
+\begin{itemize}
+\tightlist
+\item
+  using \texttt{pf\ annotation} to get GFF files generated by the
+  annotation pipeline
+\item
+  filtering \texttt{pf\ annotation} results by assembler
+\item
+  using \texttt{pf\ annotation} to symlink files generated by the
+  annotation pipeline
+\item
+  using \texttt{pf\ annotation} to get annotation statistics
+\item
+  using \texttt{pf\ annotation} to check whether a gene is found in the
+  GFF files generated by the annotation pipeline
+\end{itemize}
+
+    \hypertarget{exercise-9}{%
+\subsection{Exercise 9}\label{exercise-9}}
+
+    \textbf{First, let's tell the system the location of our tutorial
+configuration file.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{n+nb}{export} \PY{n+nv}{PF\PYZus{}CONFIG\PYZus{}FILE}\PY{o}{=}\PY{n+nv}{\PYZdl{}PWD}/data/pathfind.conf
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Let's take a look at the \texttt{pf\ annotation} usage.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf annotation \PYZhy{}h
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Now, let's get the annotation pipeline results for lane
+5477\_6\#1.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf annotation \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1
+\end{Verbatim}
+\end{terminalinput}
+
+    This returns the locations of the GFF files which were produced by the
+annotation pipeline. Two paths were returned. This is because the
+assembly pipeline was run twice on this lane with two different
+assemblers: SPAdes and Velvet. Now, look closely at the annotation file
+paths. Did you notice that each annotation file that's returned is
+within an assembly directory? This is because your annotations and
+assemblies are linked.
+
+We can filter the returned results, looking only for those results
+associated with a particular assembly program e.g.~SPAdes, Velvet or
+IVA. To do this, we can use the \texttt{-\/-program} or \texttt{-P}
+option as we did with \texttt{pf\ assembly}.
+
+
+
+\newpage
+
+
+
+\textbf{Let's get all annotation pipeline results for run 5477\_6\#1
+which were generated using ``spades''.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf annotation \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1 \PYZhy{}P spades
+\end{Verbatim}
+\end{terminalinput}
+
+    That leaves us with just one annotation file in the ``spades\_assembly''
+directory.
+
+Several different file formats are generated by the annotation pipeline.
+By default, \texttt{pf\ annotation} returns the GFF file produced by the
+annotation pipeline. We can also ask \texttt{pf\ annotation} to return a
+different filetype e.g.~the protein FASTA file of the translated CDS
+sequences. To do this we use the \texttt{-\/-filetype} or \texttt{-f}
+option.
+
+\textbf{Let's look for the protein FASTA file of the translated CDS
+sequences for lane 5477\_6\#1.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf annotation \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1 \PYZhy{}P spades \PYZhy{}f faa
+\end{Verbatim}
+\end{terminalinput}
+
+    Here we got files returned with the extension ``.faa'' instead of the
+default ``.gff'' files. We can now symlink these FASTA files into a
+directory using the \texttt{-\/-symlink} or \texttt{-l} option.
+
+\textbf{Let's symlink our protein FASTA files for our SPAdes assembly
+from lane 5477\_6\#1 to ``my\_protein\_files''.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf annotation \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1 \PYZhy{}P spades \PY{l+s+se}{\PYZbs{}}
+            \PYZhy{}f faa \PYZhy{}l my\PYZus{}protein\PYZus{}files
+\end{Verbatim}
+\end{terminalinput}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} ls my\PYZus{}protein\PYZus{}files
+\end{Verbatim}
+\end{terminalinput}
+
+    We can also get some statistics from our annotation results using the
+\texttt{-\/-stats} or \texttt{-s} option.
+
+\textbf{Let's get some annotation statistics for our SPAdes assembly
+from lane 5477\_6\#1.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf annotation \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1 \PYZhy{}P spades \PYZhy{}s
+\end{Verbatim}
+\end{terminalinput}
+
+    This generated a new file called
+``5477\_6\_1.annotationfind\_stats.csv'' which contains our annotation
+statistics.
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} cat 5477\PYZus{}6\PYZus{}1.annotationfind\PYZus{}stats.csv
+\end{Verbatim}
+\end{terminalinput}
+
+    Finally, we can check to see if a gene is present in our sample using
+the \texttt{-\/-gene} or \texttt{-g} option.
+
+\textbf{Let's see if any of our assemblies for lane 5477\_6\#1 contain
+the gene ``\textit{dnaG}''.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf annotation \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1 \PYZhy{}g dnaG
+\end{Verbatim}
+\end{terminalinput}
+
+    Here we can see that both of our samples contain the \textit{dnaG} gene.
+To check this, we can can use \texttt{grep}.
+
+\textbf{Use \texttt{grep} to search for ``\textit{dnaG}'' in the SPAdes
+annotation for lane 5477\_6\#1.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf annotation \PYZhy{}t lane \PYZhy{}i 5477\PYZus{}6\PYZsh{}1 \PYZhy{}P spades \PY{p}{|} xargs grep dnaG
+\end{Verbatim}
+\end{terminalinput}
+
+    \hypertarget{questions}{%
+\subsection{Questions}\label{questions}}
+
+\textbf{Q1: How many GFF files are returned by default for lane
+10018\_1\#1?}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q2: What is the location of the annotation for the SPAdes
+assembly of lane 10018\_1\#1?}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q3: What is the location of the translated CDS sequence file for
+the SPAdes assembly of lane 10018\_1\#1?}\\
+\textit{Hint: think about file extensions}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q4: How many of the assemblies for run 5477\_6 contain the gene
+``\textit{dnaG}''?}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \hypertarget{whats-next}{%
+\subsection{What's next?}\label{whats-next}}
+
+For a quick recap of how to get QC pipeline results, head back to
+\href{assembly-pipeline-results.ipynb}{assembly pipeline results}.
+
+Otherwise, let's move on to how to get your
+\href{rnaseq-pipeline-results.ipynb}{RNA-Seq expression pipeline
+results}.
+
+
+    % Add a bibliography block to the postdoc
+
+
+
+\newpage
+
+
+
+
+
+
+    \hypertarget{rna-seq-pipeline-results}{%
+\section{RNA-Seq pipeline results}\label{rna-seq-pipeline-results}}
+
+    \hypertarget{introduction}{%
+\subsection{Introduction}\label{introduction}}
+
+When your sample data is in the Pathogen Informatics databases, it
+becomes available to the automated analysis pipelines. After the
+analysis pipelines have been requested and run, you can use the
+\texttt{pf} scripts to return the results of each of the automated
+analysis pipelines.
+
+The
+\href{http://mediawiki.internal.sanger.ac.uk/index.php/Pathogen_Informatics_RNA-Seq_Expression_Pipeline}{RNA-Seq
+expression pipeline} maps your raw sequence reads to a reference and
+counts the number of reads associated with each gene. We can use
+\texttt{pf\ rnaseq} to return the location of the count files that were
+produced by the RNA-Seq expression pipeline.
+
+In this section of the tutorial we will cover:
+
+\begin{itemize}
+\tightlist
+\item
+  using \texttt{pf\ rnaseq} to get count files generated by the RNA-Seq
+  expression pipeline
+\item
+  filtering \texttt{pf\ rnaseq} results by mapper and reference
+\item
+  using \texttt{pf\ rnaseq} to symlink count files generated by the
+  RNA-Seq expression pipeline
+\item
+  using \texttt{pf\ rnaseq} to summarise the relationship between lane,
+  sample and file names
+\item
+  using \texttt{pf\ rnaseq} to get mapping statistics
+\end{itemize}
+
+    \hypertarget{exercise-10}{%
+\subsection{Exercise 10}\label{exercise-10}}
+
+    \textbf{First, let's tell the system the location of our tutorial
+configuration file.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{n+nb}{export} \PY{n+nv}{PF\PYZus{}CONFIG\PYZus{}FILE}\PY{o}{=}\PY{n+nv}{\PYZdl{}PWD}/data/pathfind.conf
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Let's take a look at the \texttt{pf\ rnaseq} usage.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf rnaseq \PYZhy{}h
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Now, let's get the RNA-Seq expression pipeline results for lane
+8479\_4\#17.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf rnaseq \PYZhy{}t lane \PYZhy{}i 8479\PYZus{}4\PYZsh{}17
+\end{Verbatim}
+\end{terminalinput}
+
+    By default, this returns the locations of the expression count files
+which were produced by the RNA-Seq expression pipeline.
+
+For human and mouse data, there will also be featurecount files
+available which are produced by
+\href{http://bioinf.wehi.edu.au/featureCounts/}{featureCounts}. You can
+get these files using the \texttt{-\/-filetype} or \texttt{-f} option.
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf rnaseq \PYZhy{}t lane \PYZhy{}i 8479\PYZus{}4\PYZsh{}17 \PYZhy{}f featurecounts
+\end{Verbatim}
+\end{terminalinput}
+
+    The mapping pipeline is run before the RNA-Seq expression pipeline. A
+quick way to get information about which mapper and reference were used
+by the mapping pipeline is to use the \texttt{-\/-details} or
+\texttt{-d} option.
+
+
+
+\newpage
+
+
+
+\textbf{Let's get the mapping details for lane 8479\_4\#17.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf rnaseq \PYZhy{}t lane \PYZhy{}i 8479\PYZus{}4\PYZsh{}17 \PYZhy{}d
+\end{Verbatim}
+\end{terminalinput}
+
+    Here we can see that ``bwa'' and ``tophat'' were used as the
+\textbf{mapper} and ``Mus\_musculus\_mm9'' and ``Mus\_musculus\_mm10''
+were used as \textbf{references}.
+
+You can request the RNA-Seq expression pipeline be run more than once
+using different mappers or reference. To filter the output by mapper we
+can use the \texttt{-\/-mapper} or \texttt{-M} option and the
+\texttt{-\/-reference} or \texttt{-R} option to filter by reference.
+
+\textbf{Let's look for RNA-Seq expression pipeline results for lane
+8479\_4\#17 which used the mapper ``bwa''.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf rnaseq \PYZhy{}t lane \PYZhy{}i 8479\PYZus{}4\PYZsh{}17 \PYZhy{}M bwa
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Let's look for RNA-Seq expression pipeline results for lane
+8479\_4\#17 which used the reference ``Mus\_musculus\_mm9''.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf rnaseq \PYZhy{}t lane \PYZhy{}i 8479\PYZus{}4\PYZsh{}17 \PYZhy{}R \PY{l+s+s2}{\PYZdq{}Mus\PYZus{}musculus\PYZus{}mm9\PYZdq{}}
+\end{Verbatim}
+\end{terminalinput}
+
+    We can symlink our count files into a directory using the
+\texttt{-\/-symlink} or \texttt{-l} option.
+
+\textbf{Let's symlink our count files for lane 8479\_4\#17 to
+``my\_count\_files''.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf rnaseq \PYZhy{}t lane \PYZhy{}i 8479\PYZus{}4\PYZsh{}17 \PYZhy{}l my\PYZus{}count\PYZus{}files
+\end{Verbatim}
+\end{terminalinput}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} ls my\PYZus{}count\PYZus{}files
+\end{Verbatim}
+\end{terminalinput}
+
+    You may want to know the relationship between the lane name, sample name
+and file name. We can get this relationship using the
+\texttt{-\/-summary} or \texttt{-S} option.
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf rnaseq \PYZhy{}t lane \PYZhy{}i 8479\PYZus{}4\PYZsh{}17 \PYZhy{}S
+\end{Verbatim}
+\end{terminalinput}
+
+    This generates a new file called ``8479\_4\_17.rnaseqfind\_summary.tsv''
+which contains the output from \texttt{pf\ info} for this lane (Lane,
+Sample, Supplier\_Name, Public\_Name, Strain), the filename that is
+symlinked (Filename) and the full location to that file (File\_Path).
+This may also be useful as a starting point for your
+\href{https://github.com/sanger-pathogens/Bio-Deago/blob/master/user_guide/Input-files.ipynb}{DEAGO
+targets file}.
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} cat 8479\PYZus{}4\PYZus{}17.rnaseqfind\PYZus{}summary.tsv
+\end{Verbatim}
+\end{terminalinput}
+
+    We can also get some mapping statistics from our RNA-Seq results using
+the \texttt{-\/-stats} or \texttt{-s} option.
+
+\textbf{Let's get some mapping statistics for lane 8479\_4\#17.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf rnaseq \PYZhy{}t lane \PYZhy{}i 8479\PYZus{}4\PYZsh{}17 \PYZhy{}s
+\end{Verbatim}
+\end{terminalinput}
+
+    This generated a new file called ``8479\_4\_17.rnaseqfind\_stats.csv''
+which contains our mapping statistics.
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} cat 8479\PYZus{}4\PYZus{}17.rnaseqfind\PYZus{}stats.csv
+\end{Verbatim}
+\end{terminalinput}
+
+    Notice that there are two rows for lane 8479\_4\#17. This is because the
+mapping pipeline was run twice on this lane using different references
+and mappers.
+
+    \hypertarget{questions}{%
+\subsection{Questions}\label{questions}}
+
+\textbf{Q1: How many count files are returned by default for run
+8479\_4?}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q2: Which mapper was used with the mapping pipeline for lane
+8479\_4\#18?}\\
+\textit{Hint: the mapper is in the 3rd column of the details}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q3: Which reference was used with the mapping pipeline for lane
+8479\_4\#18?}\\
+\textit{Hint: the reference is in the 2nd column of the details}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q4: What is the location or path of the featurecounts file for
+lane 8479\_4\#18?}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q5: Which of the lanes in run 8479\_4 has the lowest percentage
+of mapped reads?}\\
+\textit{Hint: you can use \texttt{awk} to print out column 2 (lane name)
+and column 12 (mapped \%) of your run statistics}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q6: What is the sample name and symlinked file name associated
+with lane 8479\_4\#18?}\\
+\textit{Hint: you might want to summarise the results}
+
+    \hypertarget{whats-next}{%
+\subsection{What's next?}\label{whats-next}}
+
+For a quick recap of how to get annotation pipeline results, head back
+to \href{annotation-pipeline-results.ipynb}{annotation pipeline
+results}.
+
+Otherwise, let's move on to how to \href{finding-a-reference.ipynb}{find
+a reference}.
+
+
+    % Add a bibliography block to the postdoc
+
+
+
+\newpage
+
+
+
+
+
+
+    \hypertarget{finding-a-reference}{%
+\section{Finding a reference}\label{finding-a-reference}}
+
+    \hypertarget{introduction}{%
+\subsection{Introduction}\label{introduction}}
+
+    For a reference to be used with the Pathogen Informatics analysis
+pipelines, the reference must first be in the pathogen databases. All
+complete bacterial genomes from
+\href{https://www.ncbi.nlm.nih.gov/refseq/}{RefSeq} are automatically
+imported and updated. There are user-submitted references too.
+
+We can look at the available reference sequences using \texttt{pf\ ref}.
+This differs from the other \texttt{pf} scripts that we've looked at in
+that it doesn't require a type (\texttt{-t}). It only needs a partial id
+(\texttt{id} or \texttt{i}).
+
+In this section of the tutorial we will cover:
+
+\begin{itemize}
+\tightlist
+\item
+  using \texttt{pf\ ref} to find a FASTA-formatted reference
+\item
+  using \texttt{pf\ ref} to find the GFF annotation for a reference
+\item
+  using \texttt{pf\ ref} to symlink a reference
+\end{itemize}
+
+    \hypertarget{exercise-11}{%
+\subsection{Exercise 11}\label{exercise-11}}
+
+    \textbf{First, let's tell the system the location of our tutorial
+configuration file.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{n+nb}{export} \PY{n+nv}{PF\PYZus{}CONFIG\PYZus{}FILE}\PY{o}{=}\PY{n+nv}{\PYZdl{}PWD}/data/pathfind.conf
+\end{Verbatim}
+\end{terminalinput}
+
+    We can find a reference using part of the reference name using
+\texttt{pf\ ref}.
+
+\textbf{Let's take a look at the usage information for
+\texttt{pf\ ref}.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf ref \PYZhy{}h
+\end{Verbatim}
+\end{terminalinput}
+
+    So, if we wanted to look which mouse (\textit{Mus\_musculus}) references
+are available we can run:
+
+\begin{verbatim}
+pf ref -i Mus_musculus
+\end{verbatim}
+
+Notice that there are no spaces between the genus, species and strain.
+Instead, these are replaced with underscores!
+
+The command above would give you:
+
+\begin{verbatim}
+No exact match for "Mus_musculus". Did you mean:
+  [1] Mus_musculus_mm10
+  [2] Mus_musculus_mm9
+  [a] all references
+Which reference?
+\end{verbatim}
+
+You would then enter the number corresponding to the reference location
+you need. Say we want to find the reference for ``Mus\_musculus\_mm9'',
+we would enter 1 which would give us:
+
+\begin{verbatim}
+/path/to/refs/Mus/musculus/Mus_musculus_mm10.fa
+\end{verbatim}
+
+We can't do that in this notebook as it will wait forever in the
+background for us to enter an option. So, instead we need to use the
+\texttt{-\/-all} or \texttt{-A} option to list all of the available
+references that match our query.
+
+\textbf{Let's see which \textit{Salmonella} references are available.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf ref \PYZhy{}i Salmonella \PYZhy{}A
+\end{Verbatim}
+\end{terminalinput}
+
+    This gives us the location of the reference FASTA file on disk. However,
+maybe we just want to see the reference names. We can do this using the
+\texttt{-\/-reference-names} or \texttt{-R} option. These can be useful
+where you need to specify a reference name when requesting the analysis
+pipelines on the command line.
+
+\textbf{Now, let's get the \textit{Salmonella} reference names.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf ref \PYZhy{}i Salmonella \PYZhy{}A \PYZhy{}R
+\end{Verbatim}
+\end{terminalinput}
+
+    Notice the version numbers at the end of the reference name. There is
+usually a naming convention with the references based on their source:
+
+\begin{itemize}
+\tightlist
+\item
+  RefSeq accession (e.g.~GCF\_001887015\_1) - complete genome imported
+  from RefSeq
+\item
+  version (v) \textgreater{}=1 (e.g.~v1) - genome requested by user and
+  imported from public repository (e.g.~ENA/GenBank)
+\item
+  version (v) \textless{}1 (e.g.~v0.1) - internal genome assembly
+  requested by user
+\end{itemize}
+
+But, perhaps you don't want the FASTA file, perhaps you want the
+reference annotation (i.e.~GFF file). To get this, we need to use the
+\texttt{-\/-filetype} or \texttt{-f} option.
+
+\textbf{Let's get the annotation (GFF) locations for the available
+\textit{Salmonella} references.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf ref \PYZhy{}i Salmonella \PYZhy{}A \PYZhy{}f gff
+\end{Verbatim}
+\end{terminalinput}
+
+    Finally, you might want to use the reference files in an analysis. The
+simplest way is to symlink them using the \texttt{-\/-symlink} or
+\texttt{-l} option.
+
+\textbf{Let's symlink our \textit{Salmonella} reference genomes to a
+directory called ``salmonella\_refs''.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf ref \PYZhy{}i Salmonella \PYZhy{}A \PYZhy{}l salmonella\PYZus{}refs
+\end{Verbatim}
+\end{terminalinput}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} ls salmonella\PYZus{}refs
+\end{Verbatim}
+\end{terminalinput}
+
+    \hypertarget{questions}{%
+\subsection{Questions}\label{questions}}
+
+    Don't forget to use the \textbf{\texttt{-A}} option for all of these
+questions if you're running the \texttt{pf\ ref} commands inside the
+notebook!
+
+
+
+\newpage
+
+
+
+\textbf{Q1: How many \textit{Streptococcus pneumoniae} references are
+available?}\\
+\textit{Hint: you can use \texttt{wc} to count the number of references
+returned}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q2: How many of those \textit{Streptococcus pneumoniae} references
+were imported from a public repository ?}\\
+\textit{Hint: think about the version in the suffix, using the \texttt{-R}
+option to get only the names might make things clearer}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q3: What is the location of the annotation (GFF) file for
+\textit{Streptococcus pneumoniae P1031}.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \textbf{Q4: Symlink the annotation (GFF) file for \textit{Streptococcus
+pneumoniae P1031} to your current directory.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{c+c1}{\PYZsh{} Enter your answer here}
+\end{Verbatim}
+\end{terminalinput}
+
+    \hypertarget{whats-next}{%
+\subsection{What's next?}\label{whats-next}}
+
+You can head back to \href{rnaseq-pipeline-results.ipynb}{RNA-Seq
+expression pipeline results}.
+
+Otherwise, let's move on to looking at
+\href{troubleshooting.ipynb}{troubleshooting}.
+
+
+    % Add a bibliography block to the postdoc
+
+
+
+\newpage
+
+
+
+
+
+
+    \hypertarget{troubleshooting}{%
+\section{Troubleshooting}\label{troubleshooting}}
+
+    \textbf{First, let's tell the system the location of our tutorial
+configuration file.}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} \PY{n+nb}{export} \PY{n+nv}{PF\PYZus{}CONFIG\PYZus{}FILE}\PY{o}{=}\PY{n+nv}{\PYZdl{}PWD}/data/pathfind.conf
+\end{Verbatim}
+\end{terminalinput}
+
+    \hypertarget{getting-help-with-the-commands}{%
+\subsection{Getting help with the
+commands}\label{getting-help-with-the-commands}}
+
+Remember that you can always look at the usage for \texttt{pf} and the
+individual \texttt{pf} scripts (e.g. \texttt{pf\ data}) if you get
+stuck.
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf \PYZhy{}h
+\end{Verbatim}
+\end{terminalinput}
+
+\begin{terminalinput}
+\begin{Verbatim}[commandchars=\\\{\}]
+\llap{\color{black}\LARGE\faKeyboardO\hspace{1em}} pf data \PYZhy{}h
+\end{Verbatim}
+\end{terminalinput}
+
+    \hypertarget{getting-no-data-found}{%
+\subsection{Getting ``No data found''}\label{getting-no-data-found}}
+
+There are several reasons why you may be getting ``No data found'' when
+you search using the \texttt{pf} scripts. All of these can be found on
+the Pathogen Informatics Wiki FAQs here:
+
+\href{http://mediawiki.internal.sanger.ac.uk/index.php/Pathogen_Informatics_FAQs\#Why_is_my_data_not_available_in_the_Pathogen_Informatics_pipelines.3F}{http://mediawiki.internal.sanger.ac.uk/index.php/Pathogen\_Informatics\_FAQs}.
+
+If you're still stuck after reading the wiki, you can email Pathogen
+Informatics at \textbf{path-help@sanger.ac.uk}.
+
+    \hypertarget{finding-out-about-the-analysis-pipelines}{%
+\subsection{Finding out about the analysis
+pipelines}\label{finding-out-about-the-analysis-pipelines}}
+
+There are links to the various analysis pipeline documentation on the
+main wiki page:
+
+\url{http://mediawiki.internal.sanger.ac.uk/index.php/Pathogen_Informatics}
+
+    \textbf{Congratulations, you have now reached the end of this tutorial!}
+
+To go back to the beginning, you'll want to head to the
+\href{index.ipynb}{index}.\\
+Or, for the answers to the tutorial questions, head to the
+\href{answers.ipynb}{answer section}.
+
+
+    % Add a bibliography block to the postdoc
+
+
+
+\end{document}
