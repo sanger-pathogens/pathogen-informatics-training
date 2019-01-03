@@ -9,7 +9,7 @@ In the notebook directory that you wish to convert, run:
 
 `../../make_course_pdf.py --no_exec <outprefix> <infile1, infile2, ...>`
 
-Edit the .tex that was generated so that it looks ok. Then run `lualatex` to convert the file to PDF. 
+Edit the .tex that was generated so that it looks ok (for instance by adding page breaks, checking that text wrapping in command blocks don't exceed page width, and fixing image positions). Then run `lualatex` to convert the file to PDF. 
 
 ## Dependencies
 - [MacTeX](https://tug.org/mactex/) or similar
