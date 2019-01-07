@@ -1,6 +1,6 @@
 # Pathogen Informatics Training - Admin scripts
 
-This directory contains a number of scripts that can be used to convert Jupyter Notebooks to PDF. Before merging a notebook into the sanger-pathogens fork, please make sure that it conforms to the styleguide in `Guide_for_developers` and that you can do a successful conversion of the notebook with the admin scripts.
+This directory contains a number of scripts that can be used to convert Jupyter Notebooks to PDF. Before merging a notebook into the sanger-pathogens fork, please make sure that it conforms to the style guide in `Guide_for_developers` and that you can do a successful conversion of the notebook with the admin scripts.
 
 ## Usage
 Make sure that your version of MacTeX (in particular lualatex) is up to date.  
@@ -13,3 +13,6 @@ Edit the .tex that was generated so that it looks ok (for instance by adding pag
 
 ## Dependencies
 - [MacTeX](https://tug.org/mactex/) or similar
+
+## Hints
+* If an image wraps over a new page, it can cause blank spaces and unusual formatting. To get around it, put a /newpage line in the .tex file before the image.
