@@ -21,3 +21,5 @@ This document contains some guidelines for creating a new Pathogen Informatics T
   - Please make sure that all commands executed in the tutorial work properly.
   - Also make sure that the notebook can be converted to pdf using the admin scripts as described in pathogen-informatics-training/Admin_scripts/README.md. Include the final pdf and the tex file in the final commit.
 
+* When you are done with the tutorial and it can be converted, please add the conversion command to `.travis.yml`.
+* If you add or remove a .ipynb from a tutorial, make sure that you edit `.travis.yml` to reflect this.
