@@ -35,5 +35,5 @@ script:
  - pushd Notebooks/RNA-Seq ../../Admin_scripts/make_course_pdf.py --no_exec RNA-Seq index.ipynb dataset-intro.ipynb genome-mapping.ipynb transcriptome-visualisation.ipynb transcript-quantification.ipynb sleuth-de.ipynb de-interpretation.ipynb key-aspects.ipynb && popd
  - pushd Notebooks/ROARY ../../Admin_scripts/make_course_pdf.py --no_exec ROARY index.ipynb pan_genome.ipynb prepare_data.ipynb qc.ipynb run_roary.ipynb results.ipynb phandango.ipynb && popd
  - pushd Notebooks/SEROBA ../../Admin_scripts/make_course_pdf.py --no_exec SEROBA index.ipynb serotyping.ipynb db_setup.ipynb run_seroba.ipynb seroba_results.ipynb && popd
- - pushd Notebooks/Unix  ../../Admin_scripts/make_course_pdf.py --no_exec Unix index.ipynb basic.ipynb files.ipynb grep.ipynb awk.ipynb bash_scripts.ipynb
+ - pushd Notebooks/Unix  ../../Admin_scripts/make_course_pdf.py --no_exec Unix index.ipynb basic.ipynb files.ipynb grep.ipynb awk.ipynb bash_scripts.ipynb && popd
  - pushd Notebooks/LSF  ../../Admin_scripts/make_course_pdf.py --no_exec LSF index.ipynb intro.ipynb queues.ipynb submitting_jobs.ipynb managing_jobs.ipynb job_arrays.ipynb priority_and_fairshare.ipynb troubleshooting.ipynb cheat_sheet.ipynb
