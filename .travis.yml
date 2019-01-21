@@ -1,0 +1,39 @@
+dist: xenial
+language: 
+ - python
+version:
+ - 3.7
+sudo: 
+ - false
+addons:
+  apt:
+    packages:
+    - pandoc
+    - fonts-lmodern
+    - texlive-xetex
+    - texlive-base
+    - texlive-luatex
+    - texlive-fonts-recommended
+    - texlive-fonts-extra
+    - texlive-generic-recommended
+    - texlive-latex-extra
+    - texlive-latex-recommended
+    - texlive-latex-base
+before_script:
+ - pip install jupyter
+ - pip install bash_kernel
+ - python -m bash_kernel.install 
+script:
+ - pushd Admin_scripts/test_data && ../make_course_pdf.py --no_exec test test.ipynb && popd
+ - pushd Notebooks/ARIBA && ../../Admin_scripts/make_course_pdf.py --no_exec ARIBA index.ipynb make_custom_db.ipynb run_ariba.ipynb phandango.ipynb micplot.ipynb && popd
+ - pushd Notebooks/BLAST && ../../Admin_scripts/make_course_pdf.py --no_exec BLAST index.ipynb format_database.ipynb run_blast.ipynb && popd
+ - pushd Notebooks/ChIP-Seq ../../Admin_scripts/make_course_pdf.py --no_exec ChIP-Seq index.ipynb dataset-intro.ipynb pax5-alignment.ipynb manipulate-sam.ipynb alignment-visualisation.ipynb control-alignment.ipynb identifying-enriched-areas.ipynb file-formats.ipynb inspecting-genomic-regions.ipynb motif-analysis.ipynb && popd
+ - pushd Notebooks/DEAGO ../../Admin_scripts/make_course_pdf.py --no_exec DEAGO index.ipynb introduction.ipynb input-data.ipynb quality-control.ipynb differential-expression.ipynb go-term-enrichment.ipynb troubleshooting.ipynb && popd
+ - pushd Notebooks/IGV ../../Admin_scripts/make_course_pdf.py --no_exec IGV index.ipynb && popd
+ - pushd Notebooks/PathFind ../../Admin_scripts/make_course_pdf.py --no_exec PathFind index.ipynb introduction.ipynb finding-your-data.ipynb information-and-accessions.ipynb pipeline-status.ipynb qc-pipeline-results.ipynb mapping-pipeline-results.ipynb snp-pipeline-results.ipynb assembly-pipeline-results.ipynb annotation-pipeline-results.ipynb rnaseq-pipeline-results.ipynb finding-a-reference.ipynb troubleshooting.ipynb && popd
+ - pushd Notebooks/QC ../../Admin_scripts/make_course_pdf.py --no_exec QC index.ipynb formats.ipynb conversion.ipynb assessment.ipynb contamination.ipynb && popd
+ - pushd Notebooks/RNA-Seq ../../Admin_scripts/make_course_pdf.py --no_exec RNA-Seq index.ipynb dataset-intro.ipynb genome-mapping.ipynb transcriptome-visualisation.ipynb transcript-quantification.ipynb sleuth-de.ipynb de-interpretation.ipynb key-aspects.ipynb && popd
+ - pushd Notebooks/ROARY ../../Admin_scripts/make_course_pdf.py --no_exec ROARY index.ipynb pan_genome.ipynb prepare_data.ipynb qc.ipynb run_roary.ipynb results.ipynb phandango.ipynb && popd
+ - pushd Notebooks/SEROBA ../../Admin_scripts/make_course_pdf.py --no_exec SEROBA index.ipynb serotyping.ipynb db_setup.ipynb run_seroba.ipynb seroba_results.ipynb && popd
+ - pushd Notebooks/Unix  ../../Admin_scripts/make_course_pdf.py --no_exec Unix index.ipynb basic.ipynb files.ipynb grep.ipynb awk.ipynb bash_scripts.ipynb
+ - pushd Notebooks/LSF  ../../Admin_scripts/make_course_pdf.py --no_exec LSF index.ipynb intro.ipynb queues.ipynb submitting_jobs.ipynb managing_jobs.ipynb job_arrays.ipynb priority_and_fairshare.ipynb troubleshooting.ipynb cheat_sheet.ipynb
