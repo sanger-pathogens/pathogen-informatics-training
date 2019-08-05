@@ -1,4 +1,7 @@
-FROM jupyter/scipy-notebook
+FROM jupyter/scipy-notebook:87210526f381
+# jupyter/scipy-notebook:87210526f381 2019-01-09 was used to build pathogen-informatics-training image from github tag NGS_feb_2019
+
+RUN which python && python --version && which pip && pip --version
 
 # Install bash kernel
 RUN pip install bash_kernel
@@ -23,6 +26,8 @@ RUN apt-get install --no-install-recommends -y \
   zlib1g-dev\
   subversion
 
+RUN conda update -n base conda
+
 # Set up conda channels
 RUN conda config --add channels r
 RUN conda config --add channels defaults
@@ -34,10 +39,16 @@ RUN conda install -c bioconda seroba
 
 RUN conda install -c conda-forge -c bioconda prokka
 
-# Reset original user
-USER $NB_UID
+# Reset original user (as used in jupyter/minimal-notebook Dockerfile)
+RUN   bash -c "if [[ \"\" == \"$NB_UID\" ]]; then echo \"user ID variable NB_UID has not been set\" && exit 255; fi"
+USER  $NB_UID
 
 # Clone PI-training repo and set workdir
-RUN git clone https://github.com/sanger-pathogens/pathogen-informatics-training.git
-WORKDIR $HOME/pathogen-informatics-training/Notebooks
+###RUN git clone https://github.com/sanger-pathogens/pathogen-informatics-training.git
+RUN      mkdir -p $HOME/pathogen-informatics-training
+COPY     --chown=$NB_UID . $HOME/pathogen-informatics-training/
+
+WORKDIR  $HOME/pathogen-informatics-training/Notebooks
+
+RUN which python && python --version && which pip && pip --version
 
