@@ -61,7 +61,7 @@ USER  $NB_UID
 # Clone PI-training repo and set workdir
 ###RUN git clone https://github.com/sanger-pathogens/pathogen-informatics-training.git
 RUN      mkdir -p $HOME/pathogen-informatics-training
-COPY     --chown=$NB_UID . $HOME/pathogen-informatics-training/
+COPY     --chown=1000 . $HOME/pathogen-informatics-training/
 RUN      find $HOME/pathogen-informatics-training/ -maxdepth 1 -ls
 
 WORKDIR  $HOME/pathogen-informatics-training/Notebooks
