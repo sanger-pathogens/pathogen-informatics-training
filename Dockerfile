@@ -2,6 +2,8 @@ FROM jupyter/scipy-notebook:58169ec3cfd3
 # jupyter/scipy-notebook:87210526f381 2019-01-09 was used to build pathogen-informatics-training image from github tag NGS_feb_2019
 # jupyter/scipy-notebook:58169ec3cfd3 2019-08-04 tested for RT666607 on 2019-08-06
 
+ENV   INSTALL_DIR=$HOME/pathogen-informatics-training
+
 # assert inheritance of NB_UID from base image
 RUN   bash -c "if [[ \"\" == \"$NB_UID\" ]]; then echo \"user ID variable NB_UID has not been set\" && exit 255; fi"
 
@@ -60,11 +62,16 @@ USER  $NB_UID
 
 # Clone PI-training repo and set workdir
 ###RUN git clone https://github.com/sanger-pathogens/pathogen-informatics-training.git
-RUN      mkdir -p $HOME/pathogen-informatics-training
-COPY     --chown="$NB_UID" . $HOME/pathogen-informatics-training/
-RUN      find $HOME/pathogen-informatics-training/ -maxdepth 1 -ls
+RUN      mkdir -p $INSTALL_DIR
+# using NB_UID variable with the chown argument works for my local docker build, but not in DockerHub
+# COPY     --chown=$NB_UID . $INSTALL_DIR/
+COPY     . $INSTALL_DIR/
+USER     root
+RUN      chown -R $NB_UID $INSTALL_DIR
+USER     $NB_UID
+# RUN      find $INSTALL_DIR/ -maxdepth 1 -ls
 
-WORKDIR  $HOME/pathogen-informatics-training/Notebooks
+WORKDIR  $INSTALL_DIR/Notebooks
 
 # RUN which python && python --version && which pip && pip --version
 
