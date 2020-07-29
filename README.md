@@ -1,6 +1,7 @@
 # Pathogen Informatics Training
 A set of bioinformatics training courses developed by Pathogen Informatics at Wellcome Sanger Institute.
 
+[![Build Status](https://travis-ci.org/sanger-pathogens/pathogen-informatics-training.svg?branch=master)](https://travis-ci.org/sanger-pathogens/pathogen-informatics-training)   
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-brightgreen.svg)](https://github.com/sanger-pathogens/pathogen-informatics-training/blob/master/LICENSE)
 
 ## Content
