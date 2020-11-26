@@ -75,6 +75,8 @@ RUN      chown -R $NB_UID $INSTALL_DIR
 USER     $NB_UID
 # RUN      find $INSTALL_DIR/ -maxdepth 1 -ls
 
+ENV      TERM=xterm-color
+
 WORKDIR  $INSTALL_DIR/Notebooks
 
 # RUN which python && python --version && which pip && pip --version
