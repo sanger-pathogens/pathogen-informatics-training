@@ -1,6 +1,7 @@
-FROM jupyter/scipy-notebook:58169ec3cfd3
+FROM jupyter/scipy-notebook:42f4c82a07ff
 # jupyter/scipy-notebook:87210526f381 2019-01-09 was used to build pathogen-informatics-training image from github tag NGS_feb_2019
 # jupyter/scipy-notebook:58169ec3cfd3 2019-08-04 tested for RT666607 on 2019-08-06
+# jupyter/scipy-notebook:42f4c82a07ff 2020-11-08 tested when reviewing notebooks for jupyterhub deployment 0220-11-26
 
 ENV   INSTALL_DIR=$HOME/pathogen-informatics-training
 
@@ -16,6 +17,9 @@ USER  root
 
 RUN   apt-get  update -qq && \
       apt-get  install -y apt-utils
+
+# Install dependencies for Unix tutorial
+RUN   apt-get  install -y less
 
 # Install dependencies for BLAST tutorial
 RUN   apt-get  install -y ncbi-blast+
