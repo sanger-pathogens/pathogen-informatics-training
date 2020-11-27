@@ -17,6 +17,10 @@ USER  root
 
 RUN   apt-get  update -qq && \
       apt-get  install -y apt-utils
+      
+# unminimize the minimal ubuntu image and get man pages back
+RUN   bash -c "yes | unminimize; exit 0" && \
+      apt-get install -y man-db
 
 # Install dependencies for Unix tutorial
 RUN   apt-get  install -y less
@@ -55,17 +59,12 @@ RUN   conda update -n base conda && \
       conda config --add channels conda-forge && \
       conda config --add channels bioconda
 
-# # SeroaBA build from github source (above), rather than conda
-# # # Install SeroBA (also installs dependencies like Ariba, Bowtie2, kmc and Samtools)
-# # RUN conda install -c bioconda seroba
-
 RUN conda install -c conda-forge -c bioconda prokka
 
 # Reset original user (as used in jupyter/minimal-notebook Dockerfile)
 USER  $NB_UID
 
 # Clone PI-training repo and set workdir
-###RUN git clone https://github.com/sanger-pathogens/pathogen-informatics-training.git
 RUN      mkdir -p $INSTALL_DIR
 # using NB_UID variable with the chown argument works for my local docker build, but not in DockerHub
 # COPY     --chown=$NB_UID . $INSTALL_DIR/
@@ -73,11 +72,8 @@ COPY     . $INSTALL_DIR/
 USER     root
 RUN      chown -R $NB_UID $INSTALL_DIR
 USER     $NB_UID
-# RUN      find $INSTALL_DIR/ -maxdepth 1 -ls
 
 ENV      TERM=xterm-color
 
 WORKDIR  $INSTALL_DIR/Notebooks
-
-# RUN which python && python --version && which pip && pip --version
 
