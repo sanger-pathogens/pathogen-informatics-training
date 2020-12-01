@@ -1,8 +1,8 @@
 # Pathogen Informatics Training
 A set of bioinformatics training courses developed by Pathogen Informatics at Wellcome Sanger Institute.
 
-[![Build Status](https://travis-ci.org/sanger-pathogens/pathogen-informatics-training.svg?branch=master)](https://travis-ci.org/sanger-pathogens/pathogen-informatics-training)   
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-brightgreen.svg)](https://github.com/sanger-pathogens/pathogen-informatics-training/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/sanger-pathogens/pathogen-informatics-training.svg?branch=master)](https://travis-ci.org/sanger-pathogens/pathogen-informatics-training)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-brightgreen.svg)](https://github.com/sanger-pathogens/pathogen-informatics-training/blob/master/LICENSE)
 
 ## Content
   * [Introduction](#introduction)
@@ -79,7 +79,7 @@ Start Jupyter at the main index page to view the available courses:
 Select a course and follow the instructions given in the notebook.
 
 ## License
-This is free software, licensed under [GPLv3](https://github.com/sanger-pathogens/pathogen-informatics-training/blob/master/LICENSE).
+This is free software and educational material, licensed under [CC BY](https://github.com/sanger-pathogens/pathogen-informatics-training/blob/master/LICENSE).
 
 ## Feedback/Issues
 Please report any issues to the [issues page](https://github.com/sanger-pathogens/pathogen-informatics-training/issues) or email path-help@sanger.ac.uk
