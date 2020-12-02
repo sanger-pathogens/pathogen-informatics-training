@@ -1,8 +1,9 @@
-FROM jupyter/scipy-notebook:58169ec3cfd3
+FROM jupyter/scipy-notebook:42f4c82a07ff
 # jupyter/scipy-notebook:87210526f381 2019-01-09 was used to build pathogen-informatics-training image from github tag NGS_feb_2019
 # jupyter/scipy-notebook:58169ec3cfd3 2019-08-04 tested for RT666607 on 2019-08-06
+# jupyter/scipy-notebook:42f4c82a07ff 2020-11-08 tested when reviewing notebooks for jupyterhub deployment 0220-11-26
 
-ENV   INSTALL_DIR=$HOME/pathogen-informatics-training
+ARG   NOTEBOOK_DIR=$HOME/pathogen-informatics-training/Notebooks
 
 # assert inheritance of NB_UID from base image
 RUN   bash -c "if [[ \"\" == \"$NB_UID\" ]]; then echo \"user ID variable NB_UID has not been set\" && exit 255; fi"
@@ -16,6 +17,13 @@ USER  root
 
 RUN   apt-get  update -qq && \
       apt-get  install -y apt-utils
+      
+# unminimize the minimal ubuntu image and get man pages back
+RUN   bash -c "yes | unminimize; exit 0" && \
+      apt-get install -y man-db
+
+# Install dependencies for Unix tutorial
+RUN   apt-get  install -y less
 
 # Install dependencies for BLAST tutorial
 RUN   apt-get  install -y ncbi-blast+
@@ -51,27 +59,12 @@ RUN   conda update -n base conda && \
       conda config --add channels conda-forge && \
       conda config --add channels bioconda
 
-# # SeroaBA build from github source (above), rather than conda
-# # # Install SeroBA (also installs dependencies like Ariba, Bowtie2, kmc and Samtools)
-# # RUN conda install -c bioconda seroba
-
 RUN conda install -c conda-forge -c bioconda prokka
 
 # Reset original user (as used in jupyter/minimal-notebook Dockerfile)
 USER  $NB_UID
 
-# Clone PI-training repo and set workdir
-###RUN git clone https://github.com/sanger-pathogens/pathogen-informatics-training.git
-RUN      mkdir -p $INSTALL_DIR
-# using NB_UID variable with the chown argument works for my local docker build, but not in DockerHub
-# COPY     --chown=$NB_UID . $INSTALL_DIR/
-COPY     . $INSTALL_DIR/
-USER     root
-RUN      chown -R $NB_UID $INSTALL_DIR
-USER     $NB_UID
-# RUN      find $INSTALL_DIR/ -maxdepth 1 -ls
+ENV      TERM=xterm-color
 
-WORKDIR  $INSTALL_DIR/Notebooks
-
-# RUN which python && python --version && which pip && pip --version
+WORKDIR  $NOTEBOOK_DIR
 
