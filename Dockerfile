@@ -64,15 +64,6 @@ RUN conda install -c conda-forge -c bioconda prokka
 # Reset original user (as used in jupyter/minimal-notebook Dockerfile)
 USER  $NB_UID
 
-# Clone PI-training repo and set workdir
-RUN      mkdir -p $INSTALL_DIR
-# using NB_UID variable with the chown argument works for my local docker build, but not in DockerHub
-# COPY     --chown=$NB_UID . $INSTALL_DIR/
-COPY     . $INSTALL_DIR/
-USER     root
-RUN      chown -R $NB_UID $INSTALL_DIR
-USER     $NB_UID
-
 ENV      TERM=xterm-color
 
 WORKDIR  $INSTALL_DIR/Notebooks
