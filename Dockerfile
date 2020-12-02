@@ -3,7 +3,7 @@ FROM jupyter/scipy-notebook:42f4c82a07ff
 # jupyter/scipy-notebook:58169ec3cfd3 2019-08-04 tested for RT666607 on 2019-08-06
 # jupyter/scipy-notebook:42f4c82a07ff 2020-11-08 tested when reviewing notebooks for jupyterhub deployment 0220-11-26
 
-ENV   INSTALL_DIR=$HOME/pathogen-informatics-training
+ARG   NOTEBOOK_DIR=$HOME/pathogen-informatics-training/Notebooks
 
 # assert inheritance of NB_UID from base image
 RUN   bash -c "if [[ \"\" == \"$NB_UID\" ]]; then echo \"user ID variable NB_UID has not been set\" && exit 255; fi"
@@ -66,5 +66,5 @@ USER  $NB_UID
 
 ENV      TERM=xterm-color
 
-WORKDIR  $INSTALL_DIR/Notebooks
+WORKDIR  $NOTEBOOK_DIR
 
