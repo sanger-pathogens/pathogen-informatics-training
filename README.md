@@ -50,20 +50,21 @@ The following tutorials can be run in a Docker container:
 First install Docker, then pull down the Docker image:
 
     docker pull sangerpathogens/pathogen-informatics-training
-
+    
 To start the Notebook, run:
 
-    docker run -p 8888:8888 -d sangerpathogens/pathogen-informatics-training jupyter notebook
+    docker run --name pathogen-informatics-training -p 8888:8888 sangerpathogens/pathogen-informatics-training bash -c \
+    "curl -fsSL 'https://github.com/sanger-pathogens/pathogen-informatics-training/archive/master.tar.gz' | \
+      tar xzf - --strip-components=2 pathogen-informatics-training-master/Notebooks && \
+      jupyter notebook"
 
 This will print a URL with a token. Copy and paste this in your browser. This will open the notebook in the "Notebooks" directroy. Click on the index.ipynb and navigate your way to the desired notebook from there.
 
-If for some reason you need to close the tutorial and want to continue at a later date (provided that you have saved your progress in the notebooks using the save button), you can restart the container by running:
+When you have finished, type `Ctrl-C` in the terminal in which you started the notebook (above) and it will shut down.
 
-    docker start -a CONTAINER_ID
+If you want to continue at a later date (provided that you have saved your progress in the notebooks using the save button), you can restart the container by running:
 
-Where CONTAINER_ID is the id of the container. You can find out what the id of the container is by running:
-
-    docker container ls -a
+    docker start -a pathogen-informatics-training
 
 Again, copy the URL into your browser and you are ready to pick up where you left off.
 
